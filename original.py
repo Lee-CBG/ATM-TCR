@@ -3,7 +3,6 @@ import os
 import sys
 import csv
 import time
-sys.path.append('../')
 import argparse
 import numpy as np
 import torch
@@ -13,6 +12,8 @@ from data_loader import define_dataloader,load_embedding
 from utils import str2bool,check_model_name,timeSince,get_performance_batchiter,print_performance,write_blackbox_output_batchiter
 import data_io_tf
 from pathlib import Path
+
+sys.path.append('../')
 
 PRINT_EVERY_EPOCH = 1
 
@@ -34,26 +35,26 @@ def train(args, model, device, train_loader, optimizer, epoch):
 
 def main():
 
-    parser = argparse.ArgumentParser(description='Prediction of TCR binding to peptide-MHC complexes')
+    parser = argparse.ArgumentParser(description = 'Prediction of TCR binding to peptide-MHC complexes')
 
     parser.add_argument('--infile', type=str,
-                        help='input file for training')
+                        help = 'input file for training')
     parser.add_argument('--indepfile', type=str, default=None,
-                        help='independent test file')
+                        help = 'independent test file')
     parser.add_argument('--blosum', type=str, default='data/BLOSUM50',
-                        help='file with BLOSUM matrix')
+                        help = 'file with BLOSUM matrix')
     parser.add_argument('--batch_size', type=int, default=50, metavar='N',
-                        help='batch size')
+                        help = 'batch size')
     parser.add_argument('--model_name', type=str, default='original.ckpt',
                         help = 'if train is True, model name to be saved, otherwise model name to be loaded')
     parser.add_argument('--epoch', type = int, default=200, metavar='N',
-                        help='number of epoch to train')
+                        help = 'number of epoch to train')
     parser.add_argument('--lr', type=float, default=0.001, metavar='LR',
-                        help='learning rate')
+                        help = 'learning rate')
     parser.add_argument('--cuda', type = str2bool, default=True,
                         help = 'enable cuda')
     parser.add_argument('--seed', type=int, default=7405,
-                        help='random seed')
+                        help ='random seed')
     parser.add_argument('--mode', default = 'train', type=str,
                         help = 'train or test')
     parser.add_argument('--model', type=str, default='cnn',
@@ -81,7 +82,9 @@ def main():
       
     ## read data
     X_pep, X_tcr, y = data_io_tf.read_pTCR(args.infile)
-    y = np.array(y)
+
+    # Isn't this already a numpy array
+    # y = np.array(y)
 
     n_total = len(y)
     n_train = int(round(n_total * 0.8))
@@ -115,13 +118,7 @@ def main():
                                          batch_size=args.batch_size, device=device)
 
     if args.model == 'cnn':
-        
         from cnn import Net
-        
-    #if args.model == 'resnet':
-    #
-    #    from resnet import Net
-    #    Net = models.resnet18
         
     else:
         raise ValueError('unknown model name')
@@ -173,7 +170,7 @@ def main():
         model_name = './models/' + model_name
         torch.save(model.state_dict(), model_name)
             
-    elif args.mode == 'test' : 
+    elif args.mode == 'test': 
         
         model_name = args.model_name
 

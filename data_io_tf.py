@@ -18,47 +18,50 @@ import tensorflow as tf
 
 def read_pTCR(filename):
     '''
-    read data file with MHC-peptide-TCR data
+    Read data file with MHC-peptide-TCR data
 
     parameters:
-        - filename : file with AA seq of peptide and TCR
+        - filename : file with Amino Acid sequence of peptide and TCR
     returns:
-        - peptides : list of peptide sequences
-        - tcrs : list of TCRb-CDR3 sequences
+        - peptides : a numpy array of peptide sequences
+        - tcrs : a numpy array of TCRb-CDR3 sequences
+        - bound : a numpy array of binding scores
     '''
 
-    # initialize variables:
-    peptides=[]
-    tcrs=[]
-    bound=[]
+    # Initialize variables:
+    peptides = []
+    tcrs = []
+    bound = []
 
-    # read data:
-    infile=open(filename,"r")
-    for l in infile:
-        if l[0] != "#":
-            l=l.strip().split("\t")
-            if len(l)<2:
-                l.strip().split(",")
-            if len(l)<2:
+    # Read data:
+    infile = open(filename, "r")
+    for line in infile:
+        # Ignore comments
+        if line[0] != "#":
+            # Account for both tab and comma separated values
+            line = line.strip().split("\t")
+            if len(line) < 2:
+                line.strip().split(",")
+            if len(line) < 2:
                 sys.stderr.write("Problem with input file format!\n")
-                sys.stderr.write(l)
+                sys.stderr.write(line)
                 sys.exit(2)
             else:
-                if l[0] != "peptide":
-                    peptides.append(l[0])
-                    tcrs.append(l[1])
-                    bound.append(l[2])
+                if line[0] != "peptide":
+                    peptides.append(line[0])
+                    tcrs.append(line[1])
+                    bound.append(line[2])
     infile.close()
 
     # return data:
     return np.array(peptides), np.array(tcrs), np.array(bound)
 
-def read_pTCR_peplist(filename,peplist):
+def read_pTCR_peplist(filename, peplist):
     '''
-    read data file with MHC-peptide-TCR data
+    Read data file with MHC-peptide-TCR data
 
     parameters:
-        - filename : file with AA seq of TCRs
+        - filename : file with Amino Acid seq of TCRs
         - peplist : list of peptides
     returns:
         - peptides : list of peptide sequences
@@ -66,20 +69,21 @@ def read_pTCR_peplist(filename,peplist):
     '''
 
     # initialize variables:
-    peptides=[]
-    tcrs=[]
+    peptides = []
+    tcrs = []
 
     # read data:
-    infile=open(filename,"r")
-    for l in infile:
-        if l[0] != "#":
-            l=l.strip()
-            if len(l.split("\t"))>1 or len(l.split(","))>1:
+    infile = open(filename, "r")
+    for line in infile:
+        # Ignore comments
+        if line[0] != "#":
+            line = line.strip()
+            if len(line.split("\t")) > 1 or len(line.split(",")) > 1:
                 sys.stderr.write("Problem with input file format!\n")
-                sys.stderr.write(l)
+                sys.stderr.write(line)
                 sys.exit(2)
             else:
-                tcrs.extend(len(peplist)*[l])
+                tcrs.extend(len(peplist) * [line])
                 peptides.extend(peplist)
     infile.close()
 
@@ -105,20 +109,20 @@ def read_blosum_MN(filename):
     Z_idx = 99
     star_idx = 99
 
-    for l in blosumfile:
-        l = l.strip()
+    for line in blosumfile:
+        line = line.strip()
 
-        if l[0] != '#':
-            l= list(filter(None,l.strip().split(" ")))
+        if line[0] != '#':
+            line = list(filter(None, line.strip().split(" ")))
 
-            if (l[0] == 'A') and (B_idx==99):
-                B_idx = l.index('B')
-                Z_idx = l.index('Z')
-                star_idx = l.index('*')
+            if (line[0] == 'A') and (B_idx==99):
+                B_idx = line.index('B')
+                Z_idx = line.index('Z')
+                star_idx = line.index('*')
             else:
-                aa = str(l[0])
+                aa = str(line[0])
                 if (aa != 'B') &  (aa != 'Z') & (aa != '*'):
-                    tmp = l[1:len(l)]
+                    tmp = line[1:len(line)]
                     # tmp = [float(i) for i in tmp]
                     # get rid of BJZ*:
                     tmp2 = []
@@ -227,7 +231,7 @@ def enc_list_sparse(aa_seqs):
     '''
 
     # define sparse AA alphabet:
-    alphabet=["A","R","N","D","C","Q","E","G","H","I","L","K","M","F","P","S","T","W","Y","V"]
+    alphabet=["A","R","N","D","C","Q","E","G","H","I","line","K","M","F","P","S","T","W","Y","V"]
     sparse={}
     count=0
     for aa in alphabet:

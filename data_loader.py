@@ -1,7 +1,6 @@
 import re
 import torch
 import numpy as np
-#import data_io_tf
 from torchtext import data
 
 AMINO_MAP = {'<pad>':24, '*': 23, 'A': 0, 'C': 4, 'B': 20,
