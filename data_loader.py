@@ -21,8 +21,6 @@ def define_dataloader(X_pep, X_tcr, y, yhat=None,
     if maxlen_tcr is None: maxlen_tcr=max([len(x) for x in X_tcr])
     if padding == 'front':
       pad_first_ = True
-    elif padding == 'end':
-      pad_first_ = False
     else:
       pad_first_ = False
 
@@ -37,15 +35,6 @@ def define_dataloader(X_pep, X_tcr, y, yhat=None,
     # define vocab
     amino_map = AMINO_MAP
     amino_map_rev = AMINO_MAP_REV
-    '''
-    amino_map = {'<pad>':24, '*': 23, 'A': 0, 'C': 4, 'B': 20,
-                 'E': 6, 'D': 3, 'G': 7, 'F': 13, 'I': 9, 'H': 8,
-                 'K': 11, 'M': 12, 'L': 10, 'N': 2, 'Q': 5, 'P': 14,
-                 'S': 15, 'R': 1, 'T': 16, 'W': 17, 'V': 19, 'Y': 18,
-                 'X': 22, 'Z': 21}
-    amino_map_rev = ['A','R','N','D','C','Q','E','G','H','I','L','K',
-                     'M','F','P','S','T','W','Y','V','B','Z','X','*','<pad>']
-    '''
     field_pep.build_vocab()
     field_tcr.build_vocab()
     field_y.build_vocab()
@@ -69,7 +58,7 @@ def define_dataloader(X_pep, X_tcr, y, yhat=None,
     data_loader = dict()
     data_loader['pep_amino_idx'] = field_pep.vocab.itos
     data_loader['tcr_amino_idx'] = field_tcr.vocab.itos
-    data_loader['tensor_type'] = torch.cuda.LongTensor if device == "cuda"  else torch.LongTensor
+    data_loader['tensor_type'] = torch.cuda.LongTensor if device == "cuda" else torch.LongTensor
     data_loader['pep_length'] = maxlen_pep
     data_loader['tcr_length'] = maxlen_tcr 
     data_loader['loader'] = loader

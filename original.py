@@ -19,7 +19,7 @@ PRINT_EVERY_EPOCH = 1
 
 def train(args, model, device, train_loader, optimizer, epoch):
     
-    model.train()     
+    model.train()
 
     for batch in train_loader:
 
@@ -83,19 +83,21 @@ def main():
     ## read data
     X_pep, X_tcr, y = data_io_tf.read_pTCR(args.infile)
 
-    # Isn't this already a numpy array
+    # TODO: Isn't this already a numpy array
     # y = np.array(y)
 
+    # Separate into training, validation, and testing data.
     n_total = len(y)
     n_train = int(round(n_total * 0.8))
     n_valid = int(round(n_total * 0.1))
     n_test = n_total - n_train - n_valid
-    idx_shuffled = np.arange(n_total); np.random.shuffle(idx_shuffled)
+    idx_shuffled = np.arange(n_total)
+    np.random.shuffle(idx_shuffled)
     idx_train, idx_valid, idx_test = idx_shuffled[:n_train], \
-                                     idx_shuffled[n_train:(n_train+n_valid)], \
-                                     idx_shuffled[(n_train+n_valid):]
+                                     idx_shuffled[n_train:(n_train + n_valid)], \
+                                     idx_shuffled[(n_train + n_valid):]
 
-    ## define dataloader
+    # Define the dataloader for each of the steps of training/testing
     train_loader = define_dataloader(X_pep[idx_train], X_tcr[idx_train], y[idx_train], None,
                                      None, None,
                                      batch_size=args.batch_size, device=device)
@@ -108,7 +110,7 @@ def main():
                                     maxlen_tcr=train_loader['tcr_length'],
                                     batch_size=args.batch_size, device=device)
         
-    ## read indep data
+    ## Read the independent dataset
     if args.indepfile is not None:
         X_indep_pep, X_indep_tcr, y_indep = data_io_tf.read_pTCR(args.indepfile)
         y_indep = np.array(y_indep)
@@ -117,13 +119,13 @@ def main():
                                          maxlen_tcr=train_loader['tcr_length'],
                                          batch_size=args.batch_size, device=device)
 
+    # Ensure using a convolutional neural network
     if args.model == 'cnn':
         from cnn import Net
-        
     else:
         raise ValueError('unknown model name')
     
-    ## define model
+    # Define Model
     model = Net(embedding, train_loader['pep_length'], train_loader['tcr_length']).to(device)
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
 
@@ -132,13 +134,15 @@ def main():
     if 'result' not in os.listdir('.'):
         os.mkdir('result')
 
-    ## fit model        
+    # Fit Model        
     if args.mode == 'train' : 
-            
+
+        # Validate File Name for Model    
         model_name = check_model_name(args.model_name)
         model_name = check_model_name(model_name, './models')
         model_name = args.model_name
 
+        # Create CSV for Results
         wf_open = open('result/'+os.path.splitext(os.path.basename(args.infile))[0]+'_'+os.path.splitext(os.path.basename(args.model_name))[0]+'_valid.csv', 'w')
         wf_colnames = ['loss', 'accuracy',
                        'precision1', 'precision0',
@@ -146,30 +150,32 @@ def main():
                        'f1macro','f1micro', 'auc']
         wf = csv.DictWriter(wf_open, wf_colnames, delimiter='\t')
 
+        # Train the Model
         t0 = time.time()
         for epoch in range(1, args.epoch + 1):
             
             train(args, model, device, train_loader['loader'], optimizer, epoch)
 
-            ## evaluate performance
+            # Evaluate Performance
             perf_train = get_performance_batchiter(train_loader['loader'], model, device)
             perf_valid = get_performance_batchiter(valid_loader['loader'], model, device)
 
-            ## print performance
+            # Print Training and Validation Performance
             print('Epoch {} TimeSince {}\n'.format(epoch, timeSince(t0)))
-            print('[TRAIN] {} ----------------'.format(epoch))
+            print('[TRAINING] {} ----------------'.format(epoch))
             print_performance(perf_train)
-            print('[VALID] {} ----------------'.format(epoch))
+            print('[VALIDATION] {} ----------------'.format(epoch))
             print_performance(perf_valid, writeif=True, wf=wf)
 
-        ## evaluate and print test-set performance 
-        print('[TEST ] {} ----------------'.format(epoch))
+        # Evaluate Testing Performance
+        print('[TESTING] {} ----------------'.format(epoch))
         perf_test = get_performance_batchiter(test_loader['loader'], model, device)
         print_performance(perf_test)
 
         model_name = './models/' + model_name
         torch.save(model.state_dict(), model_name)
             
+    # Test Exisiting Model
     elif args.mode == 'test': 
         
         model_name = args.model_name
@@ -179,12 +185,12 @@ def main():
         model_name = './models/' + model_name
         model.load_state_dict(torch.load(model_name))
 
-        ## evaluate and print independent-test-set performance
-        print('[INDEP] {} ----------------') 
+        # Evaluate Performance on Independent Testing Data
+        print('[INDEPENDENT TESTING] {} ----------------') 
         perf_indep = get_performance_batchiter(indep_loader['loader'], model, device)
         print_performance(perf_indep)
 
-        ## write blackbox output
+        # Write Blackbox Output
         wf_bb_open = open('data/testblackboxpred_' + os.path.basename(args.indepfile), 'w')
         wf_bb = csv.writer(wf_bb_open, delimiter='\t')
         write_blackbox_output_batchiter(indep_loader, model, wf_bb, device)
@@ -193,11 +199,8 @@ def main():
         wf_bb1 = csv.writer(wf_bb_open1, delimiter='\t')
         write_blackbox_output_batchiter(indep_loader, model, wf_bb1, device, ifscore=True)
         
-    else :
-        
+    else:
         print('\nError: "--mode train" or "--mode test" expected')
         
 if __name__ == '__main__':
     main()  
-
-

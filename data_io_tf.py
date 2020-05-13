@@ -3,7 +3,7 @@
 """
 Functions for data IO for neural network training.
 
-Credit: netTCR 
+Credit: netTCR
 """
 
 from __future__ import print_function
@@ -20,8 +20,8 @@ def read_pTCR(filename):
     '''
     Read data file with MHC-peptide-TCR data
 
-    parameters:
-        - filename : file with Amino Acid sequence of peptide and TCR
+    Parameters:
+        - filename : path to file with Amino Acid sequences of peptides and TCRs
     returns:
         - peptides : a numpy array of peptide sequences
         - tcrs : a numpy array of TCRb-CDR3 sequences
@@ -53,7 +53,6 @@ def read_pTCR(filename):
                     bound.append(line[2])
     infile.close()
 
-    # return data:
     return np.array(peptides), np.array(tcrs), np.array(bound)
 
 def read_pTCR_peplist(filename, peplist):
@@ -61,18 +60,18 @@ def read_pTCR_peplist(filename, peplist):
     Read data file with MHC-peptide-TCR data
 
     parameters:
-        - filename : file with Amino Acid seq of TCRs
+        - filename : path to the file with Amino Acid sequences of TCRs
         - peplist : list of peptides
     returns:
         - peptides : list of peptide sequences
         - tcrs : list of TCRb-CDR3 sequences
     '''
 
-    # initialize variables:
+    # Initialize Variables
     peptides = []
     tcrs = []
 
-    # read data:
+    # Read Data
     infile = open(filename, "r")
     for line in infile:
         # Ignore comments
@@ -87,22 +86,21 @@ def read_pTCR_peplist(filename, peplist):
                 peptides.extend(peplist)
     infile.close()
 
-    # return data:
     return peptides, tcrs
 
 
 def read_blosum_MN(filename):
     '''
-    read in BLOSUM matrix
+    Read in a BLOSUM matrix
 
     parameters:
-        - filename : file containing BLOSUM matrix
+        - filename : the path to the file containing BLOSUM matrix
 
     returns:
         - blosum : dictionnary AA -> blosum encoding (as list)
     '''
 
-    # read BLOSUM matrix:
+    # Read BLOSUM Matrix
     blosumfile = open(filename, "r")
     blosum = {}
     B_idx = 99
