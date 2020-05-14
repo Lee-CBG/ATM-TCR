@@ -31,7 +31,7 @@ def train(model, device, train_loader, optimizer, epoch):
     if epoch % PRINT_EVERY_EPOCH == 1:
         print('[TRAIN] Epoch {} Loss {:.4f}'.format(epoch, loss.item()))
 
-def main(
+def run(
         infile, indepfile=None, blosum='data/BLOSUM50', 
         batch_size=50, model_name='original.ckpt', 
         epoch=200, lr=0.001, cuda=True, seed=7405, 
