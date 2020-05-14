@@ -1,15 +1,13 @@
-from __future__ import print_function
 import os
 import sys
 import csv
 import time
-import argparse
 import numpy as np
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
 from data_loader import define_dataloader,load_embedding
-from utils import str2bool,check_model_name,timeSince,get_performance_batchiter,print_performance,write_blackbox_output_batchiter
+from utils import check_model_name,timeSince,get_performance_batchiter,print_performance,write_blackbox_output_batchiter
 import data_io_tf
 from pathlib import Path
 
@@ -17,7 +15,7 @@ sys.path.append('../')
 
 PRINT_EVERY_EPOCH = 1
 
-def train(args, model, device, train_loader, optimizer, epoch):
+def train(model, device, train_loader, optimizer, epoch):
     
     model.train()
 
@@ -33,55 +31,35 @@ def train(args, model, device, train_loader, optimizer, epoch):
     if epoch % PRINT_EVERY_EPOCH == 1:
         print('[TRAIN] Epoch {} Loss {:.4f}'.format(epoch, loss.item()))
 
-def main():
+def run(
+        infile, indepfile=None, blosum='data/BLOSUM50', 
+        batch_size=50, model_name='original.ckpt', 
+        epoch=200, lr=0.001, cuda=True, seed=7405, 
+        mode='train', model='cnn'
+    ):
 
-    parser = argparse.ArgumentParser(description = 'Prediction of TCR binding to peptide-MHC complexes')
+    print('Prediction of TCR binding to peptide-MHC complexes')
 
-    parser.add_argument('--infile', type=str,
-                        help = 'input file for training')
-    parser.add_argument('--indepfile', type=str, default=None,
-                        help = 'independent test file')
-    parser.add_argument('--blosum', type=str, default='data/BLOSUM50',
-                        help = 'file with BLOSUM matrix')
-    parser.add_argument('--batch_size', type=int, default=50, metavar='N',
-                        help = 'batch size')
-    parser.add_argument('--model_name', type=str, default='original.ckpt',
-                        help = 'if train is True, model name to be saved, otherwise model name to be loaded')
-    parser.add_argument('--epoch', type = int, default=200, metavar='N',
-                        help = 'number of epoch to train')
-    parser.add_argument('--lr', type=float, default=0.001, metavar='LR',
-                        help = 'learning rate')
-    parser.add_argument('--cuda', type = str2bool, default=True,
-                        help = 'enable cuda')
-    parser.add_argument('--seed', type=int, default=7405,
-                        help ='random seed')
-    parser.add_argument('--mode', default = 'train', type=str,
-                        help = 'train or test')
-    parser.add_argument('--model', type=str, default='cnn',
-                        help='cnn, resnet')
-    
-    args = parser.parse_args()
-
-    if args.mode is 'test':
-        assert args.indepfile is not None, '--indepfile is missing!'
+    if mode is 'test':
+        assert indepfile is not None, 'indepfile argument is missing'
         
-    ## cuda
-    if torch.cuda.is_available() and not args.cuda:
-        print("WARNING: You have a CUDA device, so you should probably run with --cuda")
-    args.cuda = (args.cuda and torch.cuda.is_available()) 
-    device = torch.device('cuda' if args.cuda else 'cpu')
+    # Check if using cuda or cuda is available
+    if torch.cuda.is_available() and not cuda:
+        print("WARNING: You have a CUDA device, so you should probably run with cude=True")
+    cuda = (cuda and torch.cuda.is_available()) 
+    device = torch.device('cuda' if cuda else 'cpu')
 
-    ## set random seed
-    seed = args.seed
+    # Set random seed
+    seed = seed
     torch.manual_seed(seed)
-    if args.cuda:
-        torch.cuda.manual_seed(seed) if args.cuda else None
+    if cuda:
+        torch.cuda.manual_seed(seed) if cuda else None
 
-    # embedding matrix
-    embedding = load_embedding(args.blosum)
+    # Embedding matrix
+    embedding = load_embedding(blosum)
       
-    ## read data
-    X_pep, X_tcr, y = data_io_tf.read_pTCR(args.infile)
+    # Read data
+    X_pep, X_tcr, y = data_io_tf.read_pTCR(infile)
 
     # TODO: Isn't this already a numpy array
     # y = np.array(y)
@@ -100,34 +78,34 @@ def main():
     # Define the dataloader for each of the steps of training/testing
     train_loader = define_dataloader(X_pep[idx_train], X_tcr[idx_train], y[idx_train], None,
                                      None, None,
-                                     batch_size=args.batch_size, device=device)
+                                     batch_size=batch_size, device=device)
     valid_loader = define_dataloader(X_pep[idx_valid], X_tcr[idx_valid], y[idx_valid], None,
                                      maxlen_pep=train_loader['pep_length'],
                                      maxlen_tcr=train_loader['tcr_length'],
-                                     batch_size=args.batch_size, device=device)
+                                     batch_size=batch_size, device=device)
     test_loader = define_dataloader(X_pep[idx_test], X_tcr[idx_test], y[idx_test], None,
                                     maxlen_pep=train_loader['pep_length'],
                                     maxlen_tcr=train_loader['tcr_length'],
-                                    batch_size=args.batch_size, device=device)
+                                    batch_size=batch_size, device=device)
         
     ## Read the independent dataset
-    if args.indepfile is not None:
-        X_indep_pep, X_indep_tcr, y_indep = data_io_tf.read_pTCR(args.indepfile)
+    if indepfile is not None:
+        X_indep_pep, X_indep_tcr, y_indep = data_io_tf.read_pTCR(indepfile)
         y_indep = np.array(y_indep)
         indep_loader = define_dataloader(X_indep_pep, X_indep_tcr, y_indep, None,
                                          maxlen_pep=train_loader['pep_length'],
                                          maxlen_tcr=train_loader['tcr_length'],
-                                         batch_size=args.batch_size, device=device)
+                                         batch_size=batch_size, device=device)
 
     # Ensure using a convolutional neural network
-    if args.model == 'cnn':
+    if model == 'cnn':
         from cnn import Net
     else:
         raise ValueError('unknown model name')
     
     # Define Model
     model = Net(embedding, train_loader['pep_length'], train_loader['tcr_length']).to(device)
-    optimizer = optim.Adam(model.parameters(), lr=args.lr)
+    optimizer = optim.Adam(model.parameters(), lr=lr)
 
     if 'models' not in os.listdir('.'):
         os.mkdir('models')
@@ -135,15 +113,15 @@ def main():
         os.mkdir('result')
 
     # Fit Model        
-    if args.mode == 'train' : 
+    if mode == 'train' : 
 
         # Validate File Name for Model    
-        model_name = check_model_name(args.model_name)
+        model_name = check_model_name(model_name)
         model_name = check_model_name(model_name, './models')
-        model_name = args.model_name
+        model_name = model_name
 
         # Create CSV for Results
-        wf_open = open('result/'+os.path.splitext(os.path.basename(args.infile))[0]+'_'+os.path.splitext(os.path.basename(args.model_name))[0]+'_valid.csv', 'w')
+        wf_open = open('result/'+os.path.splitext(os.path.basename(infile))[0]+'_'+os.path.splitext(os.path.basename(model_name))[0]+'_valid.csv', 'w')
         wf_colnames = ['loss', 'accuracy',
                        'precision1', 'precision0',
                        'recall1', 'recall0',
@@ -152,9 +130,9 @@ def main():
 
         # Train the Model
         t0 = time.time()
-        for epoch in range(1, args.epoch + 1):
+        for epoch in range(1, epoch + 1):
             
-            train(args, model, device, train_loader['loader'], optimizer, epoch)
+            train(model, device, train_loader['loader'], optimizer, epoch)
 
             # Evaluate Performance
             perf_train = get_performance_batchiter(train_loader['loader'], model, device)
@@ -176,9 +154,9 @@ def main():
         torch.save(model.state_dict(), model_name)
             
     # Test Exisiting Model
-    elif args.mode == 'test': 
+    elif mode == 'test': 
         
-        model_name = args.model_name
+        model_name = model_name
 
         assert model_name in os.listdir('./models')
         
@@ -191,16 +169,13 @@ def main():
         print_performance(perf_indep)
 
         # Write Blackbox Output
-        wf_bb_open = open('data/testblackboxpred_' + os.path.basename(args.indepfile), 'w')
+        wf_bb_open = open('data/testblackboxpred_' + os.path.basename(indepfile), 'w')
         wf_bb = csv.writer(wf_bb_open, delimiter='\t')
         write_blackbox_output_batchiter(indep_loader, model, wf_bb, device)
 
-        wf_bb_open1 = open('data/testblackboxpredscore_' + os.path.basename(args.indepfile), 'w')
+        wf_bb_open1 = open('data/testblackboxpredscore_' + os.path.basename(indepfile), 'w')
         wf_bb1 = csv.writer(wf_bb_open1, delimiter='\t')
         write_blackbox_output_batchiter(indep_loader, model, wf_bb1, device, ifscore=True)
         
     else:
-        print('\nError: "--mode train" or "--mode test" expected')
-        
-if __name__ == '__main__':
-    main()  
+        print('\nError: "mode=train" or "mode=test" expected')
