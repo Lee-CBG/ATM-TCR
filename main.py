@@ -1,4 +1,3 @@
-from __future__ import print_function
 import os
 import sys
 import csv
@@ -8,7 +7,7 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 from data_loader import define_dataloader,load_embedding
-from utils import str2bool,check_model_name,timeSince,get_performance_batchiter,print_performance,write_blackbox_output_batchiter
+from utils import check_model_name,timeSince,get_performance_batchiter,print_performance,write_blackbox_output_batchiter
 import data_io_tf
 from pathlib import Path
 
@@ -16,7 +15,7 @@ sys.path.append('../')
 
 PRINT_EVERY_EPOCH = 1
 
-def train(args, model, device, train_loader, optimizer, epoch):
+def train(model, device, train_loader, optimizer, epoch):
     
     model.train()
 
@@ -133,7 +132,7 @@ def main(
         t0 = time.time()
         for epoch in range(1, epoch + 1):
             
-            train(args, model, device, train_loader['loader'], optimizer, epoch)
+            train(model, device, train_loader['loader'], optimizer, epoch)
 
             # Evaluate Performance
             perf_train = get_performance_batchiter(train_loader['loader'], model, device)
