@@ -61,9 +61,6 @@ def run(
     # Read data
     X_pep, X_tcr, y = data_io_tf.read_pTCR(infile)
 
-    # TODO: Isn't this already a numpy array
-    # y = np.array(y)
-
     # Separate into training, validation, and testing data.
     n_total = len(y)
     n_train = int(round(n_total * 0.8))
