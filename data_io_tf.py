@@ -113,7 +113,7 @@ def read_blosum_MN(filename):
         if line[0] != '#':
             line = list(filter(None, line.strip().split(" ")))
 
-            if (line[0] == 'A') and (B_idx==99):
+            if (line[0] == 'A') and (B_idx == 99):
                 B_idx = line.index('B')
                 Z_idx = line.index('Z')
                 star_idx = line.index('*')
@@ -121,15 +121,10 @@ def read_blosum_MN(filename):
                 aa = str(line[0])
                 if (aa != 'B') &  (aa != 'Z') & (aa != '*'):
                     tmp = line[1:len(line)]
-                    # tmp = [float(i) for i in tmp]
-                    # get rid of BJZ*:
                     tmp2 = []
                     for i in range(0, len(tmp)):
                         if (i != B_idx) &  (i != Z_idx) & (i != star_idx):
                             tmp2.append(float(tmp[i]))
-
-                    #save in BLOSUM matrix
-                    #tmp2 = [i * 0.2 for i in tmp2] #scale (divide by 5)
                     blosum[aa]=tmp2
     blosumfile.close()
     blosum["B"]=np.ones(21)*0.1

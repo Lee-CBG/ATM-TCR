@@ -24,7 +24,7 @@ def define_dataloader(X_pep, X_tcr, y, yhat=None,
     else:
       pad_first_ = False
 
-    # define field
+    # Define Field
     field_pep = data.Field(tokenize=tokenizer, batch_first=True, 
                             pad_first=pad_first_, fix_length=maxlen_pep)
     field_tcr = data.Field(tokenize=tokenizer, batch_first=True, 
@@ -32,7 +32,7 @@ def define_dataloader(X_pep, X_tcr, y, yhat=None,
     field_y = data.Field(sequential=False, use_vocab=False)
     field_yhat = data.Field(sequential = False, use_vocab = False) if yhat is not None else None
 
-    # define vocab
+    # Define Vocab
     amino_map = AMINO_MAP
     amino_map_rev = AMINO_MAP_REV
     field_pep.build_vocab()
@@ -44,7 +44,7 @@ def define_dataloader(X_pep, X_tcr, y, yhat=None,
     field_pep.vocab.itos = amino_map_rev
     field_tcr.vocab.itos = amino_map_rev
         
-    # define dataloader
+    # Define Dataloader
     if yhat is None:
         fields = [('X_pep',field_pep), ('X_tcr',field_tcr), ('y',field_y)]
         example = [data.Example.fromlist([x1,x2,x3], fields) for x1,x2,x3 in zip(X_pep,X_tcr,y)]
@@ -76,12 +76,12 @@ def tokenizer(sequence):
 def load_embedding(filename):
 
     '''
-    read in BLOSUM matrix
+    Read in BLOSUM matrix
 
-    parameters:
+    Parameters:
         - filename : file containing BLOSUM matrix
 
-    returns:
+    Returns:
         - blosum embedding matrix: list 
     '''
     
@@ -100,4 +100,4 @@ def load_embedding(filename):
     for amino in amino_map_rev:
         embedding.append(blosum[amino])
     '''
-    return(embedding)
+    return (embedding)
