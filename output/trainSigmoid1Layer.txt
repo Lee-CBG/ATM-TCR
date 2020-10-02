@@ -1,0 +1,5743 @@
+nohup: ignoring input
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Prediction of TCR binding to peptide-MHC complexes
+2328 0 2299 0
+280 0 298 0
+Epoch 1 TimeSince 0m 0s
+
+[TRAINING] 1 ----------------
+accuracy   0.5031
+auc        0.4702
+f1macro    0.3347
+f1micro    0.5031
+loss       3210.7465
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 1 ----------------
+accuracy   0.4844
+auc        0.5063
+f1macro    0.3263
+f1micro    0.4844
+loss       402.0771
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 2 TimeSince 0m 0s
+
+[TRAINING] 2 ----------------
+accuracy   0.5031
+auc        0.4703
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.5692
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 2 ----------------
+accuracy   0.4844
+auc        0.5061
+f1macro    0.3263
+f1micro    0.4844
+loss       401.1292
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 3 TimeSince 0m 1s
+
+[TRAINING] 3 ----------------
+accuracy   0.5031
+auc        0.4705
+f1macro    0.3347
+f1micro    0.5031
+loss       3208.0217
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 3 ----------------
+accuracy   0.4844
+auc        0.5081
+f1macro    0.3263
+f1micro    0.4844
+loss       401.3095
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 4 TimeSince 0m 1s
+
+[TRAINING] 4 ----------------
+accuracy   0.5031
+auc        0.4713
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1023
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 4 ----------------
+accuracy   0.4844
+auc        0.5086
+f1macro    0.3263
+f1micro    0.4844
+loss       400.7765
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 5 TimeSince 0m 2s
+
+[TRAINING] 5 ----------------
+accuracy   0.5031
+auc        0.4718
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1751
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 5 ----------------
+accuracy   0.4844
+auc        0.5109
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6504
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 6 TimeSince 0m 2s
+
+[TRAINING] 6 ----------------
+accuracy   0.4969
+auc        0.4719
+f1macro    0.3319
+f1micro    0.4969
+loss       3209.6911
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 6 ----------------
+accuracy   0.5156
+auc        0.5113
+f1macro    0.3402
+f1micro    0.5156
+loss       400.3633
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 7 TimeSince 0m 2s
+
+[TRAINING] 7 ----------------
+accuracy   0.5031
+auc        0.4733
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1784
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 7 ----------------
+accuracy   0.4844
+auc        0.5095
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8977
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 8 TimeSince 0m 3s
+
+[TRAINING] 8 ----------------
+accuracy   0.4969
+auc        0.4735
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.9248
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 8 ----------------
+accuracy   0.5156
+auc        0.5093
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4581
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 9 TimeSince 0m 3s
+
+[TRAINING] 9 ----------------
+accuracy   0.5031
+auc        0.4751
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.3122
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 9 ----------------
+accuracy   0.4844
+auc        0.5099
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9960
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 10 TimeSince 0m 4s
+
+[TRAINING] 10 ----------------
+accuracy   0.5031
+auc        0.4760
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.2158
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 10 ----------------
+accuracy   0.4844
+auc        0.5138
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9296
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 11 TimeSince 0m 4s
+
+[TRAINING] 11 ----------------
+accuracy   0.4969
+auc        0.4772
+f1macro    0.3319
+f1micro    0.4969
+loss       3208.0188
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 11 ----------------
+accuracy   0.5156
+auc        0.5132
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4472
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 12 TimeSince 0m 4s
+
+[TRAINING] 12 ----------------
+accuracy   0.4969
+auc        0.4776
+f1macro    0.3319
+f1micro    0.4969
+loss       3210.3982
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 12 ----------------
+accuracy   0.5156
+auc        0.5121
+f1macro    0.3402
+f1micro    0.5156
+loss       400.3587
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 13 TimeSince 0m 5s
+
+[TRAINING] 13 ----------------
+accuracy   0.5031
+auc        0.4801
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1746
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 13 ----------------
+accuracy   0.4844
+auc        0.5180
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6507
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 14 TimeSince 0m 5s
+
+[TRAINING] 14 ----------------
+accuracy   0.5031
+auc        0.4812
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.6381
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 14 ----------------
+accuracy   0.4844
+auc        0.5157
+f1macro    0.3263
+f1micro    0.4844
+loss       401.1597
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 15 TimeSince 0m 6s
+
+[TRAINING] 15 ----------------
+accuracy   0.5031
+auc        0.4824
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.6689
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 15 ----------------
+accuracy   0.4844
+auc        0.5180
+f1macro    0.3263
+f1micro    0.4844
+loss       401.1728
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 16 TimeSince 0m 6s
+
+[TRAINING] 16 ----------------
+accuracy   0.4969
+auc        0.4831
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.5734
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 16 ----------------
+accuracy   0.5156
+auc        0.5190
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5133
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 17 TimeSince 0m 6s
+
+[TRAINING] 17 ----------------
+accuracy   0.4969
+auc        0.4852
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.2707
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 17 ----------------
+accuracy   0.5156
+auc        0.5207
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5993
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 18 TimeSince 0m 7s
+
+[TRAINING] 18 ----------------
+accuracy   0.4969
+auc        0.4879
+f1macro    0.3319
+f1micro    0.4969
+loss       3208.3797
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 18 ----------------
+accuracy   0.5156
+auc        0.5221
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4146
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 19 TimeSince 0m 7s
+
+[TRAINING] 19 ----------------
+accuracy   0.5031
+auc        0.4883
+f1macro    0.3347/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+f1micro    0.5031
+loss       3208.7526
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 19 ----------------
+accuracy   0.4844
+auc        0.5236
+f1macro    0.3263
+f1micro    0.4844
+loss       401.5473
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 20 TimeSince 0m 7s
+
+[TRAINING] 20 ----------------
+accuracy   0.5031
+auc        0.4909
+f1macro    0.3347
+f1micro    0.5031
+loss       3210.9083
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 20 ----------------
+accuracy   0.4844
+auc        0.5232
+f1macro    0.3263
+f1micro    0.4844
+loss       402.1162
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 21 TimeSince 0m 8s
+
+[TRAINING] 21 ----------------
+accuracy   0.5031
+auc        0.4919
+f1macro    0.3347
+f1micro    0.5031
+loss       3208.5659
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 21 ----------------
+accuracy   0.4844
+auc        0.5238
+f1macro    0.3263
+f1micro    0.4844
+loss       401.4903
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 22 TimeSince 0m 8s
+
+[TRAINING] 22 ----------------
+accuracy   0.5031
+auc        0.4930
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.2328
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 22 ----------------
+accuracy   0.4844
+auc        0.5259
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9429
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 23 TimeSince 0m 9s
+
+[TRAINING] 23 ----------------
+accuracy   0.5031
+auc        0.4951
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.3751
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 23 ----------------
+accuracy   0.4844
+auc        0.5255
+f1macro    0.3263
+f1micro    0.4844
+loss       401.0327
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 24 TimeSince 0m 9s
+
+[TRAINING] 24 ----------------
+accuracy   0.4969
+auc        0.4965
+f1macro    0.3319
+f1micro    0.4969
+loss       3208.3036
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 24 ----------------
+accuracy   0.5156
+auc        0.5280
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4204
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 25 TimeSince 0m 9s
+
+[TRAINING] 25 ----------------
+accuracy   0.5031
+auc        0.4993
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1621
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 25 ----------------
+accuracy   0.4844
+auc        0.5339
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8819
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 26 TimeSince 0m 10s
+
+[TRAINING] 26 ----------------
+accuracy   0.4969
+auc        0.5000
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.4692
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 26 ----------------
+accuracy   0.5156
+auc        0.5339
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5365
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 27 TimeSince 0m 10s
+
+[TRAINING] 27 ----------------
+accuracy   0.4969
+auc        0.5033
+f1macro    0.3319
+f1micro    0.4969
+loss       3210.4415
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 27 ----------------
+accuracy   0.5156
+auc        0.5343
+f1macro    0.3402
+f1micro    0.5156
+loss       400.3588
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 28 TimeSince 0m 11s
+
+[TRAINING] 28 ----------------
+accuracy   0.5031
+auc        0.5059
+f1macro    0.3347
+f1micro    0.5031
+loss       3209.6210
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 28 ----------------
+accuracy   0.4844
+auc        0.5354
+f1macro    0.3263
+f1micro    0.4844
+loss       401.7917
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 29 TimeSince 0m 11s
+
+[TRAINING] 29 ----------------
+accuracy   0.4969
+auc        0.5061
+f1macro    0.3319
+f1micro    0.4969
+loss       3210.0281
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 29 ----------------
+accuracy   0.5156
+auc        0.5380
+f1macro    0.3402
+f1micro    0.5156
+loss       400.3597
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 30 TimeSince 0m 11s
+
+[TRAINING] 30 ----------------
+accuracy   0.5031
+auc        0.5075
+f1macro    0.3347
+f1micro    0.5031
+loss       3209.6638
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 30 ----------------
+accuracy   0.4844
+auc        0.5366
+f1macro    0.3263
+f1micro    0.4844
+loss       401.8032
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 31 TimeSince 0m 12s
+
+[TRAINING] 31 ----------------
+accuracy   0.5031
+auc        0.5111
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.4466
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 31 ----------------
+accuracy   0.4844
+auc        0.5417
+f1macro    0.3263
+f1micro    0.4844
+loss       401.0706
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 32 TimeSince 0m 12s
+
+[TRAINING] 32 ----------------
+accuracy   0.5031
+auc        0.5125
+f1macro    0.3347
+f1micro    0.5031
+loss       3209.5670
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 32 ----------------
+accuracy   0.4844
+auc        0.5436
+f1macro    0.3263
+f1micro    0.4844
+loss       401.7773
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 33 TimeSince 0m 13s
+
+[TRAINING] 33 ----------------
+accuracy   0.4969
+auc        0.5151
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.2921
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 33 ----------------
+accuracy   0.5156
+auc        0.5452
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5905
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 34 TimeSince 0m 13s
+
+[TRAINING] 34 ----------------
+accuracy   0.4969
+auc        0.5167
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.5585
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 34 ----------------
+accuracy   0.5156
+auc        0.5451
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5162
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 35 TimeSince 0m 13s
+
+[TRAINING] 35 ----------------
+accuracy   0.4969
+auc        0.5190
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.1923
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 35 ----------------
+accuracy   0.5156
+auc        0.5476
+f1macro    0.3402
+f1micro    0.5156
+loss       400.6387
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 36 TimeSince 0m 14s
+
+[TRAINING] 36 ----------------
+accuracy   0.5031
+auc        0.5209
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1908
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 36 ----------------
+accuracy   0.4844
+auc        0.5487
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9092
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 37 TimeSince 0m 14s
+
+[TRAINING] 37 ----------------
+accuracy   0.5031
+auc        0.5235
+f1macro    0.3347
+f1micro    0.5031
+loss       3209.3010
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 37 ----------------/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+accuracy   0.4844
+auc        0.5529
+f1macro    0.3263
+f1micro    0.4844
+loss       401.7049
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 38 TimeSince 0m 14s
+
+[TRAINING] 38 ----------------
+accuracy   0.5031
+auc        0.5248
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.3154
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 38 ----------------
+accuracy   0.4844
+auc        0.5510
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9982
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 39 TimeSince 0m 15s
+
+[TRAINING] 39 ----------------
+accuracy   0.5031
+auc        0.5278
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.4390
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 39 ----------------
+accuracy   0.4844
+auc        0.5532
+f1macro    0.3263
+f1micro    0.4844
+loss       401.0668
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 40 TimeSince 0m 15s
+
+[TRAINING] 40 ----------------
+accuracy   0.4969
+auc        0.5306
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.3558
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 40 ----------------
+accuracy   0.5156
+auc        0.5572
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5679
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 41 TimeSince 0m 16s
+
+[TRAINING] 41 ----------------
+accuracy   0.4969
+auc        0.5330
+f1macro    0.3319
+f1micro    0.4969
+loss       3208.8518
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 41 ----------------
+accuracy   0.5156
+auc        0.5585
+f1macro    0.3402
+f1micro    0.5156
+loss       400.3870
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 42 TimeSince 0m 16s
+
+[TRAINING] 42 ----------------
+accuracy   0.4969
+auc        0.5333
+f1macro    0.3319
+f1micro    0.4969
+loss       3208.8026
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 42 ----------------
+accuracy   0.5156
+auc        0.5613
+f1macro    0.3402
+f1micro    0.5156
+loss       400.3893
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 43 TimeSince 0m 16s
+
+[TRAINING] 43 ----------------
+accuracy   0.5031
+auc        0.5366
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.4345
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 43 ----------------
+accuracy   0.4844
+auc        0.5627
+f1macro    0.3263
+f1micro    0.4844
+loss       401.0646
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 44 TimeSince 0m 17s
+
+[TRAINING] 44 ----------------
+accuracy   0.4969
+auc        0.5383
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.3139
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 44 ----------------
+accuracy   0.5156
+auc        0.5666
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5822
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 45 TimeSince 0m 17s
+
+[TRAINING] 45 ----------------
+accuracy   0.4969
+auc        0.5412
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.2490
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 45 ----------------
+accuracy   0.5156
+auc        0.5682
+f1macro    0.3402
+f1micro    0.5156
+loss       400.6085
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 46 TimeSince 0m 18s
+
+[TRAINING] 46 ----------------
+accuracy   0.5031
+auc        0.5436
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1374
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 46 ----------------
+accuracy   0.4844
+auc        0.5700
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8540
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 47 TimeSince 0m 18s
+
+[TRAINING] 47 ----------------
+accuracy   0.4969
+auc        0.5465
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.7179
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 47 ----------------
+accuracy   0.5156
+auc        0.5728
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4870
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 48 TimeSince 0m 18s
+
+[TRAINING] 48 ----------------
+accuracy   0.5031
+auc        0.5479
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.7941
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 48 ----------------
+accuracy   0.4844
+auc        0.5735
+f1macro    0.3263
+f1micro    0.4844
+loss       401.2242
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 49 TimeSince 0m 19s
+
+[TRAINING] 49 ----------------
+accuracy   0.5031
+auc        0.5508
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1185
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 49 ----------------
+accuracy   0.4844
+auc        0.5777
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8261
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 50 TimeSince 0m 19s
+
+[TRAINING] 50 ----------------
+accuracy   0.5031
+auc        0.5535
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1205
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 50 ----------------
+accuracy   0.4844
+auc        0.5790
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8298
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 51 TimeSince 0m 20s
+
+[TRAINING] 51 ----------------
+accuracy   0.4969
+auc        0.5569
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.4768
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 51 ----------------
+accuracy   0.5156
+auc        0.5803
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5342
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 52 TimeSince 0m 20s
+
+[TRAINING] 52 ----------------
+accuracy   0.5031
+auc        0.5619
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.5304
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 52 ----------------
+accuracy   0.4844
+auc        0.5848
+f1macro    0.3263
+f1micro    0.4844
+loss       401.1118
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 53 TimeSince 0m 20s
+
+[TRAINING] 53 ----------------
+accuracy   0.5031
+auc        0.5680
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1300
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 53 ----------------
+accuracy   0.4844
+auc        0.5895
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6880
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 54 TimeSince 0m 21s
+
+[TRAINING] 54 ----------------
+accuracy   0.5031
+auc        0.5682
+f1macro    0.3347
+f1micro    0.5031
+loss       3208.9886
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 54 ----------------
+accuracy   0.4844
+auc        0.5892
+f1macro    0.3263
+f1micro    0.4844
+loss       401.6170
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 55 TimeSince 0m 21s
+
+[TRAINING] 55 ----------------
+accuracy   0.4969
+auc        0.5720
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.2655
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 55 ----------------
+accuracy   0.5156
+auc        0.5922
+f1macro    0.3402
+f1micro    0.5156
+loss       400.6003
+precision0 0.0000
+precision1 0.5156
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 56 TimeSince 0m 21s
+
+[TRAINING] 56 ----------------
+accuracy   0.5031
+auc        0.5673
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.2903
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 56 ----------------
+accuracy   0.4844
+auc        0.5898
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9833
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 57 TimeSince 0m 22s
+
+[TRAINING] 57 ----------------
+accuracy   0.5031
+auc        0.5675
+f1macro    0.3347
+f1micro    0.5031
+loss       3208.3770
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 57 ----------------
+accuracy   0.4844
+auc        0.5900
+f1macro    0.3263
+f1micro    0.4844
+loss       401.4308
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 58 TimeSince 0m 22s
+
+[TRAINING] 58 ----------------
+accuracy   0.4969
+auc        0.5701
+f1macro    0.3319
+f1micro    0.4969
+loss       3208.1301
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 58 ----------------
+accuracy   0.5156
+auc        0.5922
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4351
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 59 TimeSince 0m 23s
+
+[TRAINING] 59 ----------------
+accuracy   0.5031
+auc        0.5900
+f1macro    0.3347
+f1micro    0.5031
+loss       3209.6234
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 59 ----------------
+accuracy   0.4844
+auc        0.5977
+f1macro    0.3263
+f1micro    0.4844
+loss       401.7954
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 60 TimeSince 0m 23s
+
+[TRAINING] 60 ----------------
+accuracy   0.4969
+auc        0.5797
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.2422
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 60 ----------------
+accuracy   0.5156
+auc        0.5957
+f1macro    0.3402
+f1micro    0.5156
+loss       400.6095
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2327 1 2299 0
+280 0 298 0
+Epoch 61 TimeSince 0m 23s
+
+[TRAINING] 61 ----------------
+accuracy   0.5029
+auc        0.6007
+f1macro    0.3346
+f1micro    0.5029
+loss       3207.1586
+precision0 0.5030
+precision1 0.0000
+recall0    0.9996
+recall1    0.0000
+
+[VALIDATION] 61 ----------------
+accuracy   0.4844
+auc        0.5900
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6373
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 62 TimeSince 0m 24s
+
+[TRAINING] 62 ----------------
+accuracy   0.5031
+auc        0.5929
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.6915
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 62 ----------------
+accuracy   0.4844
+auc        0.5916
+f1macro    0.3263
+f1micro    0.4844
+loss       401.1845
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 63 TimeSince 0m 24s
+
+[TRAINING] 63 ----------------
+accuracy   0.5031
+auc        0.5966
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.5569
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 63 ----------------
+accuracy   0.4844
+auc        0.5854
+f1macro    0.3263
+f1micro    0.4844
+loss       401.1700
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 64 TimeSince 0m 25s
+
+[TRAINING] 64 ----------------
+accuracy   0.4969
+auc        0.5873
+f1macro    0.3319
+f1micro    0.4969
+loss       3208.3071
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 64 ----------------
+accuracy   0.5156
+auc        0.5999
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4177
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 65 TimeSince 0m 25s
+
+[TRAINING] 65 ----------------
+accuracy   0.5031
+auc        0.5996
+f1macro    0.3347
+f1micro    0.5031
+loss       3209.0017
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 65 ----------------
+accuracy   0.4844
+auc        0.5805
+f1macro    0.3263
+f1micro    0.4844
+loss       401.7234
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 66 TimeSince 0m 25s
+
+[TRAINING] 66 ----------------
+accuracy   0.5031
+auc        0.6037
+f1macro    0.3347
+f1micro    0.5031
+loss       3206.6146
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 66 ----------------
+accuracy   0.4844
+auc        0.5810
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8313
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 67 TimeSince 0m 26s
+
+[TRAINING] 67 ----------------
+accuracy   0.5031
+auc        0.5993
+f1macro    0.3347
+f1micro    0.5031
+loss       3206.4937
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 67 ----------------
+accuracy   0.4844
+auc        0.5674
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8709
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 68 TimeSince 0m 26s
+
+[TRAINING] 68 ----------------
+accuracy   0.5031
+auc        0.5948
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1580
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 68 ----------------
+accuracy   0.4844
+auc        0.5985
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6434
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 69 TimeSince 0m 26s
+
+[TRAINING] 69 ----------------
+accuracy   0.5031
+auc        0.5787
+f1macro    0.3347
+f1micro    0.5031
+loss       3209.8413
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 69 ----------------
+accuracy   0.4844
+auc        0.5966
+f1macro    0.3263
+f1micro    0.4844
+loss       401.8500
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 70 TimeSince 0m 27s
+
+[TRAINING] 70 ----------------
+accuracy   0.5031
+auc        0.5754
+f1macro    0.3347
+f1micro    0.5031
+loss       3208.7714
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 70 ----------------
+accuracy   0.4844
+auc        0.5959
+f1macro    0.3263
+f1micro    0.4844
+loss       401.5531
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 71 TimeSince 0m 27s
+
+[TRAINING] 71 ----------------
+accuracy   0.5031
+auc        0.5833
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.2275
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 71 ----------------
+accuracy   0.4844
+auc        0.5959
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9418
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 72 TimeSince 0m 28s
+
+[TRAINING] 72 ----------------
+accuracy   0.5031
+auc        0.5302
+f1macro    0.3347
+f1micro    0.5031
+loss       3208.0040
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 72 ----------------
+accuracy   0.4844
+auc        0.5026
+f1macro    0.3263
+f1micro    0.4844
+loss       401.3032
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 73 TimeSince 0m 28s
+
+[TRAINING] 73 ----------------
+accuracy   0.4969
+auc        0.5124
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.3536
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 73 ----------------
+accuracy   0.5156
+auc        0.5149
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5688
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 74 TimeSince 0m 28s
+
+[TRAINING] 74 ----------------
+accuracy   0.4969/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+auc        0.5203
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.3426
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 74 ----------------
+accuracy   0.5156
+auc        0.5205
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5723
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 75 TimeSince 0m 29s
+
+[TRAINING] 75 ----------------
+accuracy   0.5031
+auc        0.5570
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.4064
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 75 ----------------
+accuracy   0.4844
+auc        0.5654
+f1macro    0.3263
+f1micro    0.4844
+loss       401.0502
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 76 TimeSince 0m 29s
+
+[TRAINING] 76 ----------------
+accuracy   0.5031
+auc        0.5826
+f1macro    0.3347
+f1micro    0.5031
+loss       3210.1554
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 76 ----------------
+accuracy   0.4844
+auc        0.5893
+f1macro    0.3263
+f1micro    0.4844
+loss       401.9307
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 77 TimeSince 0m 30s
+
+[TRAINING] 77 ----------------
+accuracy   0.5031
+auc        0.5781
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1654
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 77 ----------------
+accuracy   0.4844
+auc        0.5765
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6571
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 78 TimeSince 0m 30s
+
+[TRAINING] 78 ----------------
+accuracy   0.5031
+auc        0.6001
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1935
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 78 ----------------
+accuracy   0.4844
+auc        0.5832
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9202
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 79 TimeSince 0m 30s
+
+[TRAINING] 79 ----------------
+accuracy   0.5031
+auc        0.5727
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1213
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 79 ----------------
+accuracy   0.4844
+auc        0.5815
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8303
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 80 TimeSince 0m 31s
+
+[TRAINING] 80 ----------------
+accuracy   0.5031
+auc        0.5960
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.4218
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 80 ----------------
+accuracy   0.4844
+auc        0.5443
+f1macro    0.3263
+f1micro    0.4844
+loss       401.0587
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 81 TimeSince 0m 31s
+
+[TRAINING] 81 ----------------
+accuracy   0.5031
+auc        0.4227
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1824
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 81 ----------------
+accuracy   0.4844
+auc        0.4740
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6456
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 82 TimeSince 0m 31s
+
+[TRAINING] 82 ----------------
+accuracy   0.5031
+auc        0.6057
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.5647
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 82 ----------------
+accuracy   0.4844
+auc        0.5782
+f1macro    0.3263
+f1micro    0.4844
+loss       401.1273
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 83 TimeSince 0m 32s
+
+[TRAINING] 83 ----------------
+accuracy   0.5031
+auc        0.5253
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1247
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 83 ----------------
+accuracy   0.4844
+auc        0.5438
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8350
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 84 TimeSince 0m 32s
+
+[TRAINING] 84 ----------------
+accuracy   0.4969
+auc        0.5024
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.4725
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 84 ----------------
+accuracy   0.5156
+auc        0.5375
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5358
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 85 TimeSince 0m 33s
+
+[TRAINING] 85 ----------------
+accuracy   0.5031
+auc        0.5783
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.5676
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 85 ----------------
+accuracy   0.4844
+auc        0.5920
+f1macro    0.3263
+f1micro    0.4844
+loss       401.1288
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 86 TimeSince 0m 33s
+
+[TRAINING] 86 ----------------
+accuracy   0.5031
+auc        0.5989
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1418
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 86 ----------------
+accuracy   0.4844
+auc        0.5659
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9689
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 87 TimeSince 0m 33s
+
+[TRAINING] 87 ----------------
+accuracy   0.4969
+auc        0.4457
+f1macro    0.3319
+f1micro    0.4969
+loss       3212.4434
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 87 ----------------
+accuracy   0.5156
+auc        0.5061
+f1macro    0.3402
+f1micro    0.5156
+loss       400.3914
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 88 TimeSince 0m 34s
+
+[TRAINING] 88 ----------------
+accuracy   0.5031
+auc        0.5854
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.6426
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 88 ----------------
+accuracy   0.4844
+auc        0.5932
+f1macro    0.3263
+f1micro    0.4844
+loss       401.1628
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 89 TimeSince 0m 34s
+
+[TRAINING] 89 ----------------
+accuracy   0.5031
+auc        0.6008
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.0918
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 89 ----------------
+accuracy   0.4844
+auc        0.5807
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8539
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 90 TimeSince 0m 35s
+
+[TRAINING] 90 ----------------
+accuracy   0.5031
+auc        0.4555
+f1macro    0.3347
+f1micro    0.5031
+loss       3208.8526
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 90 ----------------
+accuracy   0.4844
+auc        0.4526
+f1macro    0.3263
+f1micro    0.4844
+loss       401.5771
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 91 TimeSince 0m 35s
+
+[TRAINING] 91 ----------------
+accuracy   0.5031
+auc        0.4369
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1862
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 91 ----------------
+accuracy   0.4844
+auc        0.4566
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9051
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 92 TimeSince 0m 35s
+
+[TRAINING] 92 ----------------
+accuracy   0.5031
+auc        0.4487
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.9679
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+recall1    0.0000
+
+[VALIDATION] 92 ----------------
+accuracy   0.4844
+auc        0.4496
+f1macro    0.3263
+f1micro    0.4844
+loss       401.2900
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 93 TimeSince 0m 36s
+
+[TRAINING] 93 ----------------
+accuracy   0.4969
+auc        0.4404
+f1macro    0.3319
+f1micro    0.4969
+loss       3209.5989
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 93 ----------------
+accuracy   0.5156
+auc        0.4529
+f1macro    0.3402
+f1micro    0.5156
+loss       400.3647
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 94 TimeSince 0m 36s
+
+[TRAINING] 94 ----------------
+accuracy   0.4969
+auc        0.4322
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.4519
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 94 ----------------
+accuracy   0.5156
+auc        0.4456
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5408
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 95 TimeSince 0m 37s
+
+[TRAINING] 95 ----------------
+accuracy   0.4969
+auc        0.4356
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.2802
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 95 ----------------
+accuracy   0.5156
+auc        0.4711
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5954
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 96 TimeSince 0m 37s
+
+[TRAINING] 96 ----------------
+accuracy   0.5031
+auc        0.4477
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1111
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 96 ----------------
+accuracy   0.4844
+auc        0.4513
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8088
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 97 TimeSince 0m 37s
+
+[TRAINING] 97 ----------------
+accuracy   0.5031
+auc        0.4594
+f1macro    0.3347
+f1micro    0.5031
+loss       3208.1149
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 97 ----------------
+accuracy   0.4844
+auc        0.4462
+f1macro    0.3263
+f1micro    0.4844
+loss       401.3427
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 98 TimeSince 0m 38s
+
+[TRAINING] 98 ----------------
+accuracy   0.5031
+auc        0.4687
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.3981
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 98 ----------------
+accuracy   0.4844
+auc        0.4748
+f1macro    0.3263
+f1micro    0.4844
+loss       401.0450
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 99 TimeSince 0m 38s
+
+[TRAINING] 99 ----------------
+accuracy   0.5031
+auc        0.4692
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.5561
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 99 ----------------
+accuracy   0.4844
+auc        0.4901
+f1macro    0.3263
+f1micro    0.4844
+loss       401.1234
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 100 TimeSince 0m 38s
+
+[TRAINING] 100 ----------------
+accuracy   0.5031
+auc        0.4638
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1125
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 100 ----------------
+accuracy   0.4844
+auc        0.4802
+f1macro    0.3263
+f1micro    0.4844
+loss       400.7165
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 101 TimeSince 0m 39s
+
+[TRAINING] 101 ----------------
+accuracy   0.4969
+auc        0.4789
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.7230
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 101 ----------------
+accuracy   0.5156
+auc        0.4462
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4865
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 102 TimeSince 0m 39s
+
+[TRAINING] 102 ----------------
+accuracy   0.4969
+auc        0.4334
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.2462
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 102 ----------------
+accuracy   0.5156
+auc        0.4418
+f1macro    0.3402
+f1micro    0.5156
+loss       400.6103
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 103 TimeSince 0m 40s
+
+[TRAINING] 103 ----------------
+accuracy   0.4969
+auc        0.4752
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.3260
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 103 ----------------
+accuracy   0.5156
+auc        0.4598
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5780
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 104 TimeSince 0m 40s
+
+[TRAINING] 104 ----------------
+accuracy   0.5031
+auc        0.4592
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1430
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 104 ----------------
+accuracy   0.4844
+auc        0.4793
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6771
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 105 TimeSince 0m 40s
+
+[TRAINING] 105 ----------------
+accuracy   0.5031
+auc        0.4813
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1431
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 105 ----------------
+accuracy   0.4844
+auc        0.4888
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6768
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 106 TimeSince 0m 41s
+
+[TRAINING] 106 ----------------
+accuracy   0.5031
+auc        0.4969
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.2608
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 106 ----------------
+accuracy   0.4844
+auc        0.4829
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9630
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 107 TimeSince 0m 41s
+
+[TRAINING] 107 ----------------
+accuracy   0.4969
+auc        0.4944
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.4218
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 107 ----------------
+accuracy   0.5156
+auc        0.4730
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5487
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 108 TimeSince 0m 42s
+
+[TRAINING] 108 ----------------
+accuracy   0.4969
+auc        0.4995
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.8736
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 108 ----------------
+accuracy   0.5156
+auc        0.4791
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4645
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 109 TimeSince 0m 42s
+
+[TRAINING] 109 ----------------
+accuracy   0.4969
+auc        0.5019
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.2414
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 109 ----------------
+accuracy   0.5156
+auc        0.5030
+f1macro    0.3402
+f1micro    0.5156
+loss       400.6122
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 110 TimeSince 0m 42s
+
+[TRAINING] 110 ----------------
+accuracy   0.4969
+auc        0.4982
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.2904
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 110 ----------------
+accuracy   0.5156
+auc        0.5069
+f1macro    0.3402/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+f1micro    0.5156
+loss       400.5910
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 111 TimeSince 0m 43s
+
+[TRAINING] 111 ----------------
+accuracy   0.5031
+auc        0.5042
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1093
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 111 ----------------
+accuracy   0.4844
+auc        0.5007
+f1macro    0.3263
+f1micro    0.4844
+loss       400.7235
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 112 TimeSince 0m 43s
+
+[TRAINING] 112 ----------------
+accuracy   0.5031
+auc        0.5193
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1666
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 112 ----------------
+accuracy   0.4844
+auc        0.4984
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8865
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 113 TimeSince 0m 43s
+
+[TRAINING] 113 ----------------
+accuracy   0.4969
+auc        0.5178
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.8754
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 113 ----------------
+accuracy   0.5156
+auc        0.5031
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4644
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 114 TimeSince 0m 44s
+
+[TRAINING] 114 ----------------
+accuracy   0.4969
+auc        0.5322
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.1938
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 114 ----------------
+accuracy   0.5156
+auc        0.5084
+f1macro    0.3402
+f1micro    0.5156
+loss       400.6377
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 115 TimeSince 0m 44s
+
+[TRAINING] 115 ----------------
+accuracy   0.5031
+auc        0.5312
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1743
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 115 ----------------
+accuracy   0.4844
+auc        0.5380
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6513
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 116 TimeSince 0m 45s
+
+[TRAINING] 116 ----------------
+accuracy   0.4969
+auc        0.5219
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.3317
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 116 ----------------
+accuracy   0.5156
+auc        0.5627
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5761
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 117 TimeSince 0m 45s
+
+[TRAINING] 117 ----------------
+accuracy   0.5031
+auc        0.5390
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1668
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 117 ----------------
+accuracy   0.4844
+auc        0.5290
+f1macro    0.3263
+f1micro    0.4844
+loss       400.8870
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 118 TimeSince 0m 45s
+
+[TRAINING] 118 ----------------
+accuracy   0.5031
+auc        0.5203
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1375
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 118 ----------------
+accuracy   0.4844
+auc        0.5405
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6821
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 119 TimeSince 0m 46s
+
+[TRAINING] 119 ----------------
+accuracy   0.5031
+auc        0.5492
+f1macro    0.3347
+f1micro    0.5031
+loss       3208.0837
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 119 ----------------
+accuracy   0.4844
+auc        0.5516
+f1macro    0.3263
+f1micro    0.4844
+loss       401.3316
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 120 TimeSince 0m 46s
+
+[TRAINING] 120 ----------------
+accuracy   0.5031
+auc        0.5446
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.2437
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 120 ----------------
+accuracy   0.4844
+auc        0.5405
+f1macro    0.3263
+f1micro    0.4844
+loss       400.9510
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 121 TimeSince 0m 47s
+
+[TRAINING] 121 ----------------
+accuracy   0.4969
+auc        0.5463
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.1954
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 121 ----------------
+accuracy   0.5156
+auc        0.5566
+f1macro    0.3402
+f1micro    0.5156
+loss       400.6369
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 122 TimeSince 0m 47s
+
+[TRAINING] 122 ----------------
+accuracy   0.4969
+auc        0.5561
+f1macro    0.3319
+f1micro    0.4969
+loss       3207.3643
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 122 ----------------
+accuracy   0.5156
+auc        0.5636
+f1macro    0.3402
+f1micro    0.5156
+loss       400.5652
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 123 TimeSince 0m 47s
+
+[TRAINING] 123 ----------------
+accuracy   0.5031
+auc        0.5750
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.1280
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 123 ----------------
+accuracy   0.4844
+auc        0.5564
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6918
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 124 TimeSince 0m 48s
+
+[TRAINING] 124 ----------------
+accuracy   0.5031
+auc        0.6005
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.3865
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 124 ----------------
+accuracy   0.4844
+auc        0.5870
+f1macro    0.3263
+f1micro    0.4844
+loss       401.0541
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 125 TimeSince 0m 48s
+
+[TRAINING] 125 ----------------
+accuracy   0.5031
+auc        0.5823
+f1macro    0.3347
+f1micro    0.5031
+loss       3207.3487
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 125 ----------------
+accuracy   0.4844
+auc        0.5823
+f1macro    0.3263
+f1micro    0.4844
+loss       401.0180
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 126 TimeSince 0m 48s
+
+[TRAINING] 126 ----------------
+accuracy   0.4969
+auc        0.5936
+f1macro    0.3319
+f1micro    0.4969
+loss       3208.1435
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 126 ----------------
+accuracy   0.5156
+auc        0.5801
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4344
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 127 TimeSince 0m 49s
+
+[TRAINING] 127 ----------------
+accuracy   0.5031
+auc        0.5978
+f1macro    0.3347
+f1micro    0.5031
+loss       3208.0608
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 127 ----------------
+accuracy   0.4844
+auc        0.5991
+f1macro    0.3263
+f1micro    0.4844
+loss       401.3238
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 128 TimeSince 0m 49s
+
+[TRAINING] 128 ----------------
+accuracy   0.4969
+auc        0.6020
+f1macro    0.3319
+f1micro    0.4969
+loss       3208.1579
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 128 ----------------
+accuracy   0.5156
+auc        0.5903
+f1macro    0.3402
+f1micro    0.5156
+loss       400.4322
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+0 2328 0 2299
+0 280 0 298
+Epoch 129 TimeSince 0m 50s
+
+[TRAINING] 129 ----------------
+accuracy   0.4969
+auc        0.6003
+f1macro    0.3319
+f1micro    0.4969
+loss       3210.4096
+precision0 0.0000
+precision1 0.4969
+recall0    0.0000
+recall1    1.0000
+
+[VALIDATION] 129 ----------------
+accuracy   0.5156
+auc        0.5877
+f1macro    0.3402
+f1micro    0.5156
+loss       400.3578
+precision0 0.0000
+precision1 0.5156
+recall0    0.0000
+recall1    1.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 130 TimeSince 0m 50s
+
+[TRAINING] 130 ----------------
+accuracy   0.5031
+auc        0.6070
+f1macro    0.3347
+f1micro    0.5031
+loss       3206.3673
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 130 ----------------
+accuracy   0.4844
+auc        0.5839
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6232
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+2328 0 2299 0
+280 0 298 0
+Epoch 131 TimeSince 0m 50s
+
+[TRAINING] 131 ----------------
+accuracy   0.5031
+auc        0.6072
+f1macro    0.3347
+f1micro    0.5031
+loss       3203.5177
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 131 ----------------
+accuracy   0.4844
+auc        0.5780
+f1macro    0.3263
+f1micro    0.4844
+loss       400.6081
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+533 1795 323 1976
+62 218 41 257
+Epoch 132 TimeSince 0m 51s
+
+[TRAINING] 132 ----------------
+accuracy   0.5423
+auc        0.6157
+f1macro    0.4929
+f1micro    0.5423
+loss       3205.2228
+precision0 0.6227
+precision1 0.5240
+recall0    0.2290
+recall1    0.8595
+
+[VALIDATION] 132 ----------------
+accuracy   0.5519
+auc        0.5906
+f1macro    0.4944
+f1micro    0.5519
+loss       400.5041
+precision0 0.6019
+precision1 0.5411
+recall0    0.2214
+recall1    0.8624
+
+1161 1167 771 1528
+131 149 106 192
+Epoch 133 TimeSince 0m 51s
+
+[TRAINING] 133 ----------------
+accuracy   0.5812
+auc        0.6178
+f1macro    0.5785
+f1micro    0.5812
+loss       3200.5767
+precision0 0.6009
+precision1 0.5670
+recall0    0.4987
+recall1    0.6646
+
+[VALIDATION] 133 ----------------
+accuracy   0.5588
+auc        0.5896
+f1macro    0.5539
+f1micro    0.5588
+loss       400.1306
+precision0 0.5527
+precision1 0.5630
+recall0    0.4679
+recall1    0.6443
+
+1844 484 1414 885
+213 67 185 113
+Epoch 134 TimeSince 0m 52s
+
+[TRAINING] 134 ----------------
+accuracy   0.5898
+auc        0.6246
+f1macro    0.5714
+f1micro    0.5898
+loss       3194.0103
+precision0 0.5660
+precision1 0.6465
+recall0    0.7921
+recall1    0.3849
+
+[VALIDATION] 134 ----------------
+accuracy   0.5640
+auc        0.5966
+f1macro    0.5506
+f1micro    0.5640
+loss       399.6281
+precision0 0.5352
+precision1 0.6278
+recall0    0.7607
+recall1    0.3792
+
+2328 0 2299 0
+280 0 298 0
+Epoch 135 TimeSince 0m 52s
+
+[TRAINING] 135 ----------------
+accuracy   0.5031
+auc        0.6266
+f1macro    0.3347
+f1micro    0.5031
+loss       3187.3694
+precision0 0.5031
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+[VALIDATION] 135 ----------------
+accuracy   0.4844
+auc        0.6004
+f1macro    0.3263
+f1micro    0.4844
+loss       399.6103
+precision0 0.4844
+precision1 0.0000
+recall0    1.0000
+recall1    0.0000
+
+1955 373 1535 764
+229 51 204 94
+Epoch 136 TimeSince 0m 52s
+
+[TRAINING] 136 ----------------
+accuracy   0.5876
+auc        0.6300
+f1macro    0.5584
+f1micro    0.5876
+loss       3177.9495
+precision0 0.5602
+precision1 0.6719
+recall0    0.8398
+recall1    0.3323
+
+[VALIDATION] 136 ----------------
+accuracy   0.5588
+auc        0.6036
+f1macro    0.5334
+f1micro    0.5588
+loss       398.4868
+precision0 0.5289
+precision1 0.6483
+recall0    0.8179
+recall1    0.3154
+
+1840 488 1379 920
+215 65 183 115
+Epoch 137 TimeSince 0m 53s
+
+[TRAINING] 137 ----------------
+accuracy   0.5965
+auc        0.6355
+f1macro    0.5799
+f1micro    0.5965
+loss       3162.9208
+precision0 0.5716
+precision1 0.6534
+recall0    0.7904
+recall1    0.4002
+
+[VALIDATION] 137 ----------------
+accuracy   0.5709
+auc        0.6095
+f1macro    0.5577
+f1micro    0.5709
+loss       396.9751
+precision0 0.5402
+precision1 0.6389
+recall0    0.7679
+recall1    0.3859
+
+1862 466 1389 910
+216 64 187 111
+Epoch 138 TimeSince 0m 53s
+
+[TRAINING] 138 ----------------
+accuracy   0.5991
+auc        0.6431
+f1macro    0.5814
+f1micro    0.5991
+loss       3148.8676
+precision0 0.5727
+precision1 0.6613
+recall0    0.7998
+recall1    0.3958
+
+[VALIDATION] 138 ----------------
+accuracy   0.5657
+auc        0.6122
+f1macro    0.5509
+f1micro    0.5657
+loss       396.0195
+precision0 0.5360
+precision1 0.6343
+recall0    0.7714
+recall1    0.3725
+
+1678 650 1136 1163
+200 80 153 145
+Epoch 139 TimeSince 0m 54s
+
+[TRAINING] 139 ----------------
+accuracy   0.6140
+auc        0.6460
+f1macro    0.6092
+f1micro    0.6140
+loss       3122.6156
+precision0 0.5963
+precision1 0.6415
+recall0    0.7208
+recall1    0.5059
+
+[VALIDATION] 139 ----------------
+accuracy   0.5969
+auc        0.6142
+f1macro    0.5932
+f1micro    0.5969
+loss       393.3639
+precision0 0.5666
+precision1 0.6444
+recall0    0.7143
+recall1    0.4866
+
+1786 542 1246 1053
+212 68 169 129
+Epoch 140 TimeSince 0m 54s
+
+[TRAINING] 140 ----------------
+accuracy   0.6136
+auc        0.6490
+f1macro    0.6036
+f1micro    0.6136
+loss       3112.7383
+precision0 0.5891
+precision1 0.6602
+recall0    0.7672
+recall1    0.4580
+
+[VALIDATION] 140 ----------------
+accuracy   0.5900
+auc        0.6160
+f1macro    0.5813
+f1micro    0.5900
+loss       393.2626
+precision0 0.5564
+precision1 0.6548
+recall0    0.7571
+recall1    0.4329
+
+1449 879 832 1467
+161 119 117 181
+Epoch 141 TimeSince 0m 54s
+
+[TRAINING] 141 ----------------
+accuracy   0.6302
+auc        0.6529
+f1macro    0.6302
+f1micro    0.6302
+loss       3079.0592
+precision0 0.6352
+precision1 0.6253
+recall0    0.6224
+recall1    0.6381
+
+[VALIDATION] 141 ----------------
+accuracy   0.5917
+auc        0.6159
+f1macro    0.5912
+f1micro    0.5917
+loss       391.2253
+precision0 0.5791
+precision1 0.6033
+recall0    0.5750
+recall1    0.6074
+
+1406 922 786 1513
+159 121 109 189
+Epoch 142 TimeSince 0m 55s
+
+[TRAINING] 142 ----------------
+accuracy   0.6309
+auc        0.6553
+f1macro    0.6307
+f1micro    0.6309
+loss       3068.6514
+precision0 0.6414
+precision1 0.6214
+recall0    0.6040
+recall1    0.6581
+
+[VALIDATION] 142 ----------------
+accuracy   0.6021
+auc        0.6151
+f1macro    0.6010
+f1micro    0.6021
+loss       388.6127
+precision0 0.5933
+precision1 0.6097
+recall0    0.5679
+recall1    0.6342
+
+1586 742 944 1355
+188 92 139 159
+Epoch 143 TimeSince 0m 55s
+
+[TRAINING] 143 ----------------
+accuracy   0.6356
+auc        0.6584
+f1macro    0.6347
+f1micro    0.6356
+loss       3051.7497
+precision0 0.6269
+precision1 0.6462
+recall0    0.6813
+recall1    0.5894
+
+[VALIDATION] 143 ----------------
+accuracy   0.6003
+auc        0.6158
+f1macro    0.5993
+f1micro    0.6003
+loss       387.7321
+precision0 0.5749
+precision1 0.6335
+recall0    0.6714
+recall1    0.5336
+
+2096 232 1800 499
+245 35 238 60
+Epoch 144 TimeSince 0m 55s
+
+[TRAINING] 144 ----------------
+accuracy   0.5608
+auc        0.6618
+f1macro    0.5014
+f1micro    0.5608
+loss       3174.2752
+precision0 0.5380
+precision1 0.6826
+recall0    0.9003
+recall1    0.2171
+
+[VALIDATION] 144 ----------------
+accuracy   0.5277
+auc        0.6212
+f1macro    0.4738
+f1micro    0.5277
+loss       403.7515
+precision0 0.5072
+precision1 0.6316
+recall0    0.8750
+recall1    0.2013
+
+804 1524 412 1887
+88 192 59 239
+Epoch 145 TimeSince 0m 56s
+
+[TRAINING] 145 ----------------
+accuracy   0.5816
+auc        0.6604
+f1macro    0.5573
+f1micro    0.5816
+loss       3127.9467
+precision0 0.6612
+precision1 0.5532
+recall0    0.3454
+recall1    0.8208
+
+[VALIDATION] 145 ----------------
+accuracy   0.5657
+auc        0.6215
+f1macro    0.5339
+f1micro    0.5657
+loss       394.0985
+precision0 0.5986
+precision1 0.5545
+recall0    0.3143
+recall1    0.8020
+
+1609 719 958 1341
+191 89 138 160
+Epoch 146 TimeSince 0m 56s
+
+[TRAINING] 146 ----------------
+accuracy   0.6376
+auc        0.6611
+f1macro    0.6363
+f1micro    0.6376
+loss       3028.8777
+precision0 0.6268
+precision1 0.6510
+recall0    0.6912
+recall1    0.5833
+
+[VALIDATION] 146 ----------------
+accuracy   0.6073
+auc        0.6203
+f1macro    0.6061
+f1micro    0.6073
+loss       387.0440
+precision0 0.5805
+precision1 0.6426
+recall0    0.6821
+recall1    0.5369
+
+1545 783 868 1431
+180 100 124 174
+Epoch 147 TimeSince 0m 57s
+
+[TRAINING] 147 ----------------
+accuracy   0.6432
+auc        0.6625
+f1macro    0.6430
+f1micro    0.6432
+loss       3015.7315
+precision0 0.6403
+precision1 0.6463
+recall0    0.6637
+recall1    0.6224
+
+[VALIDATION] 147 ----------------
+accuracy   0.6125
+auc        0.6213
+f1macro    0.6124
+f1micro    0.6125
+loss       385.0886
+precision0 0.5921
+precision1 0.6350
+recall0    0.6429
+recall1    0.5839
+
+1550 778 872 1427
+183 97 126 172
+Epoch 148 TimeSince 0m 57s
+
+[TRAINING] 148 ----------------
+accuracy   0.6434
+auc        0.6636
+f1macro    0.6431
+f1micro    0.6434
+loss       3010.4272
+precision0 0.6400
+precision1 0.6472
+recall0    0.6658
+recall1    0.6207
+
+[VALIDATION] 148 ----------------
+accuracy   0.6142
+auc        0.6208
+f1macro    0.6140
+f1micro    0.6142
+loss       384.5768
+precision0 0.5922
+precision1 0.6394
+recall0    0.6536
+recall1    0.5772
+
+1498 830 803 1496
+171 109 117 181
+Epoch 149 TimeSince 0m 57s
+
+[TRAINING] 149 ----------------
+accuracy   0.6471
+auc        0.6652
+f1macro    0.6471
+f1micro    0.6471
+loss       3004.9250
+precision0 0.6510
+precision1 0.6432
+recall0    0.6435
+recall1    0.6507
+
+[VALIDATION] 149 ----------------
+accuracy   0.6090
+auc        0.6226
+f1macro    0.6089
+f1micro    0.6090
+loss       383.8924
+precision0 0.5938
+precision1 0.6241
+recall0    0.6107
+recall1    0.6074
+
+1576 752 867 1432
+186 94 130 168
+Epoch 150 TimeSince 0m 58s
+
+[TRAINING] 150 ----------------
+accuracy   0.6501
+auc        0.6660
+f1macro    0.6498
+f1micro    0.6501
+loss       3000.0546
+precision0 0.6451
+precision1 0.6557
+recall0    0.6770
+recall1    0.6229
+
+[VALIDATION] 150 ----------------
+accuracy   0.6125
+auc        0.6224
+f1macro    0.6121
+f1micro    0.6125
+loss       383.5656
+precision0 0.5886
+precision1 0.6412
+recall0    0.6643
+recall1    0.5638
+
+1360 968 679 1620
+151 129 92 206
+Epoch 151 TimeSince 0m 58s
+
+[TRAINING] 151 ----------------
+accuracy   0.6440
+auc        0.6693
+f1macro    0.6429
+f1micro    0.6440
+loss       3002.7360
+precision0 0.6670
+precision1 0.6260
+recall0    0.5842
+recall1    0.7047
+
+[VALIDATION] 151 ----------------
+accuracy   0.6176
+auc        0.6259
+f1macro    0.6142
+f1micro    0.6176
+loss       384.4920
+precision0 0.6214
+precision1 0.6149
+recall0    0.5393
+recall1    0.6913
+
+1414 914 706 1593
+159 121 97 201
+Epoch 152 TimeSince 0m 59s
+
+[TRAINING] 152 ----------------
+accuracy   0.6499
+auc        0.6692
+f1macro    0.6494
+f1micro    0.6499
+loss       2993.7336
+precision0 0.6670
+precision1 0.6354
+recall0    0.6074
+recall1    0.6929
+
+[VALIDATION] 152 ----------------
+accuracy   0.6228
+auc        0.6251
+f1macro    0.6208
+f1micro    0.6228
+loss       384.6581
+precision0 0.6211
+precision1 0.6242
+recall0    0.5679
+recall1    0.6745
+
+1455 873 748 1551
+162 118 106 192
+Epoch 153 TimeSince 0m 59s
+
+[TRAINING] 153 ----------------
+accuracy   0.6497
+auc        0.6697
+f1macro    0.6495
+f1micro    0.6497
+loss       2985.9176
+precision0 0.6605
+precision1 0.6399
+recall0    0.6250
+recall1    0.6746
+
+[VALIDATION] 153 ----------------
+accuracy   0.6125
+auc        0.6252
+f1macro    0.6114
+f1micro    0.6125
+loss       383.8857
+precision0 0.6045
+precision1 0.6194
+recall0    0.5786
+recall1    0.6443
+
+1405 923 701 1598
+155 125 96 202
+Epoch 154 TimeSince 0m 59s
+
+[TRAINING] 154 ----------------
+accuracy   0.6490
+auc        0.6701
+f1macro    0.6484
+f1micro    0.6490
+loss       2994.5513
+precision0 0.6671
+precision1 0.6339
+recall0    0.6035
+recall1    0.6951
+
+[VALIDATION] 154 ----------------
+accuracy   0.6176
+auc        0.6228
+f1macro    0.6151
+f1micro    0.6176
+loss       383.9779
+precision0 0.6175
+precision1 0.6177
+recall0    0.5536
+recall1    0.6779
+
+1785 543 1141 1158
+214 66 164 134
+Epoch 155 TimeSince 1m 0s
+
+[TRAINING] 155 ----------------
+accuracy   0.6360
+auc        0.6727
+f1macro    0.6292
+f1micro    0.6360
+loss       3015.3045
+precision0 0.6100
+precision1 0.6808
+recall0    0.7668
+recall1    0.5037
+
+[VALIDATION] 155 ----------------
+accuracy   0.6021
+auc        0.6237
+f1macro    0.5943
+f1micro    0.6021
+loss       390.1654
+precision0 0.5661
+precision1 0.6700
+recall0    0.7643
+recall1    0.4497
+
+1577 751 828 1471
+182 98 123 175
+Epoch 156 TimeSince 1m 0s
+
+[TRAINING] 156 ----------------
+accuracy   0.6587
+auc        0.6749
+f1macro    0.6586
+f1micro    0.6587
+loss       2968.1925
+precision0 0.6557
+precision1 0.6620
+recall0    0.6774
+recall1    0.6398
+
+[VALIDATION] 156 ----------------
+accuracy   0.6176
+auc        0.6277
+f1macro    0.6176
+f1micro    0.6176
+loss       382.8238
+precision0 0.5967
+precision1 0.6410
+recall0    0.6500
+recall1    0.5872
+
+1538 790 782 1517
+173 107 112 186
+Epoch 157 TimeSince 1m 0s
+
+[TRAINING] 157 ----------------
+accuracy   0.6603
+auc        0.6749
+f1macro    0.6602
+f1micro    0.6603
+loss       2966.2439
+precision0 0.6629
+precision1 0.6576
+recall0    0.6607
+recall1    0.6599
+
+[VALIDATION] 157 ----------------
+accuracy   0.6211
+auc        0.6269
+f1macro    0.6209
+f1micro    0.6211
+loss       382.5699
+precision0 0.6070
+precision1 0.6348
+recall0    0.6179
+recall1    0.6242
+
+1622 706 890 1409
+189 91 131 167
+Epoch 158 TimeSince 1m 1s
+
+[TRAINING] 158 ----------------
+accuracy   0.6551
+auc        0.6759
+f1macro    0.6543
+f1micro    0.6551
+loss       2971.0471
+precision0 0.6457
+precision1 0.6662
+recall0    0.6967
+recall1    0.6129
+
+[VALIDATION] 158 ----------------
+accuracy   0.6159
+auc        0.6283
+f1macro    0.6154
+f1micro    0.6159
+loss       384.0092
+precision0 0.5906
+precision1 0.6473
+recall0    0.6750
+recall1    0.5604
+
+1410 918 679 1620
+156 124 99 199
+Epoch 159 TimeSince 1m 1s
+
+[TRAINING] 159 ----------------
+accuracy   0.6549
+auc        0.6778
+f1macro    0.6541
+f1micro    0.6549
+loss       2970.0626
+precision0 0.6750
+precision1 0.6383
+recall0    0.6057
+recall1    0.7047
+
+[VALIDATION] 159 ----------------
+accuracy   0.6142
+auc        0.6299
+f1macro    0.6120
+f1micro    0.6142
+loss       383.5189
+precision0 0.6118
+precision1 0.6161
+recall0    0.5571
+recall1    0.6678
+
+1564 764 801 1498
+178 102 115 183
+Epoch 160 TimeSince 1m 2s
+
+[TRAINING] 160 ----------------
+accuracy   0.6618
+auc        0.6791
+f1macro    0.6617
+f1micro    0.6618
+loss       2958.1453
+precision0 0.6613
+precision1 0.6622
+recall0    0.6718
+recall1    0.6516
+
+[VALIDATION] 160 ----------------
+accuracy   0.6246
+auc        0.6283
+f1macro    0.6245
+f1micro    0.6246
+loss       382.1483
+precision0 0.6075
+precision1 0.6421
+recall0    0.6357
+recall1    0.6141
+
+1615 713 869 1430
+186 94 128 170
+Epoch 161 TimeSince 1m 2s
+
+[TRAINING] 161 ----------------
+accuracy   0.6581
+auc        0.6803
+f1macro    0.6575
+f1micro    0.6581
+loss       2956.3163
+precision0 0.6502
+precision1 0.6673
+recall0    0.6937
+recall1    0.6220
+
+[VALIDATION] 161 ----------------
+accuracy   0.6159
+auc        0.6287
+f1macro    0.6156
+f1micro    0.6159
+loss       383.5417
+precision0 0.5924
+precision1 0.6439
+recall0    0.6643
+recall1    0.5705
+
+1608 720 842 1457
+183 97 123 175
+Epoch 162 TimeSince 1m 2s
+
+[TRAINING] 162 ----------------
+accuracy   0.6624
+auc        0.6809
+f1macro    0.6621
+f1micro    0.6624
+loss       2950.7847
+precision0 0.6563
+precision1 0.6693
+recall0    0.6907
+recall1    0.6338
+
+[VALIDATION] 162 ----------------
+accuracy   0.6194
+auc        0.6298
+f1macro    0.6193
+f1micro    0.6194
+loss       383.2368
+precision0 0.5980
+precision1 0.6434
+recall0    0.6536
+recall1    0.5872
+
+1685 643 915 1384
+193 87 137 161
+Epoch 163 TimeSince 1m 3s
+
+[TRAINING] 163 ----------------
+accuracy   0.6633
+auc        0.6828
+f1macro    0.6618
+f1micro    0.6633
+loss       2953.5630
+precision0 0.6481
+precision1 0.6828
+recall0    0.7238
+recall1    0.6020
+
+[VALIDATION] 163 ----------------
+accuracy   0.6125
+auc        0.6293
+f1macro    0.6113
+f1micro    0.6125
+loss       383.6143
+precision0 0.5848
+precision1 0.6492
+recall0    0.6893
+recall1    0.5403
+
+1561 767 791 1508
+176 104 116 182
+Epoch 164 TimeSince 1m 3s
+
+[TRAINING] 164 ----------------
+accuracy   0.6633
+auc        0.6834
+f1macro    0.6632
+f1micro    0.6633
+loss       2944.7595
+precision0 0.6637
+precision1 0.6629
+recall0    0.6705
+recall1    0.6559
+
+[VALIDATION] 164 ----------------
+accuracy   0.6194
+auc        0.6287
+f1macro    0.6193
+f1micro    0.6194
+loss       384.4795
+precision0 0.6027
+precision1 0.6364
+recall0    0.6286
+recall1    0.6107
+
+1688 640 927 1372
+194 86 138 160
+Epoch 165 TimeSince 1m 4s
+
+[TRAINING] 165 ----------------
+accuracy   0.6613
+auc        0.6838
+f1macro    0.6597
+f1micro    0.6613
+loss       2949.8876
+precision0 0.6455
+precision1 0.6819
+recall0    0.7251
+recall1    0.5968
+
+[VALIDATION] 165 ----------------
+accuracy   0.6125
+auc        0.6290
+f1macro    0.6111
+f1micro    0.6125
+loss       383.8954
+precision0 0.5843
+precision1 0.6504
+recall0    0.6929
+recall1    0.5369
+
+1695 633 949 1350
+196 84 141 157
+Epoch 166 TimeSince 1m 4s
+
+[TRAINING] 166 ----------------
+accuracy   0.6581
+auc        0.6846
+f1macro    0.6562
+f1micro    0.6581
+loss       2951.0527
+precision0 0.6411
+precision1 0.6808
+recall0    0.7281
+recall1    0.5872
+
+[VALIDATION] 166 ----------------
+accuracy   0.6107
+auc        0.6297
+f1macro    0.6089
+f1micro    0.6107
+loss       383.6271
+precision0 0.5816
+precision1 0.6515
+recall0    0.7000
+recall1    0.5268
+
+1510 818 721 1578
+170 110 108 190
+Epoch 167 TimeSince 1m 4s
+
+[TRAINING] 167 ----------------
+accuracy   0.6674
+auc        0.6861
+f1macro    0.6673
+f1micro    0.6674
+loss       2936.0451
+precision0 0.6768
+precision1 0.6586
+recall0    0.6486
+recall1    0.6864
+
+[VALIDATION] 167 ----------------
+accuracy   0.6228
+auc        0.6305
+f1macro    0.6224
+f1micro    0.6228
+loss       383.6305
+precision0 0.6115
+precision1 0.6333
+recall0    0.6071
+recall1    0.6376
+
+1456 872 687 1612
+159 121 101 197
+Epoch 168 TimeSince 1m 5s
+
+[TRAINING] 168 ----------------
+accuracy   0.6631
+auc        0.6864
+f1macro    0.6627
+f1micro    0.6631
+loss       2942.0291
+precision0 0.6794
+precision1 0.6490
+recall0    0.6254
+recall1    0.7012
+
+[VALIDATION] 168 ----------------
+accuracy   0.6159
+auc        0.6308
+f1macro    0.6142
+f1micro    0.6159
+loss       383.4561
+precision0 0.6115
+precision1 0.6195
+recall0    0.5679
+recall1    0.6611
+
+1413 915 650 1649
+151 129 98 200
+Epoch 169 TimeSince 1m 5s
+
+[TRAINING] 169 ----------------
+accuracy   0.6618
+auc        0.6875
+f1macro    0.6609
+f1micro    0.6618
+loss       2948.5197
+precision0 0.6849
+precision1 0.6431
+recall0    0.6070
+recall1    0.7173
+
+[VALIDATION] 169 ----------------
+accuracy   0.6073
+auc        0.6311
+f1macro    0.6044
+f1micro    0.6073
+loss       384.4527
+precision0 0.6064
+precision1 0.6079
+recall0    0.5393
+recall1    0.6711
+
+1513 815 720 1579
+170 110 108 190
+Epoch 170 TimeSince 1m 6s
+
+[TRAINING] 170 ----------------
+accuracy   0.6683
+auc        0.6892
+f1macro    0.6682
+f1micro    0.6683
+loss       2932.6855
+precision0 0.6776
+precision1 0.6596
+recall0    0.6499
+recall1    0.6868
+
+[VALIDATION] 170 ----------------
+accuracy   0.6228
+auc        0.6315
+f1macro    0.6224
+f1micro    0.6228
+loss       382.3075
+precision0 0.6115
+precision1 0.6333
+recall0    0.6071
+recall1    0.6376
+
+1653 675 856 1443
+190 90 129 169
+Epoch 171 TimeSince 1m 6s
+
+[TRAINING] 171 ----------------
+accuracy   0.6691
+auc        0.6898
+f1macro    0.6684
+f1micro    0.6691
+loss       2928.9269
+precision0 0.6588
+precision1 0.6813
+recall0    0.7101
+recall1    0.6277
+
+[VALIDATION] 171 ----------------
+accuracy   0.6211
+auc        0.6325
+f1macro    0.6206
+f1micro    0.6211
+loss       381.5072
+precision0 0.5956
+precision1 0.6525
+recall0    0.6786
+recall1    0.5671
+
+1467 861 680 1619
+162 118 101 197
+Epoch 172 TimeSince 1m 6s
+
+[TRAINING] 172 ----------------
+accuracy   0.6670
+auc        0.6915
+f1macro    0.6666
+f1micro    0.6670
+loss       2931.9195
+precision0 0.6833
+precision1 0.6528
+recall0    0.6302
+recall1    0.7042
+
+[VALIDATION] 172 ----------------
+accuracy   0.6211
+auc        0.6330
+f1macro    0.6197
+f1micro    0.6211
+loss       383.8194
+precision0 0.6160
+precision1 0.6254
+recall0    0.5786
+recall1    0.6611
+
+1651 677 835 1464
+186 94 127 171
+Epoch 173 TimeSince 1m 7s
+
+[TRAINING] 173 ----------------
+accuracy   0.6732
+auc        0.6936
+f1macro    0.6727
+f1micro    0.6732
+loss       2920.4348
+precision0 0.6641
+precision1 0.6838
+recall0    0.7092
+recall1    0.6368
+
+[VALIDATION] 173 ----------------
+accuracy   0.6176
+auc        0.6346
+f1macro    0.6174
+f1micro    0.6176
+loss       381.5693
+precision0 0.5942
+precision1 0.6453
+recall0    0.6643
+recall1    0.5738
+
+1568 760 749 1550
+173 107 110 188
+Epoch 174 TimeSince 1m 7s
+
+[TRAINING] 174 ----------------
+accuracy   0.6739
+auc        0.6952
+f1macro    0.6739
+f1micro    0.6739
+loss       2916.2252
+precision0 0.6767
+precision1 0.6710
+recall0    0.6735
+recall1    0.6742
+
+[VALIDATION] 174 ----------------
+accuracy   0.6246
+auc        0.6354
+f1macro    0.6243
+f1micro    0.6246
+loss       381.2019
+precision0 0.6113
+precision1 0.6373
+recall0    0.6179
+recall1    0.6309
+
+1603 725 780 1519
+181 99 116 182
+Epoch 175 TimeSince 1m 7s
+
+[TRAINING] 175 ----------------
+accuracy   0.6747
+auc        0.6959
+f1macro    0.6746
+f1micro    0.6747
+loss       2913.6426
+precision0 0.6727
+precision1 0.6769
+recall0    0.6886
+recall1    0.6607
+
+[VALIDATION] 175 ----------------
+accuracy   0.6280
+auc        0.6346
+f1macro    0.6280
+f1micro    0.6280
+loss       381.4217
+precision0 0.6094
+precision1 0.6477
+recall0    0.6464
+recall1    0.6107
+
+1617 711 794 1505
+181 99 120 178
+Epoch 176 TimeSince 1m 8s
+
+[TRAINING] 176 ----------------
+accuracy   0.6747
+auc        0.6971
+f1macro    0.6745
+f1micro    0.6747
+loss       2910.3074
+precision0 0.6707
+precision1 0.6792
+recall0    0.6946
+recall1    0.6546
+
+[VALIDATION] 176 ----------------
+accuracy   0.6211
+auc        0.6369
+f1macro    0.6211
+f1micro    0.6211
+loss       381.0852
+precision0 0.6013
+precision1 0.6426
+recall0    0.6464
+recall1    0.5973
+
+1649 679 811 1488
+188 92 125 173
+Epoch 177 TimeSince 1m 8s
+
+[TRAINING] 177 ----------------
+accuracy   0.6780
+auc        0.6979
+f1macro    0.6776
+f1micro    0.6780
+loss       2908.5600
+precision0 0.6703
+precision1 0.6867
+recall0    0.7083
+recall1    0.6472
+
+[VALIDATION] 177 ----------------
+accuracy   0.6246
+auc        0.6357
+f1macro    0.6243
+f1micro    0.6246
+loss       381.8164
+precision0 0.6006
+precision1 0.6528
+recall0    0.6714
+recall1    0.5805
+
+1763 565 994 1305
+206 74 143 155
+Epoch 178 TimeSince 1m 9s
+
+[TRAINING] 178 ----------------
+accuracy   0.6631
+auc        0.6994
+f1macro    0.6597
+f1micro    0.6631
+loss       2921.9791
+precision0 0.6395
+precision1 0.6979
+recall0    0.7573
+recall1    0.5676
+
+[VALIDATION] 178 ----------------
+accuracy   0.6246
+auc        0.6342
+f1macro    0.6216
+f1micro    0.6246
+loss       384.5535
+precision0 0.5903
+precision1 0.6769
+recall0    0.7357
+recall1    0.5201
+
+1817 511 1061 1238
+211 69 156 142
+Epoch 179 TimeSince 1m 9s
+
+[TRAINING] 179 ----------------
+accuracy   0.6603
+auc        0.7006
+f1macro    0.6549
+f1micro    0.6603
+loss       2936.1930
+precision0 0.6313
+precision1 0.7078
+recall0    0.7805
+recall1    0.5385
+
+[VALIDATION] 179 ----------------
+accuracy   0.6107
+auc        0.6351
+f1macro    0.6051
+f1micro    0.6107
+loss       387.6854
+precision0 0.5749
+precision1 0.6730
+recall0    0.7536
+recall1    0.4765
+
+1615 713 784 1515
+184 96 119 179
+Epoch 180 TimeSince 1m 9s
+
+[TRAINING] 180 ----------------
+accuracy   0.6765
+auc        0.7014
+f1macro    0.6763
+f1micro    0.6765
+loss       2902.9537
+precision0 0.6732
+precision1 0.6800
+recall0    0.6937
+recall1    0.6590
+
+[VALIDATION] 180 ----------------
+accuracy   0.6280
+auc        0.6370
+f1macro    0.6280
+f1micro    0.6280
+loss       381.1325
+precision0 0.6073
+precision1 0.6509
+recall0    0.6571
+recall1    0.6007
+
+1586 742 757 1542
+178 102 117 181
+Epoch 181 TimeSince 1m 10s
+
+[TRAINING] 181 ----------------
+accuracy   0.6760
+auc        0.7015
+f1macro    0.6760
+f1micro    0.6760
+loss       2899.5683
+precision0 0.6769
+precision1 0.6751
+recall0    0.6813
+recall1    0.6707
+
+[VALIDATION] 181 ----------------
+accuracy   0.6211
+auc        0.6347
+f1macro    0.6211
+f1micro    0.6211
+loss       381.3636
+precision0 0.6034
+precision1 0.6396
+recall0    0.6357
+recall1    0.6074
+
+1433 895 646 1653
+159 121 100 198
+Epoch 182 TimeSince 1m 10s
+
+[TRAINING] 182 ----------------
+accuracy   0.6670
+auc        0.7031
+f1macro    0.6662
+f1micro    0.6670
+loss       2916.9953
+precision0 0.6893
+precision1 0.6487
+recall0    0.6155
+recall1    0.7190
+
+[VALIDATION] 182 ----------------
+accuracy   0.6176
+auc        0.6380
+f1macro    0.6159
+f1micro    0.6176
+loss       382.7528
+precision0 0.6139
+precision1 0.6207
+recall0    0.5679
+recall1    0.6644
+
+1620 708 780 1519
+183 97 118 180
+Epoch 183 TimeSince 1m 11s
+
+[TRAINING] 183 ----------------
+accuracy   0.6784
+auc        0.7030
+f1macro    0.6783
+f1micro    0.6784
+loss       2894.1874
+precision0 0.6750
+precision1 0.6821
+recall0    0.6959
+recall1    0.6607
+
+[VALIDATION] 183 ----------------
+accuracy   0.6280
+auc        0.6372
+f1macro    0.6280
+f1micro    0.6280
+loss       381.5282
+precision0 0.6080
+precision1 0.6498
+recall0    0.6536
+recall1    0.6040
+
+1521 807 705 1594
+170 110 108 190
+Epoch 184 TimeSince 1m 11s
+
+[TRAINING] 184 ----------------
+accuracy   0.6732
+auc        0.7022
+f1macro    0.6731
+f1micro    0.6732
+loss       2904.8128
+precision0 0.6833
+precision1 0.6639
+recall0    0.6534
+recall1    0.6933
+
+[VALIDATION] 184 ----------------
+accuracy   0.6228
+auc        0.6379
+f1macro    0.6224
+f1micro    0.6228
+loss       380.5184
+precision0 0.6115
+precision1 0.6333
+recall0    0.6071
+recall1    0.6376
+
+1673 655 821 1478
+189 91 125 173
+Epoch 185 TimeSince 1m 11s
+
+[TRAINING] 185 ----------------
+accuracy   0.6810
+auc        0.7043
+f1macro    0.6804
+f1micro    0.6810
+loss       2890.4160
+precision0 0.6708
+precision1 0.6929
+recall0    0.7186
+recall1    0.6429
+
+[VALIDATION] 185 ----------------
+accuracy   0.6263
+auc        0.6392
+f1macro    0.6260
+f1micro    0.6263
+loss       380.4455
+precision0 0.6019
+precision1 0.6553
+recall0    0.6750
+recall1    0.5805
+
+1524 804 706 1593
+170 110 110 188
+Epoch 186 TimeSince 1m 12s
+
+[TRAINING] 186 ----------------
+accuracy   0.6737
+auc        0.7049
+f1macro    0.6736
+f1micro    0.6737
+loss       2897.9756
+precision0 0.6834
+precision1 0.6646
+recall0    0.6546
+recall1    0.6929
+
+[VALIDATION] 186 ----------------
+accuracy   0.6194
+auc        0.6407
+f1macro    0.6190
+f1micro    0.6194
+loss       381.4042
+precision0 0.6071
+precision1 0.6309
+recall0    0.6071
+recall1    0.6309
+
+1673 655 826 1473
+188 92 124 174
+Epoch 187 TimeSince 1m 12s
+
+[TRAINING] 187 ----------------
+accuracy   0.6799
+auc        0.7055
+f1macro    0.6793
+f1micro    0.6799
+loss       2887.9014
+precision0 0.6695
+precision1 0.6922
+recall0    0.7186
+recall1    0.6407
+
+[VALIDATION] 187 ----------------
+accuracy   0.6263
+auc        0.6418
+f1macro    0.6261
+f1micro    0.6263
+loss       379.8571
+precision0 0.6026
+precision1 0.6541
+recall0    0.6714
+recall1    0.5839
+
+1649 679 808 1491
+188 92 121 177
+Epoch 188 TimeSince 1m 13s
+
+[TRAINING] 188 ----------------
+accuracy   0.6786
+auc        0.7057
+f1macro    0.6783
+f1micro    0.6786
+loss       2887.7661
+precision0 0.6711
+precision1 0.6871
+recall0    0.7083
+recall1    0.6485
+
+[VALIDATION] 188 ----------------
+accuracy   0.6315
+auc        0.6420
+f1macro    0.6314
+f1micro    0.6315
+loss       380.4186
+precision0 0.6084
+precision1 0.6580
+recall0    0.6714
+recall1    0.5940
+
+1702 626 861 1438
+194 86 128 170
+Epoch 189 TimeSince 1m 13s
+
+[TRAINING] 189 ----------------
+accuracy   0.6786
+auc        0.7069
+f1macro    0.6776
+f1micro    0.6786
+loss       2883.6253
+precision0 0.6641
+precision1 0.6967
+recall0    0.7311
+recall1    0.6255
+
+[VALIDATION] 189 ----------------
+accuracy   0.6298
+auc        0.6432
+f1macro    0.6291
+f1micro    0.6298
+loss       379.2683
+precision0 0.6025
+precision1 0.6641
+recall0    0.6929
+recall1    0.5705
+
+1493 835 678 1621
+163 117 104 194
+Epoch 190 TimeSince 1m 13s
+
+[TRAINING] 190 ----------------
+accuracy   0.6730
+auc        0.7082
+f1macro    0.6728
+f1micro    0.6730
+loss       2896.6858
+precision0 0.6877
+precision1 0.6600
+recall0    0.6413
+recall1    0.7051
+
+[VALIDATION] 190 ----------------
+accuracy   0.6176
+auc        0.6447
+f1macro    0.6165
+f1micro    0.6176
+loss       380.3497
+precision0 0.6105
+precision1 0.6238
+recall0    0.5821
+recall1    0.6510
+
+1481 847 672 1627
+163 117 104 194
+Epoch 191 TimeSince 1m 14s
+
+[TRAINING] 191 ----------------
+accuracy   0.6717
+auc        0.7092
+f1macro    0.6714
+f1micro    0.6717
+loss       2904.4999
+precision0 0.6879
+precision1 0.6576
+recall0    0.6362
+recall1    0.7077
+
+[VALIDATION] 191 ----------------
+accuracy   0.6176
+auc        0.6466
+f1macro    0.6165
+f1micro    0.6176
+loss       380.0736
+precision0 0.6105
+precision1 0.6238
+recall0    0.5821
+recall1    0.6510
+
+1570 758 723 1576
+175 105 110 188
+Epoch 192 TimeSince 1m 14s
+
+[TRAINING] 192 ----------------
+accuracy   0.6799
+auc        0.7111
+f1macro    0.6799
+f1micro    0.6799
+loss       2879.6626
+precision0 0.6847
+precision1 0.6752
+recall0    0.6744
+recall1    0.6855
+
+[VALIDATION] 192 ----------------
+accuracy   0.6280
+auc        0.6484
+f1macro    0.6278
+f1micro    0.6280
+loss       378.5470
+precision0 0.6140
+precision1 0.6416
+recall0    0.6250
+recall1    0.6309
+
+1839 489 1023 1276
+210 70 154 144
+Epoch 193 TimeSince 1m 14s
+
+[TRAINING] 193 ----------------
+accuracy   0.6732
+auc        0.7124
+f1macro    0.6683
+f1micro    0.6732
+loss       2890.1310
+precision0 0.6426
+precision1 0.7229
+recall0    0.7899
+recall1    0.5550
+
+[VALIDATION] 193 ----------------
+accuracy   0.6125
+auc        0.6479
+f1macro    0.6073
+f1micro    0.6125
+loss       381.6662
+precision0 0.5769
+precision1 0.6729
+recall0    0.7500
+recall1    0.4832
+
+1697 631 845 1454
+193 87 128 170
+Epoch 194 TimeSince 1m 15s
+
+[TRAINING] 194 ----------------
+accuracy   0.6810
+auc        0.7117
+f1macro    0.6801
+f1micro    0.6810
+loss       2870.7724
+precision0 0.6676
+precision1 0.6974
+recall0    0.7290
+recall1    0.6324
+
+[VALIDATION] 194 ----------------
+accuracy   0.6280
+auc        0.6484
+f1macro    0.6274
+f1micro    0.6280
+loss       379.5328
+precision0 0.6012
+precision1 0.6615
+recall0    0.6893
+recall1    0.5705
+
+1680 648 816 1483
+189 91 124 174
+Epoch 195 TimeSince 1m 15s
+
+[TRAINING] 195 ----------------
+accuracy   0.6836
+auc        0.7118
+f1macro    0.6830
+f1micro    0.6836
+loss       2869.2675
+precision0 0.6731
+precision1 0.6959
+recall0    0.7216
+recall1    0.6451
+
+[VALIDATION] 195 ----------------
+accuracy   0.6280
+auc        0.6503
+f1macro    0.6278
+f1micro    0.6280
+loss       378.0365
+precision0 0.6038
+precision1 0.6566
+recall0    0.6750
+recall1    0.5839
+
+1713 615 845 1454
+191 89 131 167
+Epoch 196 TimeSince 1m 16s
+
+[TRAINING] 196 ----------------
+accuracy   0.6845
+auc        0.7131
+f1macro    0.6835
+f1micro    0.6845
+loss       2867.8198
+precision0 0.6697
+precision1 0.7028
+recall0    0.7358
+recall1    0.6324
+
+[VALIDATION] 196 ----------------
+accuracy   0.6194
+auc        0.6504
+f1macro    0.6187
+f1micro    0.6194
+loss       379.8247
+precision0 0.5932
+precision1 0.6523
+recall0    0.6821
+recall1    0.5604
+
+1594 734 728 1571
+174 106 111 187
+Epoch 197 TimeSince 1m 16s
+
+[TRAINING] 197 ----------------
+accuracy   0.6840
+auc        0.7143
+f1macro    0.6840
+f1micro    0.6840
+loss       2870.9529
+precision0 0.6865
+precision1 0.6816
+recall0    0.6847
+recall1    0.6833
+
+[VALIDATION] 197 ----------------
+accuracy   0.6246
+auc        0.6510
+f1macro    0.6244
+f1micro    0.6246
+loss       377.8530
+precision0 0.6105
+precision1 0.6382
+recall0    0.6214
+recall1    0.6275
+
+1619 709 741 1558
+181 99 111 187
+Epoch 198 TimeSince 1m 16s
+
+[TRAINING] 198 ----------------
+accuracy   0.6866
+auc        0.7161
+f1macro    0.6866
+f1micro    0.6866
+loss       2858.7514
+precision0 0.6860
+precision1 0.6873
+recall0    0.6954
+recall1    0.6777
+
+[VALIDATION] 198 ----------------
+accuracy   0.6367
+auc        0.6522
+f1macro    0.6366
+f1micro    0.6367
+loss       377.5167
+precision0 0.6199
+precision1 0.6538
+recall0    0.6464
+recall1    0.6275
+
+1755 573 857 1442
+194 86 132 166
+Epoch 199 TimeSince 1m 17s
+
+[TRAINING] 199 ----------------
+accuracy   0.6909
+auc        0.7168
+f1macro    0.6895
+f1micro    0.6909
+loss       2852.8470
+precision0 0.6719
+precision1 0.7156
+recall0    0.7539
+recall1    0.6272
+
+[VALIDATION] 199 ----------------
+accuracy   0.6228
+auc        0.6522
+f1macro    0.6220
+f1micro    0.6228
+loss       379.3825
+precision0 0.5951
+precision1 0.6587
+recall0    0.6929
+recall1    0.5570
+
+1693 635 787 1512
+187 93 121 177
+Epoch 200 TimeSince 1m 17s
+
+[TRAINING] 200 ----------------
+accuracy   0.6927
+auc        0.7179
+f1macro    0.6922
+f1micro    0.6927
+loss       2848.2610
+precision0 0.6827
+precision1 0.7042
+recall0    0.7272
+recall1    0.6577
+
+[VALIDATION] 200 ----------------/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+accuracy   0.6298
+auc        0.6525
+f1macro    0.6296
+f1micro    0.6298
+loss       378.8969
+precision0 0.6071
+precision1 0.6556
+recall0    0.6679
+recall1    0.5940
+
+[TESTING] 200 ----------------
+182 102 132 163
+accuracy   0.5959
+auc        0.6388
+f1macro    0.5954
+f1micro    0.5959
+loss       389.9397
+precision0 0.5796
+precision1 0.6151
+recall0    0.6408
+recall1    0.5525
+
