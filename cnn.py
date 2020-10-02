@@ -39,7 +39,7 @@ class Net(nn.Module):
                       self.size_hidden1_cnn,
                       kernel_size=self.size_kernel1),
             nn.BatchNorm1d(self.size_hidden1_cnn),
-            nn.ReLU(True),
+            nn.GELU(),
             nn.MaxPool1d(kernel_size=self.size_kernel1,
                          stride=1,
                          padding=self.size_padding),
@@ -47,7 +47,7 @@ class Net(nn.Module):
                       self.size_hidden2_cnn,
                       kernel_size=self.size_kernel2),
             nn.BatchNorm1d(self.size_hidden2_cnn),
-            nn.ReLU(True),
+            nn.GELU(),
             nn.MaxPool1d(kernel_size=self.size_kernel2,
                          stride=1,
                          padding=self.size_padding),
@@ -55,7 +55,7 @@ class Net(nn.Module):
                       self.size_hidden3_cnn,
                       kernel_size=self.size_kernel3),
             nn.BatchNorm1d(self.size_hidden3_cnn),
-            nn.ReLU(True),
+            nn.GELU(),
             nn.MaxPool1d(kernel_size=self.size_kernel3)
             )
         
@@ -66,7 +66,7 @@ class Net(nn.Module):
                       self.size_hidden1_cnn,
                       kernel_size=self.size_kernel1),
             nn.BatchNorm1d(self.size_hidden1_cnn),
-            nn.ReLU(True),
+            nn.GELU(),
             nn.MaxPool1d(kernel_size=self.size_kernel1,
                          stride=1,
                          padding=self.size_padding),
@@ -74,7 +74,7 @@ class Net(nn.Module):
                       self.size_hidden2_cnn,
                       kernel_size=self.size_kernel2),
             nn.BatchNorm1d(self.size_hidden2_cnn),
-            nn.ReLU(True),
+            nn.GELU(),
             nn.MaxPool1d(kernel_size=self.size_kernel2,
                          stride=1,
                          padding=self.size_padding),
@@ -82,7 +82,7 @@ class Net(nn.Module):
                       self.size_hidden3_cnn,
                       kernel_size=self.size_kernel3),
             nn.BatchNorm1d(self.size_hidden3_cnn),
-            nn.ReLU(True),
+            nn.GELU(),
             nn.MaxPool1d(kernel_size=self.size_kernel3)
             )
 
@@ -92,9 +92,9 @@ class Net(nn.Module):
         self.net = nn.Sequential(
             nn.Dropout(0.3),
             nn.Linear(self.net_pep_dim+self.net_tcr_dim, 32),
-            nn.ReLU(),
+            nn.GELU(),
             nn.Linear(32, 16),
-            nn.ReLU(),
+            nn.GELU(),
             nn.Linear(16, 2),
             nn.LogSoftmax(1)
             )
