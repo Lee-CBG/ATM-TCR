@@ -1,0 +1,20 @@
+nohup: ignoring input
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+/opt/anaconda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Prediction of TCR binding to peptide-MHC complexes
+[INDEPENDENT TESTING] {} ----------------
+0 0 6157 3171
+accuracy   0.3399
+auc        -1.0000
+f1macro    0.2537
+f1micro    0.3399
+loss       15360.0661
+precision0 0.0000
+precision1 1.0000
+recall0    0.0000
+recall1    0.3399
+
