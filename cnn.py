@@ -3,8 +3,11 @@ import torch.nn as nn
 
 SIZE_HIDDEN1_CNN = 64
 SIZE_HIDDEN2_CNN = 32
+SIZE_HIDDEN3_CNN = 16
+
 SIZE_KERNEL1 = 3
 SIZE_KERNEL2 = 3
+SIZE_KERNEL3 = 3
 
 class Net(nn.Module):
     def __init__(self, embedding, pep_length, tcr_length):
@@ -20,22 +23,40 @@ class Net(nn.Module):
                                       from_pretrained(torch.FloatTensor(embedding),
                                                       freeze = False)
 
-        ## peptide encoding layer
+        
         self.size_hidden1_cnn = SIZE_HIDDEN1_CNN
         self.size_hidden2_cnn = SIZE_HIDDEN2_CNN
+        self.size_hidden3_cnn = SIZE_HIDDEN3_CNN
         self.size_kernel1 = SIZE_KERNEL1
         self.size_kernel2 = SIZE_KERNEL2
+        self.size_kernel3 = SIZE_KERNEL3
         self.size_padding = (self.size_kernel1-1)//2
+
+        ## peptide encoding layer
         self.encode_pep = nn.Sequential(
             nn.Dropout(0.3),
             nn.Conv1d(self.embedding_dim,
                       self.size_hidden1_cnn,
                       kernel_size=self.size_kernel1),
             nn.BatchNorm1d(self.size_hidden1_cnn),
-            nn.Sigmoid(),
+            nn.ReLU(True),
             nn.MaxPool1d(kernel_size=self.size_kernel1,
                          stride=1,
-                         padding=self.size_padding)
+                         padding=self.size_padding),
+            nn.Conv1d(self.size_hidden1_cnn,
+                      self.size_hidden2_cnn,
+                      kernel_size=self.size_kernel2),
+            nn.BatchNorm1d(self.size_hidden2_cnn),
+            nn.ReLU(True),
+            nn.MaxPool1d(kernel_size=self.size_kernel2,
+                         stride=1,
+                         padding=self.size_padding),
+            nn.Conv1d(self.size_hidden2_cnn,
+                      self.size_hidden3_cnn,
+                      kernel_size=self.size_kernel3),
+            nn.BatchNorm1d(self.size_hidden3_cnn),
+            nn.ReLU(True),
+            nn.MaxPool1d(kernel_size=self.size_kernel3)
             )
         
         ## trc encoding layer
@@ -45,22 +66,35 @@ class Net(nn.Module):
                       self.size_hidden1_cnn,
                       kernel_size=self.size_kernel1),
             nn.BatchNorm1d(self.size_hidden1_cnn),
-            nn.Sigmoid(),
+            nn.ReLU(True),
             nn.MaxPool1d(kernel_size=self.size_kernel1,
                          stride=1,
-                         padding=self.size_padding)
+                         padding=self.size_padding),
+            nn.Conv1d(self.size_hidden1_cnn,
+                      self.size_hidden2_cnn,
+                      kernel_size=self.size_kernel2),
+            nn.BatchNorm1d(self.size_hidden2_cnn),
+            nn.ReLU(True),
+            nn.MaxPool1d(kernel_size=self.size_kernel2,
+                         stride=1,
+                         padding=self.size_padding),
+            nn.Conv1d(self.size_hidden2_cnn,
+                      self.size_hidden3_cnn,
+                      kernel_size=self.size_kernel3),
+            nn.BatchNorm1d(self.size_hidden3_cnn),
+            nn.ReLU(True),
+            nn.MaxPool1d(kernel_size=self.size_kernel3)
             )
 
         ## dense layer at the end
-        # [(InputSize − Kernel + 2*Padding) / Stride] + 1
-        self.net_pep_dim = self.size_hidden1_cnn * (pep_length - 2)
-        self.net_tcr_dim = self.size_hidden1_cnn * (tcr_length - 2)
+        self.net_pep_dim = self.size_hidden3_cnn * ((pep_length-self.size_kernel1+1-self.size_kernel2+1-self.size_kernel3+1)//self.size_kernel3)
+        self.net_tcr_dim = self.size_hidden3_cnn * ((tcr_length-self.size_kernel1+1-self.size_kernel2+1-self.size_kernel3+1)//self.size_kernel3)
         self.net = nn.Sequential(
             nn.Dropout(0.3),
             nn.Linear(self.net_pep_dim+self.net_tcr_dim, 32),
-            nn.Sigmoid(),
+            nn.ReLU(),
             nn.Linear(32, 16),
-            nn.Sigmoid(),
+            nn.ReLU(),
             nn.Linear(16, 2),
             nn.LogSoftmax(1)
             )
