@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 
-SIZE_HIDDEN1_CNN = 32
-SIZE_HIDDEN2_CNN = 16
+SIZE_HIDDEN1_CNN = 64
+SIZE_HIDDEN2_CNN = 32
 SIZE_KERNEL1 = 3
 SIZE_KERNEL2 = 3
 
@@ -32,16 +32,10 @@ class Net(nn.Module):
                       self.size_hidden1_cnn,
                       kernel_size=self.size_kernel1),
             nn.BatchNorm1d(self.size_hidden1_cnn),
-            nn.Sigmoid(),
+            nn.ReLU(True),
             nn.MaxPool1d(kernel_size=self.size_kernel1,
                          stride=1,
-                         padding=self.size_padding),
-            nn.Conv1d(self.size_hidden1_cnn,
-                      self.size_hidden2_cnn,
-                      kernel_size=self.size_kernel2),
-            nn.BatchNorm1d(self.size_hidden2_cnn),
-            nn.Sigmoid(),
-            nn.MaxPool1d(kernel_size=self.size_kernel2)
+                         padding=self.size_padding)
             )
         
         ## trc encoding layer
@@ -51,27 +45,22 @@ class Net(nn.Module):
                       self.size_hidden1_cnn,
                       kernel_size=self.size_kernel1),
             nn.BatchNorm1d(self.size_hidden1_cnn),
-            nn.Sigmoid(),
+            nn.ReLU(True),
             nn.MaxPool1d(kernel_size=self.size_kernel1,
                          stride=1,
-                         padding=self.size_padding),
-            nn.Conv1d(self.size_hidden1_cnn,
-                      self.size_hidden2_cnn,
-                      kernel_size=self.size_kernel2),
-            nn.BatchNorm1d(self.size_hidden2_cnn),
-            nn.Sigmoid(),
-            nn.MaxPool1d(kernel_size=self.size_kernel2)
+                         padding=self.size_padding)
             )
 
         ## dense layer at the end
-        self.net_pep_dim = self.size_hidden2_cnn * ((pep_length-self.size_kernel1+1-self.size_kernel2+1)//self.size_kernel2)
-        self.net_tcr_dim = self.size_hidden2_cnn * ((tcr_length-self.size_kernel1+1-self.size_kernel2+1)//self.size_kernel2)
+        # [(InputSize − Kernel + 2*Padding) / Stride] + 1
+        self.net_pep_dim = self.size_hidden1_cnn * (pep_length - 2)
+        self.net_tcr_dim = self.size_hidden1_cnn * (tcr_length - 2)
         self.net = nn.Sequential(
             nn.Dropout(0.3),
             nn.Linear(self.net_pep_dim+self.net_tcr_dim, 32),
-            nn.Sigmoid(),
+            nn.ReLU(True),
             nn.Linear(32, 16),
-            nn.Sigmoid(),
+            nn.ReLU(True),
             nn.Linear(16, 2),
             nn.LogSoftmax(1)
             )
