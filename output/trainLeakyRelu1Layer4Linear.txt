@@ -1,0 +1,27 @@
+nohup: ignoring input
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+Prediction of TCR binding to peptide-MHC complexes
+Traceback (most recent call last):
+  File "pipeline.py", line 21, in <module>
+    main.run(infile, indepfile=indepData, blosum=blosumPath, batch_size=batchSize, model_name=name, epoch=epochs, lr=alpha, cuda=cudaFlag, seed=randomSeed, mode=modeType, model=modelType)
+  File "/mnt/disk04/user/mrcai/TCRResearch/main.py", line 132, in run
+    train(model, device, train_loader['loader'], optimizer, epoch)
+  File "/mnt/disk04/user/mrcai/TCRResearch/main.py", line 26, in train
+    yhat = model(X_pep, X_tcr)
+  File "/opt/anaconda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/mnt/disk04/user/mrcai/TCRResearch/cnn.py", line 80, in forward
+    peptcr = self.net(peptcr)
+  File "/opt/anaconda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/anaconda/lib/python3.7/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/opt/anaconda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/anaconda/lib/python3.7/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/opt/anaconda/lib/python3.7/site-packages/torch/nn/functional.py", line 1610, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: size mismatch, m1: [100 x 576], m2: [928 x 64] at /opt/conda/conda-bld/pytorch_1591914855613/work/aten/src/THC/generic/THCTensorMathBlas.cu:283

@@ -39,24 +39,8 @@ class Net(nn.Module):
                       self.size_hidden1_cnn,
                       kernel_size=self.size_kernel1),
             nn.BatchNorm1d(self.size_hidden1_cnn),
-            nn.Sigmoid(),
-            nn.MaxPool1d(kernel_size=self.size_kernel1,
-                         stride=1,
-                         padding=self.size_padding),
-            nn.Conv1d(self.size_hidden1_cnn,
-                      self.size_hidden2_cnn,
-                      kernel_size=self.size_kernel2),
-            nn.BatchNorm1d(self.size_hidden2_cnn),
-            nn.Sigmoid(),
-            nn.MaxPool1d(kernel_size=self.size_kernel2,
-                         stride=1,
-                         padding=self.size_padding),
-            nn.Conv1d(self.size_hidden2_cnn,
-                      self.size_hidden3_cnn,
-                      kernel_size=self.size_kernel3),
-            nn.BatchNorm1d(self.size_hidden3_cnn),
-            nn.Sigmoid(),
-            nn.MaxPool1d(kernel_size=self.size_kernel3)
+            nn.LeakyReLU(True),
+            nn.MaxPool1d(kernel_size=self.size_kernel1)
             )
         
         ## trc encoding layer
@@ -66,29 +50,13 @@ class Net(nn.Module):
                       self.size_hidden1_cnn,
                       kernel_size=self.size_kernel1),
             nn.BatchNorm1d(self.size_hidden1_cnn),
-            nn.Sigmoid(),
-            nn.MaxPool1d(kernel_size=self.size_kernel1,
-                         stride=1,
-                         padding=self.size_padding),
-            nn.Conv1d(self.size_hidden1_cnn,
-                      self.size_hidden2_cnn,
-                      kernel_size=self.size_kernel2),
-            nn.BatchNorm1d(self.size_hidden2_cnn),
-            nn.Sigmoid(),
-            nn.MaxPool1d(kernel_size=self.size_kernel2,
-                         stride=1,
-                         padding=self.size_padding),
-            nn.Conv1d(self.size_hidden2_cnn,
-                      self.size_hidden3_cnn,
-                      kernel_size=self.size_kernel3),
-            nn.BatchNorm1d(self.size_hidden3_cnn),
-            nn.Sigmoid(),
-            nn.MaxPool1d(kernel_size=self.size_kernel3)
+            nn.LeakyReLU(True),
+            nn.MaxPool1d(kernel_size=self.size_kernel1)
             )
 
         ## dense layer at the end
-        self.net_pep_dim = self.size_hidden3_cnn * ((pep_length-self.size_kernel1+1-self.size_kernel2+1-self.size_kernel3+1)//self.size_kernel3)
-        self.net_tcr_dim = self.size_hidden3_cnn * ((tcr_length-self.size_kernel1+1-self.size_kernel2+1-self.size_kernel3+1)//self.size_kernel3)
+        self.net_pep_dim = self.size_hidden2_cnn * ((pep_length-2))
+        self.net_tcr_dim = self.size_hidden2_cnn * ((tcr_length-2))
         self.net = nn.Sequential(
             nn.Dropout(0.3),
             nn.Linear(self.net_pep_dim+self.net_tcr_dim, 64),
