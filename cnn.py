@@ -55,8 +55,8 @@ class Net(nn.Module):
             )
 
         ## dense layer at the end
-        self.net_pep_dim = self.size_hidden2_cnn * ((pep_length-2))
-        self.net_tcr_dim = self.size_hidden2_cnn * ((tcr_length-2))
+        self.net_pep_dim = self.size_hidden1_cnn * ((pep_length-12))
+        self.net_tcr_dim = self.size_hidden1_cnn * ((tcr_length-12))
         self.net = nn.Sequential(
             nn.Dropout(0.3),
             nn.Linear(self.net_pep_dim+self.net_tcr_dim, 64),
