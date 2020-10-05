@@ -1,0 +1,5217 @@
+nohup: ignoring input
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+The `device` argument should be set by using `torch.device` or passing a string as an argument. This behavior will be deprecated soon and currently defaults to cpu.
+Prediction of TCR binding to peptide-MHC complexes
+66 2234 41 2286
+5 297 6 270
+Epoch 1 TimeSince 0m 0s
+
+[TRAINING] 1 ----------------
+accuracy   0.5083
+auc        0.5753
+f1macro    0.3613
+f1micro    0.5083
+loss       3202.7639
+precision0 0.6168
+precision1 0.5058
+recall0    0.0287
+recall1    0.9824
+
+[VALIDATION] 1 ----------------
+accuracy   0.4758
+auc        0.5800
+f1macro    0.3363
+f1micro    0.4758
+loss       400.5010
+precision0 0.4545
+precision1 0.4762
+recall0    0.0166
+recall1    0.9783
+
+480 1820 273 2054
+54 248 38 238
+Epoch 2 TimeSince 0m 1s
+
+[TRAINING] 2 ----------------
+accuracy   0.5477
+auc        0.6085
+f1macro    0.4885
+f1micro    0.5477
+loss       3188.2066
+precision0 0.6375
+precision1 0.5302
+recall0    0.2087
+recall1    0.8827
+
+[VALIDATION] 2 ----------------
+accuracy   0.5052
+auc        0.5803
+f1macro    0.4494
+f1micro    0.5052
+loss       399.7917
+precision0 0.5870
+precision1 0.4897
+recall0    0.1788
+recall1    0.8623
+
+1297 1003 907 1420
+174 128 119 157
+Epoch 3 TimeSince 0m 1s
+
+[TRAINING] 3 ----------------
+accuracy   0.5872
+auc        0.6288
+f1macro    0.5869
+f1micro    0.5872
+loss       3120.8566
+precision0 0.5885
+precision1 0.5861
+recall0    0.5639
+recall1    0.6102
+
+[VALIDATION] 3 ----------------
+accuracy   0.5727
+auc        0.5943
+f1macro    0.5723
+f1micro    0.5727
+loss       393.9337
+precision0 0.5939
+precision1 0.5509
+recall0    0.5762
+recall1    0.5688
+
+1231 1069 789 1538
+158 144 113 163
+Epoch 4 TimeSince 0m 1s
+
+[TRAINING] 4 ----------------
+accuracy   0.5984
+auc        0.6430
+f1macro    0.5967
+f1micro    0.5984
+loss       3073.0572
+precision0 0.6094
+precision1 0.5900
+recall0    0.5352
+recall1    0.6609
+
+[VALIDATION] 4 ----------------
+accuracy   0.5554
+auc        0.5979
+f1macro    0.5553
+f1micro    0.5554
+loss       392.3184
+precision0 0.5830
+precision1 0.5309
+recall0    0.5232
+recall1    0.5906
+
+1641 659 1173 1154
+209 93 153 123
+Epoch 5 TimeSince 0m 2s
+
+[TRAINING] 5 ----------------
+accuracy   0.6041
+auc        0.6632
+f1macro    0.5996
+f1micro    0.6041
+loss       3049.0944
+precision0 0.5832
+precision1 0.6365
+recall0    0.7135
+recall1    0.4959
+
+[VALIDATION] 5 ----------------
+accuracy   0.5744
+auc        0.6056
+f1macro    0.5648
+f1micro    0.5744
+loss       388.4527
+precision0 0.5773
+precision1 0.5694
+recall0    0.6921
+recall1    0.4457
+
+1424 876 901 1426
+176 126 124 152
+Epoch 6 TimeSince 0m 2s
+
+[TRAINING] 6 ----------------
+accuracy   0.6159
+auc        0.6804
+f1macro    0.6159
+f1micro    0.6159
+loss       2962.9687
+precision0 0.6125
+precision1 0.6195
+recall0    0.6191
+recall1    0.6128
+
+[VALIDATION] 6 ----------------
+accuracy   0.5675
+auc        0.6192
+f1macro    0.5667
+f1micro    0.5675
+loss       383.2956
+precision0 0.5867
+precision1 0.5468
+recall0    0.5828
+recall1    0.5507
+
+1463 837 884 1443
+178 124 120 156
+Epoch 7 TimeSince 0m 3s
+
+[TRAINING] 7 ----------------
+accuracy   0.6281
+auc        0.6922
+f1macro    0.6280
+f1micro    0.6281
+loss       2908.9550
+precision0 0.6233
+precision1 0.6329
+recall0    0.6361
+recall1    0.6201
+
+[VALIDATION] 7 ----------------
+accuracy   0.5779
+auc        0.6308
+f1macro    0.5772
+f1micro    0.5779
+loss       380.8665
+precision0 0.5973
+precision1 0.5571
+recall0    0.5894
+recall1    0.5652
+
+970 1330 379 1948
+103 199 64 212
+Epoch 8 TimeSince 0m 3s
+
+[TRAINING] 8 ----------------
+accuracy   0.6306
+auc        0.7102
+f1macro    0.6134
+f1micro    0.6306
+loss       2886.9592
+precision0 0.7191
+precision1 0.5943
+recall0    0.4217
+recall1    0.8371
+
+[VALIDATION] 8 ----------------
+accuracy   0.5450
+auc        0.6413
+f1macro    0.5282
+f1micro    0.5450
+loss       380.1471
+precision0 0.6168
+precision1 0.5158
+recall0    0.3411
+recall1    0.7681
+
+1190 1110 521 1806
+135 167 76 200
+Epoch 9 TimeSince 0m 3s
+
+[TRAINING] 9 ----------------
+accuracy   0.6475
+auc        0.7198
+f1macro    0.6411
+f1micro    0.6475
+loss       2827.1404
+precision0 0.6955
+precision1 0.6193
+recall0    0.5174
+recall1    0.7761
+
+[VALIDATION] 9 ----------------
+accuracy   0.5796
+auc        0.6537
+f1macro    0.5742
+f1micro    0.5796
+loss       372.3158
+precision0 0.6398
+precision1 0.5450
+recall0    0.4470
+recall1    0.7246
+
+1184 1116 496 1831
+124 178 79 197
+Epoch 10 TimeSince 0m 4s
+
+[TRAINING] 10 ----------------
+accuracy   0.6516
+auc        0.7298
+f1macro    0.6447
+f1micro    0.6516
+loss       2784.2492
+precision0 0.7048
+precision1 0.6213
+recall0    0.5148
+recall1    0.7869
+
+[VALIDATION] 10 ----------------
+accuracy   0.5554
+auc        0.6568
+f1macro    0.5482
+f1micro    0.5554
+loss       369.5625
+precision0 0.6108
+precision1 0.5253
+recall0    0.4106
+recall1    0.7138
+
+1510 790 717 1610
+184 118 98 178
+Epoch 11 TimeSince 0m 4s
+
+[TRAINING] 11 ----------------
+accuracy   0.6743
+auc        0.7455
+f1macro    0.6742
+f1micro    0.6743
+loss       2754.7455
+precision0 0.6780
+precision1 0.6708
+recall0    0.6565
+recall1    0.6919
+
+[VALIDATION] 11 ----------------
+accuracy   0.6263
+auc        0.6818
+f1macro    0.6263
+f1micro    0.6263
+loss       362.8064
+precision0 0.6525
+precision1 0.6014
+recall0    0.6093
+recall1    0.6449
+
+694 1606 174 2153
+70 232 31 245
+Epoch 12 TimeSince 0m 5s
+
+[TRAINING] 12 ----------------
+accuracy   0.6153
+auc        0.7433
+f1macro    0.5728
+f1micro    0.6153
+loss       2828.4343
+precision0 0.7995
+precision1 0.5728
+recall0    0.3017
+recall1    0.9252
+
+[VALIDATION] 12 ----------------
+accuracy   0.5450
+auc        0.6958
+f1macro    0.4991
+f1micro    0.5450
+loss       368.2975
+precision0 0.6931
+precision1 0.5136
+recall0    0.2318
+recall1    0.8877
+
+1356 944 565 1762
+152 150 83 193
+Epoch 13 TimeSince 0m 5s
+
+[TRAINING] 13 ----------------
+accuracy   0.6739
+auc        0.7570
+f1macro    0.6713
+f1micro    0.6739
+loss       2705.9081
+precision0 0.7059
+precision1 0.6511
+recall0    0.5896
+recall1    0.7572
+
+[VALIDATION] 13 ----------------
+accuracy   0.5969
+auc        0.6945
+f1macro    0.5948
+f1micro    0.5969
+loss       358.0870
+precision0 0.6468
+precision1 0.5627
+recall0    0.5033
+recall1    0.6993
+
+1820 480 1052 1275
+227 75 132 144
+Epoch 14 TimeSince 0m 5s
+
+[TRAINING] 14 ----------------
+accuracy   0.6689
+auc        0.7575
+f1macro    0.6642
+f1micro    0.6689
+loss       2650.8950
+precision0 0.6337
+precision1 0.7265
+recall0    0.7913
+recall1    0.5479
+
+[VALIDATION] 14 ----------------
+accuracy   0.6419
+auc        0.6914
+f1macro    0.6343
+f1micro    0.6419
+loss       354.0793
+precision0 0.6323
+precision1 0.6575
+recall0    0.7517
+recall1    0.5217
+
+1298 1002 481 1846
+145 157 67 209
+Epoch 15 TimeSince 0m 6s
+
+[TRAINING] 15 ----------------
+accuracy   0.6795
+auc        0.7719
+f1macro    0.6749
+f1micro    0.6795
+loss       2637.7606
+precision0 0.7296
+precision1 0.6482
+recall0    0.5643
+recall1    0.7933
+
+[VALIDATION] 15 ----------------
+accuracy   0.6125
+auc        0.7205
+f1macro    0.6076
+f1micro    0.6125
+loss       351.7890
+precision0 0.6840
+precision1 0.5710
+recall0    0.4801
+recall1    0.7572
+
+1636 664 770 1557
+203 99 101 175
+Epoch 16 TimeSince 0m 6s
+
+[TRAINING] 16 ----------------
+accuracy   0.6901
+auc        0.7624
+f1macro    0.6900
+f1micro    0.6901
+loss       2627.7621
+precision0 0.6800
+precision1 0.7010
+recall0    0.7113
+recall1    0.6691
+
+[VALIDATION] 16 ----------------
+accuracy   0.6540
+auc        0.7082
+f1macro    0.6532
+f1micro    0.6540
+loss       352.0754
+precision0 0.6678
+precision1 0.6387
+recall0    0.6722
+recall1    0.6341
+
+1574 726 709 1618
+185 117 91 185
+Epoch 17 TimeSince 0m 7s
+
+[TRAINING] 17 ----------------
+accuracy   0.6899
+auc        0.7729
+f1macro    0.6898
+f1micro    0.6899
+loss       2597.8311
+precision0 0.6894
+precision1 0.6903
+recall0    0.6843
+recall1    0.6953
+
+[VALIDATION] 17 ----------------
+accuracy   0.6401
+auc        0.7145
+f1macro    0.6401
+f1micro    0.6401
+loss       349.9355
+precision0 0.6703
+precision1 0.6126
+recall0    0.6126
+recall1    0.6703
+
+1600 700 674 1653
+197 105 90 186
+Epoch 18 TimeSince 0m 7s
+
+[TRAINING] 18 ----------------
+accuracy   0.7030
+auc        0.7865
+f1macro    0.7030
+f1micro    0.7030
+loss       2585.6981
+precision0 0.7036
+precision1 0.7025
+recall0    0.6957
+recall1    0.7104
+
+[VALIDATION] 18 ----------------
+accuracy   0.6626
+auc        0.7350
+f1macro    0.6625
+f1micro    0.6626
+loss       344.8376
+precision0 0.6864
+precision1 0.6392
+recall0    0.6523
+recall1    0.6739
+
+1476 824 545 1782
+168 134 71 205
+Epoch 19 TimeSince 0m 7s
+
+[TRAINING] 19 ----------------
+accuracy   0.7041
+auc        0.7897
+f1macro    0.7028
+f1micro    0.7041
+loss       2562.9093
+precision0 0.7303
+precision1 0.6838
+recall0    0.6417
+recall1    0.7658
+
+[VALIDATION] 19 ----------------
+accuracy   0.6453
+auc        0.7392
+f1macro    0.6439
+f1micro    0.6453
+loss       345.4435
+precision0 0.7029
+precision1 0.6047
+recall0    0.5563
+recall1    0.7428
+
+1466 834 515 1812
+182 120 70 206
+Epoch 20 TimeSince 0m 8s
+
+[TRAINING] 20 ----------------
+accuracy   0.7085
+auc        0.7985
+f1macro    0.7068
+f1micro    0.7085
+loss       2526.7633
+precision0 0.7400
+precision1 0.6848
+recall0    0.6374
+recall1    0.7787
+
+[VALIDATION] 20 ----------------
+accuracy   0.6713
+auc        0.7527
+f1macro    0.6707
+f1micro    0.6713
+loss       340.0188
+precision0 0.7222
+precision1 0.6319
+recall0    0.6026
+recall1    0.7464
+
+1652 648 611 1716
+205 97 84 192
+Epoch 21 TimeSince 0m 8s
+
+[TRAINING] 21 ----------------
+accuracy   0.7279
+auc        0.8031
+f1macro    0.7278
+f1micro    0.7279
+loss       2498.7541
+precision0 0.7300
+precision1 0.7259
+recall0    0.7183
+recall1    0.7374
+
+[VALIDATION] 21 ----------------
+accuracy   0.6869
+auc        0.7620
+f1macro    0.6867
+f1micro    0.6869
+loss       335.3290
+precision0 0.7093
+precision1 0.6644
+recall0    0.6788
+recall1    0.6957
+
+1782 518 727 1600
+216 86 95 181
+Epoch 22 TimeSince 0m 9s
+
+[TRAINING] 22 ----------------
+accuracy   0.7309
+auc        0.8133
+f1macro    0.7305
+f1micro    0.7309
+loss       2460.0962
+precision0 0.7102
+precision1 0.7554
+recall0    0.7748
+recall1    0.6876
+
+[VALIDATION] 22 ----------------
+accuracy   0.6869
+auc        0.7587
+f1macro    0.6857
+f1micro    0.6869
+loss       331.0328
+precision0 0.6945
+precision1 0.6779
+recall0    0.7152
+recall1    0.6558
+
+1621 679 596 1731
+194 108 74 202
+Epoch 23 TimeSince 0m 9s
+
+[TRAINING] 23 ----------------
+accuracy   0.7244
+auc        0.8145
+f1macro    0.7243
+f1micro    0.7244
+loss       2440.8725
+precision0 0.7312
+precision1 0.7183
+recall0    0.7048
+recall1    0.7439
+
+[VALIDATION] 23 ----------------
+accuracy   0.6851
+auc        0.7616
+f1macro    0.6851
+f1micro    0.6851
+loss       331.9696
+precision0 0.7239
+precision1 0.6516
+recall0    0.6424
+recall1    0.7319
+
+1855 445 753 1574
+235 67 98 178
+Epoch 24 TimeSince 0m 9s
+
+[TRAINING] 24 ----------------
+accuracy   0.7411
+auc        0.8210
+f1macro    0.7401
+f1micro    0.7411
+loss       2442.7965
+precision0 0.7113
+precision1 0.7796
+recall0    0.8065
+recall1    0.6764
+
+[VALIDATION] 24 ----------------
+accuracy   0.7145
+auc        0.7652
+f1macro    0.7117
+f1micro    0.7145
+loss       328.6454
+precision0 0.7057
+precision1 0.7265
+recall0    0.7781
+recall1    0.6449
+
+1625 675 555 1772
+201 101 67 209
+Epoch 25 TimeSince 0m 10s
+
+[TRAINING] 25 ----------------
+accuracy   0.7342
+auc        0.8215
+f1macro    0.7339
+f1micro    0.7342
+loss       2415.4675
+precision0 0.7454
+precision1 0.7242
+recall0    0.7065
+recall1    0.7615
+
+[VALIDATION] 25 ----------------
+accuracy   0.7093
+auc        0.7743
+f1macro    0.7093
+f1micro    0.7093
+loss       331.2653
+precision0 0.7500
+precision1 0.6742
+recall0    0.6656
+recall1    0.7572
+
+1698 602 543 1784
+204 98 79 197
+Epoch 26 TimeSince 0m 10s
+
+[TRAINING] 26 ----------------
+accuracy   0.7525
+auc        0.8295
+f1macro    0.7525
+f1micro    0.7525
+loss       2378.1700
+precision0 0.7577
+precision1 0.7477
+recall0    0.7383
+recall1    0.7667
+
+[VALIDATION] 26 ----------------
+accuracy   0.6938
+auc        0.7664
+f1macro    0.6937
+f1micro    0.6938
+loss       329.2691
+precision0 0.7208
+precision1 0.6678
+recall0    0.6755
+recall1    0.7138
+
+1714 586 565 1762
+210 92 78 198
+Epoch 27 TimeSince 0m 11s
+
+[TRAINING] 27 ----------------
+accuracy   0.7512
+auc        0.8327
+f1macro    0.7512
+f1micro    0.7512
+loss       2359.7238
+precision0 0.7521
+precision1 0.7504
+recall0    0.7452
+recall1    0.7572
+
+[VALIDATION] 27 ----------------
+accuracy   0.7059
+auc        0.7775
+f1macro    0.7058
+f1micro    0.7059
+loss       325.8312
+precision0 0.7292
+precision1 0.6828
+recall0    0.6954
+recall1    0.7174
+
+1861 439 716 1611
+228 74 91 185
+Epoch 28 TimeSince 0m 11s
+
+[TRAINING] 28 ----------------
+accuracy   0.7504
+auc        0.8342
+f1macro    0.7496
+f1micro    0.7504
+loss       2338.8060
+precision0 0.7222
+precision1 0.7859
+recall0    0.8091
+recall1    0.6923
+
+[VALIDATION] 28 ----------------
+accuracy   0.7145
+auc        0.7843
+f1macro    0.7129
+f1micro    0.7145
+loss       321.3340
+precision0 0.7147
+precision1 0.7143
+recall0    0.7550
+recall1    0.6703
+
+1965 335 835 1492
+247 55 113 163
+Epoch 29 TimeSince 0m 12s
+
+[TRAINING] 29 ----------------
+accuracy   0.7471
+auc        0.8318
+f1macro    0.7445
+f1micro    0.7471
+loss       2347.8469
+precision0 0.7018
+precision1 0.8166
+recall0    0.8543
+recall1    0.6412
+
+[VALIDATION] 29 ----------------
+accuracy   0.7093
+auc        0.7636
+f1macro    0.7031
+f1micro    0.7093
+loss       325.9935
+precision0 0.6861
+precision1 0.7477
+recall0    0.8179
+recall1    0.5906
+
+1750 550 572 1755
+217 85 83 193
+Epoch 30 TimeSince 0m 12s
+
+[TRAINING] 30 ----------------
+accuracy   0.7575
+auc        0.8403
+f1macro    0.7575
+f1micro    0.7575
+loss       2323.1884
+precision0 0.7537
+precision1 0.7614
+recall0    0.7609
+recall1    0.7542
+
+[VALIDATION] 30 ----------------
+accuracy   0.7093
+auc        0.7878
+f1macro    0.7088
+f1micro    0.7093
+loss       322.4455
+precision0 0.7233
+precision1 0.6942
+recall0    0.7185
+recall1    0.6993
+
+1899 401 697 1630
+244 58 103 173
+Epoch 31 TimeSince 0m 12s
+
+[TRAINING] 31 ----------------
+accuracy   0.7627
+auc        0.8419
+f1macro    0.7619
+f1micro    0.7627
+loss       2315.2544
+precision0 0.7315
+precision1 0.8026
+recall0    0.8257
+recall1    0.7005
+
+[VALIDATION] 31 ----------------
+accuracy   0.7215
+auc        0.7868
+f1macro    0.7172
+f1micro    0.7215
+loss       320.7880
+precision0 0.7032
+precision1 0.7489
+recall0    0.8079
+recall1    0.6268
+
+1763 537 559 1768
+225 77 81 195
+Epoch 32 TimeSince 0m 13s
+
+[TRAINING] 32 ----------------
+accuracy   0.7631
+auc        0.8458
+f1macro    0.7631
+f1micro    0.7631
+loss       2260.1480
+precision0 0.7593
+precision1 0.7670
+recall0    0.7665
+recall1    0.7598
+
+[VALIDATION] 32 ----------------
+accuracy   0.7266
+auc        0.7881
+f1macro    0.7259
+f1micro    0.7266
+loss       321.3251
+precision0 0.7353
+precision1 0.7169
+recall0    0.7450
+recall1    0.7065
+
+1765 535 529 1798
+205 97 75 201
+Epoch 33 TimeSince 0m 13s
+
+[TRAINING] 33 ----------------
+accuracy   0.7700
+auc        0.8523
+f1macro    0.7700
+f1micro    0.7700
+loss       2247.1224
+precision0 0.7694
+precision1 0.7707
+recall0    0.7674
+recall1    0.7727
+
+[VALIDATION] 33 ----------------
+accuracy   0.7024
+auc        0.7891
+f1macro    0.7024
+f1micro    0.7024
+loss       317.9136
+precision0 0.7321
+precision1 0.6745
+recall0    0.6788
+recall1    0.7283
+
+1762 538 520 1807
+217 85 71 205
+Epoch 34 TimeSince 0m 14s
+
+[TRAINING] 34 ----------------
+accuracy   0.7713
+auc        0.8550
+f1macro    0.7713
+f1micro    0.7713
+loss       2227.0499
+precision0 0.7721
+precision1 0.7706
+recall0    0.7661
+recall1    0.7765
+
+[VALIDATION] 34 ----------------
+accuracy   0.7301
+auc        0.8007
+f1macro    0.7300
+f1micro    0.7301
+loss       314.6479
+precision0 0.7535
+precision1 0.7069
+recall0    0.7185
+recall1    0.7428
+
+1770 530 538 1789
+221 81 81 195
+Epoch 35 TimeSince 0m 14s
+
+[TRAINING] 35 ----------------
+accuracy   0.7692
+auc        0.8529
+f1macro    0.7692
+f1micro    0.7692
+loss       2228.7224
+precision0 0.7669
+precision1 0.7715
+recall0    0.7696
+recall1    0.7688
+
+[VALIDATION] 35 ----------------
+accuracy   0.7197
+auc        0.7914
+f1macro    0.7192
+f1micro    0.7197
+loss       317.4097
+precision0 0.7318
+precision1 0.7065
+recall0    0.7318
+recall1    0.7065
+
+1840 460 572 1755
+215 87 86 190
+Epoch 36 TimeSince 0m 14s
+
+[TRAINING] 36 ----------------
+accuracy   0.7770
+auc        0.8596
+f1macro    0.7769
+f1micro    0.7770
+loss       2196.4806
+precision0 0.7629
+precision1 0.7923
+recall0    0.8000
+recall1    0.7542
+
+[VALIDATION] 36 ----------------
+accuracy   0.7007
+auc        0.7932
+f1macro    0.7001
+f1micro    0.7007
+loss       315.2861
+precision0 0.7143
+precision1 0.6859
+recall0    0.7119
+recall1    0.6884
+
+1909 391 622 1705
+236 66 87 189
+Epoch 37 TimeSince 0m 15s
+
+[TRAINING] 37 ----------------
+accuracy   0.7811
+auc        0.8608
+f1macro    0.7806
+f1micro    0.7811
+loss       2141.1507
+precision0 0.7542
+precision1 0.8135
+recall0    0.8300
+recall1    0.7327
+
+[VALIDATION] 37 ----------------
+accuracy   0.7353
+auc        0.8023
+f1macro    0.7335
+f1micro    0.7353
+loss       312.2861
+precision0 0.7307
+precision1 0.7412
+recall0    0.7815
+recall1    0.6848
+
+1900 400 582 1745
+236 66 89 187
+Epoch 38 TimeSince 0m 15s
+
+[TRAINING] 38 ----------------
+accuracy   0.7878
+auc        0.8644
+f1macro    0.7875
+f1micro    0.7878
+loss       2184.8474
+precision0 0.7655
+precision1 0.8135
+recall0    0.8261
+recall1    0.7499
+
+[VALIDATION] 38 ----------------
+accuracy   0.7318
+auc        0.8022
+f1macro    0.7299
+f1micro    0.7318
+loss       312.2285
+precision0 0.7262
+precision1 0.7391
+recall0    0.7815
+recall1    0.6775
+
+1853 447 520 1807
+225 77 66 210
+Epoch 39 TimeSince 0m 16s
+
+[TRAINING] 39 ----------------
+accuracy   0.7910
+auc        0.8679
+f1macro    0.7910
+f1micro    0.7910
+loss       2139.3213
+precision0 0.7809
+precision1 0.8017
+recall0    0.8057
+recall1    0.7765
+
+[VALIDATION] 39 ----------------
+accuracy   0.7526
+auc        0.8112
+f1macro    0.7524
+f1micro    0.7526
+loss       307.1578
+precision0 0.7732
+precision1 0.7317
+recall0    0.7450
+recall1    0.7609
+
+1742 558 466 1861
+212 90 57 219
+Epoch 40 TimeSince 0m 16s
+
+[TRAINING] 40 ----------------
+accuracy   0.7787
+auc        0.8674
+f1macro    0.7785
+f1micro    0.7787
+loss       2151.7711
+precision0 0.7889
+precision1 0.7693
+recall0    0.7574
+recall1    0.7997
+
+[VALIDATION] 40 ----------------
+accuracy   0.7457
+auc        0.8096
+f1macro    0.7456
+f1micro    0.7457
+loss       314.6116
+precision0 0.7881
+precision1 0.7087
+recall0    0.7020
+recall1    0.7935
+
+1786 514 472 1855
+211 91 63 213
+Epoch 41 TimeSince 0m 16s
+
+[TRAINING] 41 ----------------
+accuracy   0.7869
+auc        0.8705
+f1macro    0.7869
+f1micro    0.7869
+loss       2139.8970
+precision0 0.7910
+precision1 0.7830
+recall0    0.7765
+recall1    0.7972
+
+[VALIDATION] 41 ----------------
+accuracy   0.7336
+auc        0.7957
+f1macro    0.7336
+f1micro    0.7336
+loss       318.5985
+precision0 0.7701
+precision1 0.7007
+recall0    0.6987
+recall1    0.7717
+
+1940 360 575 1752
+236 66 81 195
+Epoch 42 TimeSince 0m 17s
+
+[TRAINING] 42 ----------------
+accuracy   0.7979
+auc        0.8758
+f1macro    0.7976
+f1micro    0.7979
+loss       2092.4559
+precision0 0.7714
+precision1 0.8295
+recall0    0.8435
+recall1    0.7529
+
+[VALIDATION] 42 ----------------
+accuracy   0.7457
+auc        0.7989
+f1macro    0.7444
+f1micro    0.7457
+loss       309.2481
+precision0 0.7445
+precision1 0.7471
+recall0    0.7815
+recall1    0.7065
+
+1890 410 514 1813
+224 78 77 199
+Epoch 43 TimeSince 0m 17s
+
+[TRAINING] 43 ----------------
+accuracy   0.8003
+auc        0.8775
+f1macro    0.8002
+f1micro    0.8003
+loss       2064.2645
+precision0 0.7862
+precision1 0.8156
+recall0    0.8217
+recall1    0.7791
+
+[VALIDATION] 43 ----------------
+accuracy   0.7318
+auc        0.8007
+f1macro    0.7313
+f1micro    0.7318
+loss       310.3870
+precision0 0.7442
+precision1 0.7184
+recall0    0.7417
+recall1    0.7210
+
+1773 527 440 1887
+211 91 67 209
+Epoch 44 TimeSince 0m 18s
+
+[TRAINING] 44 ----------------
+accuracy   0.7910
+auc        0.8772
+f1macro    0.7909
+f1micro    0.7910
+loss       2093.9281
+precision0 0.8012
+precision1 0.7817
+recall0    0.7709
+recall1    0.8109
+
+[VALIDATION] 44 ----------------
+accuracy   0.7266
+auc        0.8058
+f1macro    0.7266
+f1micro    0.7266
+loss       311.7378
+precision0 0.7590
+precision1 0.6967
+recall0    0.6987
+recall1    0.7572
+
+2051 249 672 1655
+249 53 94 182
+Epoch 45 TimeSince 0m 18s
+
+[TRAINING] 45 ----------------
+accuracy   0.8010
+auc        0.8836
+f1macro    0.7995
+f1micro    0.8010
+loss       2031.0211
+precision0 0.7532
+precision1 0.8692
+recall0    0.8917
+recall1    0.7112
+
+[VALIDATION] 45 ----------------
+accuracy   0.7457
+auc        0.8084
+f1macro    0.7422
+f1micro    0.7457
+loss       302.4370
+precision0 0.7259
+precision1 0.7745
+recall0    0.8245
+recall1    0.6594
+
+1872 428 466 1861
+225 77 72 204
+Epoch 46 TimeSince 0m 18s
+
+[TRAINING] 46 ----------------
+accuracy   0.8068
+auc        0.8854
+f1macro    0.8068
+f1micro    0.8068
+loss       1999.3794
+precision0 0.8007
+precision1 0.8130
+recall0    0.8139
+recall1    0.7997
+
+[VALIDATION] 46 ----------------
+accuracy   0.7422
+auc        0.8079
+f1macro    0.7419
+f1micro    0.7422
+loss       309.1776
+precision0 0.7576
+precision1 0.7260
+recall0    0.7450
+recall1    0.7391
+
+1931 369 510 1817
+236 66 77 199
+Epoch 47 TimeSince 0m 19s
+
+[TRAINING] 47 ----------------
+accuracy   0.8100
+auc        0.8841
+f1macro    0.8099
+f1micro    0.8100
+loss       2016.8090
+precision0 0.7911
+precision1 0.8312
+recall0    0.8396
+recall1    0.7808
+
+[VALIDATION] 47 ----------------
+accuracy   0.7526
+auc        0.8144
+f1macro    0.7516
+f1micro    0.7526
+loss       302.1007
+precision0 0.7540
+precision1 0.7509
+recall0    0.7815
+recall1    0.7210
+
+2051 249 650 1677
+248 54 92 184
+Epoch 48 TimeSince 0m 19s
+
+[TRAINING] 48 ----------------
+accuracy   0.8057
+auc        0.8873
+f1macro    0.8044
+f1micro    0.8057
+loss       2023.0083
+precision0 0.7593
+precision1 0.8707
+recall0    0.8917
+recall1    0.7207
+
+[VALIDATION] 48 ----------------
+accuracy   0.7474
+auc        0.8113
+f1macro    0.7443
+f1micro    0.7474
+loss       299.8018
+precision0 0.7294
+precision1 0.7731
+recall0    0.8212
+recall1    0.6667
+
+1786 514 422 1905
+215 87 64 212
+Epoch 49 TimeSince 0m 20s
+
+[TRAINING] 49 ----------------
+accuracy   0.7977
+auc        0.8920
+f1macro    0.7976
+f1micro    0.7977
+loss       2002.5178
+precision0 0.8089
+precision1 0.7875
+recall0    0.7765
+recall1    0.8187
+
+[VALIDATION] 49 ----------------
+accuracy   0.7388
+auc        0.8167
+f1macro    0.7387
+f1micro    0.7388
+loss       306.5139
+precision0 0.7706
+precision1 0.7090
+recall0    0.7119
+recall1    0.7681
+
+2000 300 546 1781
+246 56 85 191
+Epoch 50 TimeSince 0m 20s
+
+[TRAINING] 50 ----------------
+accuracy   0.8172
+auc        0.8933
+f1macro    0.8167
+f1micro    0.8172
+loss       1944.2784
+precision0 0.7855
+precision1 0.8558
+recall0    0.8696
+recall1    0.7654
+
+[VALIDATION] 50 ----------------
+accuracy   0.7561
+auc        0.8069
+f1macro    0.7538
+f1micro    0.7561
+loss       302.2340
+precision0 0.7432
+precision1 0.7733
+recall0    0.8146
+recall1    0.6920
+
+1914 386 455 1872
+221 81 68 208
+Epoch 51 TimeSince 0m 21s
+
+[TRAINING] 51 ----------------
+accuracy   0.8182
+auc        0.8962
+f1macro    0.8182
+f1micro    0.8182
+loss       1934.4609
+precision0 0.8079
+precision1 0.8291
+recall0    0.8322
+recall1    0.8045
+
+[VALIDATION] 51 ----------------
+accuracy   0.7422
+auc        0.8253
+f1macro    0.7421
+f1micro    0.7422
+loss       298.7378
+precision0 0.7647
+precision1 0.7197
+recall0    0.7318
+recall1    0.7536
+
+1881 419 418 1909
+214 88 63 213
+Epoch 52 TimeSince 0m 21s
+
+[TRAINING] 52 ----------------
+accuracy   0.8191
+auc        0.8970
+f1macro    0.8191
+f1micro    0.8191
+loss       1922.8125
+precision0 0.8182
+precision1 0.8200
+recall0    0.8178
+recall1    0.8204
+
+[VALIDATION] 52 ----------------
+accuracy   0.7388
+auc        0.8236
+f1macro    0.7388
+f1micro    0.7388
+loss       300.8970
+precision0 0.7726
+precision1 0.7076
+recall0    0.7086
+recall1    0.7717
+
+1956 344 484 1843
+233 69 75 201
+Epoch 53 TimeSince 0m 21s
+
+[TRAINING] 53 ----------------
+accuracy   0.8211
+auc        0.8959
+f1macro    0.8209
+f1micro    0.8211
+loss       1918.9424
+precision0 0.8016
+precision1 0.8427
+recall0    0.8504
+recall1    0.7920
+
+[VALIDATION] 53 ----------------
+accuracy   0.7509
+auc        0.8159
+f1macro    0.7501
+f1micro    0.7509
+loss       299.9556
+precision0 0.7565
+precision1 0.7444
+recall0    0.7715
+recall1    0.7283
+
+1987 313 511 1816
+235 67 76 200
+Epoch 54 TimeSince 0m 22s
+
+[TRAINING] 54 ----------------
+accuracy   0.8219
+auc        0.8999
+f1macro    0.8217
+f1micro    0.8219
+loss       1884.4966
+precision0 0.7954
+precision1 0.8530
+recall0    0.8639
+recall1    0.7804
+
+[VALIDATION] 54 ----------------
+accuracy   0.7526
+auc        0.8136
+f1macro    0.7517
+f1micro    0.7526
+loss       299.7180
+precision0 0.7556
+precision1 0.7491
+recall0    0.7781
+recall1    0.7246
+
+1877 423 399 1928
+221 81 63 213
+Epoch 55 TimeSince 0m 22s
+
+[TRAINING] 55 ----------------
+accuracy   0.8223
+auc        0.9010
+f1macro    0.8223
+f1micro    0.8223
+loss       1883.0067
+precision0 0.8247
+precision1 0.8201
+recall0    0.8161
+recall1    0.8285
+
+[VALIDATION] 55 ----------------
+accuracy   0.7509
+auc        0.8180
+f1macro    0.7508
+f1micro    0.7509
+loss       303.9058
+precision0 0.7782
+precision1 0.7245
+recall0    0.7318
+recall1    0.7717
+
+1819 481 378 1949
+208 94 57 219
+Epoch 56 TimeSince 0m 23s
+
+[TRAINING] 56 ----------------
+accuracy   0.8144
+auc        0.9028
+f1macro    0.8142
+f1micro    0.8144
+loss       1887.7756
+precision0 0.8279
+precision1 0.8021
+recall0    0.7909
+recall1    0.8376
+
+[VALIDATION] 56 ----------------
+accuracy   0.7388
+auc        0.8232
+f1macro    0.7387
+f1micro    0.7388
+loss       302.1578
+precision0 0.7849
+precision1 0.6997
+recall0    0.6887
+recall1    0.7935
+
+2066 234 524 1803
+243 59 80 196
+Epoch 57 TimeSince 0m 23s
+
+[TRAINING] 57 ----------------
+accuracy   0.8362
+auc        0.9094
+f1macro    0.8356
+f1micro    0.8362
+loss       1864.7588
+precision0 0.7977
+precision1 0.8851
+recall0    0.8983
+recall1    0.7748
+
+[VALIDATION] 57 ----------------
+accuracy   0.7595
+auc        0.8196
+f1macro    0.7579
+f1micro    0.7595
+loss       294.2652
+precision0 0.7523
+precision1 0.7686
+recall0    0.8046
+recall1    0.7101
+
+1982 318 495 1832
+238 64 74 202
+Epoch 58 TimeSince 0m 23s
+
+[TRAINING] 58 ----------------
+accuracy   0.8243
+auc        0.9013
+f1macro    0.8241
+f1micro    0.8243
+loss       1888.3864
+precision0 0.8002
+precision1 0.8521
+recall0    0.8617
+recall1    0.7873
+
+[VALIDATION] 58 ----------------
+accuracy   0.7612
+auc        0.8163
+f1macro    0.7603
+f1micro    0.7612
+loss       298.1304
+precision0 0.7628
+precision1 0.7594
+recall0    0.7881
+recall1    0.7319
+
+1752 548 354 1973
+203 99 55 221
+Epoch 59 TimeSince 0m 24s
+
+[TRAINING] 59 ----------------
+accuracy   0.8051
+auc        0.9061
+f1macro    0.8046
+f1micro    0.8051
+loss       1878.1587
+precision0 0.8319
+precision1 0.7826
+recall0    0.7617
+recall1    0.8479
+
+[VALIDATION] 59 ----------------
+accuracy   0.7336
+auc        0.8189
+f1macro    0.7333
+f1micro    0.7336
+loss       307.7910
+precision0 0.7868
+precision1 0.6906
+recall0    0.6722
+recall1    0.8007
+
+1830 470 357 1970
+210 92 54 222
+Epoch 60 TimeSince 0m 24s
+
+[TRAINING] 60 ----------------
+accuracy   0.8213
+auc        0.9038
+f1macro    0.8211
+f1micro    0.8213
+loss       1913.7591
+precision0 0.8368
+precision1 0.8074
+recall0    0.7957
+recall1    0.8466
+
+[VALIDATION] 60 ----------------
+accuracy   0.7474
+auc        0.8145
+f1macro    0.7473
+f1micro    0.7474
+loss       308.7079
+precision0 0.7955
+precision1 0.7070
+recall0    0.6954
+recall1    0.8043
+
+1869 431 359 1968
+211 91 61 215
+Epoch 61 TimeSince 0m 25s
+
+[TRAINING] 61 ----------------
+accuracy   0.8293
+auc        0.9110
+f1macro    0.8292
+f1micro    0.8293
+loss       1813.5738
+precision0 0.8389
+precision1 0.8203
+recall0    0.8126
+recall1    0.8457
+
+[VALIDATION] 61 ----------------
+accuracy   0.7370
+auc        0.8203
+f1macro    0.7370
+f1micro    0.7370
+loss       302.3074
+precision0 0.7757
+precision1 0.7026
+recall0    0.6987
+recall1    0.7790
+
+1958 342 412 1915
+230 72 62 214
+Epoch 62 TimeSince 0m 25s
+
+[TRAINING] 62 ----------------
+accuracy   0.8370
+auc        0.9148
+f1macro    0.8370
+f1micro    0.8370
+loss       1751.4139
+precision0 0.8262
+precision1 0.8485
+recall0    0.8513
+recall1    0.8229
+
+[VALIDATION] 62 ----------------
+accuracy   0.7682
+auc        0.8264
+f1macro    0.7680
+f1micro    0.7682
+loss       293.7024
+precision0 0.7877
+precision1 0.7483
+recall0    0.7616
+recall1    0.7754
+
+1869 431 355 1972
+211 91 62 214
+Epoch 63 TimeSince 0m 25s
+
+[TRAINING] 63 ----------------
+accuracy   0.8301
+auc        0.9125
+f1macro    0.8300
+f1micro    0.8301
+loss       1822.3772
+precision0 0.8404
+precision1 0.8206
+recall0    0.8126
+recall1    0.8474
+
+[VALIDATION] 63 ----------------
+accuracy   0.7353
+auc        0.8286
+f1macro    0.7353
+f1micro    0.7353
+loss       298.8931
+precision0 0.7729
+precision1 0.7016
+recall0    0.6987
+recall1    0.7754
+
+1996 304 451 1876
+227 75 76 200
+Epoch 64 TimeSince 0m 26s
+
+[TRAINING] 64 ----------------
+accuracy   0.8368
+auc        0.9139
+f1macro    0.8367
+f1micro    0.8368
+loss       1787.3503
+precision0 0.8157
+precision1 0.8606
+recall0    0.8678
+recall1    0.8062
+
+[VALIDATION] 64 ----------------
+accuracy   0.7388
+auc        0.8185
+f1macro    0.7382
+f1micro    0.7388
+loss       300.0643
+precision0 0.7492
+precision1 0.7273
+recall0    0.7517
+recall1    0.7246
+
+2048 252 471 1856
+237 65 75 201
+Epoch 65 TimeSince 0m 26s
+
+[TRAINING] 65 ----------------
+accuracy   0.8437
+auc        0.9183
+f1macro    0.8435
+f1micro    0.8437
+loss       1774.4718
+precision0 0.8130
+precision1 0.8805
+recall0    0.8904
+recall1    0.7976
+
+[VALIDATION] 65 ----------------
+accuracy   0.7578
+auc        0.8300
+f1macro    0.7568
+f1micro    0.7578
+loss       290.2504
+precision0 0.7596
+precision1 0.7556
+recall0    0.7848
+recall1    0.7283
+
+2099 201 520 1807
+248 54 78 198
+Epoch 66 TimeSince 0m 27s
+
+[TRAINING] 66 ----------------
+accuracy   0.8442
+auc        0.9221
+f1macro    0.8436
+f1micro    0.8442
+loss       1733.5997
+precision0 0.8015
+precision1 0.8999
+recall0    0.9126
+recall1    0.7765
+
+[VALIDATION] 66 ----------------
+accuracy   0.7716
+auc        0.8235
+f1macro    0.7699
+f1micro    0.7716
+loss       291.0184
+precision0 0.7607
+precision1 0.7857
+recall0    0.8212
+recall1    0.7174
+
+1967 333 394 1933
+225 77 62 214
+Epoch 67 TimeSince 0m 27s
+
+[TRAINING] 67 ----------------
+accuracy   0.8429
+auc        0.9225
+f1macro    0.8429
+f1micro    0.8429
+loss       1718.7242
+precision0 0.8331
+precision1 0.8530
+recall0    0.8552
+recall1    0.8307
+
+[VALIDATION] 67 ----------------
+accuracy   0.7595
+auc        0.8322
+f1macro    0.7594
+f1micro    0.7595
+loss       291.1808
+precision0 0.7840
+precision1 0.7354
+recall0    0.7450
+recall1    0.7754
+
+1888 412 350 1977
+213 89 57 219
+Epoch 68 TimeSince 0m 27s
+
+[TRAINING] 68 ----------------
+accuracy   0.8353
+auc        0.9181
+f1macro    0.8353
+f1micro    0.8353
+loss       1759.0241
+precision0 0.8436
+precision1 0.8275
+recall0    0.8209
+recall1    0.8496
+
+[VALIDATION] 68 ----------------
+accuracy   0.7474
+auc        0.8187
+f1macro    0.7474
+f1micro    0.7474
+loss       303.5520
+precision0 0.7889
+precision1 0.7110
+recall0    0.7053
+recall1    0.7935
+
+1995 305 385 1942
+229 73 60 216
+Epoch 69 TimeSince 0m 28s
+
+[TRAINING] 69 ----------------
+accuracy   0.8509
+auc        0.9265
+f1macro    0.8509
+f1micro    0.8509
+loss       1695.5685
+precision0 0.8382
+precision1 0.8643
+recall0    0.8674
+recall1    0.8346
+
+[VALIDATION] 69 ----------------
+accuracy   0.7699
+auc        0.8328
+f1macro    0.7698
+f1micro    0.7699
+loss       289.7467
+precision0 0.7924
+precision1 0.7474
+recall0    0.7583
+recall1    0.7826
+
+1918 382 336 1991
+215 87 52 224
+Epoch 70 TimeSince 0m 28s
+
+[TRAINING] 70 ----------------
+accuracy   0.8448
+auc        0.9248
+f1macro    0.8448
+f1micro    0.8448
+loss       1709.9521
+precision0 0.8509
+precision1 0.8390
+recall0    0.8339
+recall1    0.8556
+
+[VALIDATION] 70 ----------------
+accuracy   0.7595
+auc        0.8269
+f1macro    0.7595
+f1micro    0.7595
+loss       297.5984
+precision0 0.8052
+precision1 0.7203
+recall0    0.7119
+recall1    0.8116
+
+2038 262 439 1888
+239 63 69 207
+Epoch 71 TimeSince 0m 29s
+
+[TRAINING] 71 ----------------
+accuracy   0.8485
+auc        0.9264
+f1macro    0.8483
+f1micro    0.8485
+loss       1651.5993
+precision0 0.8228
+precision1 0.8781
+recall0    0.8861
+recall1    0.8113
+
+[VALIDATION] 71 ----------------
+accuracy   0.7716
+auc        0.8304
+f1macro    0.7709
+f1micro    0.7716
+loss       287.9447
+precision0 0.7760
+precision1 0.7667
+recall0    0.7914
+recall1    0.7500
+
+1931 369 350 1977
+217 85 59 217
+Epoch 72 TimeSince 0m 29s
+
+[TRAINING] 72 ----------------
+accuracy   0.8446
+auc        0.9260
+f1macro    0.8446
+f1micro    0.8446
+loss       1664.1183
+precision0 0.8466
+precision1 0.8427
+recall0    0.8396
+recall1    0.8496
+
+[VALIDATION] 72 ----------------
+accuracy   0.7509
+auc        0.8311
+f1macro    0.7509
+f1micro    0.7509
+loss       292.9435
+precision0 0.7862
+precision1 0.7185
+recall0    0.7185
+recall1    0.7862
+
+2035 265 399 1928
+235 67 66 210
+Epoch 73 TimeSince 0m 29s
+
+[TRAINING] 73 ----------------
+accuracy   0.8565
+auc        0.9299
+f1macro    0.8564
+f1micro    0.8565
+loss       1669.5069
+precision0 0.8361
+precision1 0.8792
+recall0    0.8848
+recall1    0.8285
+
+[VALIDATION] 73 ----------------
+accuracy   0.7699
+auc        0.8405
+f1macro    0.7695
+f1micro    0.7699
+loss       282.0575
+precision0 0.7807
+precision1 0.7581
+recall0    0.7781
+recall1    0.7609
+
+2027 273 377 1950
+230 72 61 215
+Epoch 74 TimeSince 0m 30s
+
+[TRAINING] 74 ----------------
+accuracy   0.8595
+auc        0.9340
+f1macro    0.8595
+f1micro    0.8595
+loss       1631.3304
+precision0 0.8432
+precision1 0.8772
+recall0    0.8813
+recall1    0.8380
+
+[VALIDATION] 74 ----------------
+accuracy   0.7699
+auc        0.8409
+f1macro    0.7697
+f1micro    0.7699
+loss       280.3065
+precision0 0.7904
+precision1 0.7491
+recall0    0.7616
+recall1    0.7790
+
+1979 321 358 1969
+227 75 65 211
+Epoch 75 TimeSince 0m 30s
+
+[TRAINING] 75 ----------------
+accuracy   0.8533
+auc        0.9323
+f1macro    0.8533
+f1micro    0.8533
+loss       1631.7816
+precision0 0.8468
+precision1 0.8598
+recall0    0.8604
+recall1    0.8462
+
+[VALIDATION] 75 ----------------
+accuracy   0.7578
+auc        0.8350
+f1macro    0.7576
+f1micro    0.7578
+loss       287.8404
+precision0 0.7774
+precision1 0.7378
+recall0    0.7517
+recall1    0.7645
+
+1994 306 359 1968
+221 81 65 211
+Epoch 76 TimeSince 0m 31s
+
+[TRAINING] 76 ----------------
+accuracy   0.8563
+auc        0.9347
+f1macro    0.8563
+f1micro    0.8563
+loss       1601.0979
+precision0 0.8474
+precision1 0.8654
+recall0    0.8670
+recall1    0.8457
+
+[VALIDATION] 76 ----------------
+accuracy   0.7474
+auc        0.8388
+f1macro    0.7473
+f1micro    0.7474
+loss       284.6613
+precision0 0.7727
+precision1 0.7226
+recall0    0.7318
+recall1    0.7645
+
+1864 436 276 2051
+213 89 60 216
+Epoch 77 TimeSince 0m 31s
+
+[TRAINING] 77 ----------------
+accuracy   0.8461
+auc        0.9324
+f1macro    0.8459
+f1micro    0.8461
+loss       1661.2868
+precision0 0.8710
+precision1 0.8247
+recall0    0.8104
+recall1    0.8814
+
+[VALIDATION] 77 ----------------
+accuracy   0.7422
+auc        0.8362
+f1macro    0.7422
+f1micro    0.7422
+loss       293.2671
+precision0 0.7802
+precision1 0.7082
+recall0    0.7053
+recall1    0.7826
+
+2066 234 411 1916
+243 59 70 206
+Epoch 78 TimeSince 0m 31s
+
+[TRAINING] 78 ----------------
+accuracy   0.8606
+auc        0.9373
+f1macro    0.8605
+f1micro    0.8606
+loss       1586.8090
+precision0 0.8341
+precision1 0.8912
+recall0    0.8983
+recall1    0.8234
+
+[VALIDATION] 78 ----------------
+accuracy   0.7768
+auc        0.8372
+f1macro    0.7759
+f1micro    0.7768
+loss       283.5297
+precision0 0.7764
+precision1 0.7774
+recall0    0.8046
+recall1    0.7464
+
+1983 317 328 1999
+225 77 61 215
+Epoch 79 TimeSince 0m 32s
+
+[TRAINING] 79 ----------------
+accuracy   0.8606
+auc        0.9377
+f1macro    0.8606
+f1micro    0.8606
+loss       1607.1990
+precision0 0.8581
+precision1 0.8631
+recall0    0.8622
+recall1    0.8590
+
+[VALIDATION] 79 ----------------
+accuracy   0.7612
+auc        0.8405
+f1macro    0.7612
+f1micro    0.7612
+loss       283.4785
+precision0 0.7867
+precision1 0.7363
+recall0    0.7450
+recall1    0.7790
+
+2085 215 411 1916
+242 60 69 207
+Epoch 80 TimeSince 0m 32s
+
+[TRAINING] 80 ----------------
+accuracy   0.8647
+auc        0.9393
+f1macro    0.8645
+f1micro    0.8647
+loss       1550.5232
+precision0 0.8353
+precision1 0.8991
+recall0    0.9065
+recall1    0.8234
+
+[VALIDATION] 80 ----------------
+accuracy   0.7768
+auc        0.8464
+f1macro    0.7760
+f1micro    0.7768
+loss       275.8948
+precision0 0.7781
+precision1 0.7753
+recall0    0.8013
+recall1    0.7500
+
+1987 313 316 2011
+222 80 57 219
+Epoch 81 TimeSince 0m 33s
+
+[TRAINING] 81 ----------------
+accuracy   0.8641
+auc        0.9394
+f1macro    0.8641
+f1micro    0.8641
+loss       1562.6436
+precision0 0.8628
+precision1 0.8653
+recall0    0.8639
+recall1    0.8642
+
+[VALIDATION] 81 ----------------
+accuracy   0.7630
+auc        0.8384
+f1macro    0.7630
+f1micro    0.7630
+loss       285.6767
+precision0 0.7957
+precision1 0.7324
+recall0    0.7351
+recall1    0.7935
+
+1993 307 322 2005
+222 80 62 214
+Epoch 82 TimeSince 0m 33s
+
+[TRAINING] 82 ----------------
+accuracy   0.8641
+auc        0.9405
+f1macro    0.8641
+f1micro    0.8641
+loss       1548.3208
+precision0 0.8609
+precision1 0.8672
+recall0    0.8665
+recall1    0.8616
+
+[VALIDATION] 82 ----------------
+accuracy   0.7543
+auc        0.8403
+f1macro    0.7543
+f1micro    0.7543
+loss       283.9050
+precision0 0.7817
+precision1 0.7279
+recall0    0.7351
+recall1    0.7754
+
+1934 366 288 2039
+215 87 57 219
+Epoch 83 TimeSince 0m 33s
+
+[TRAINING] 83 ----------------
+accuracy   0.8587
+auc        0.9410
+f1macro    0.8586
+f1micro    0.8587
+loss       1555.8704
+precision0 0.8704
+precision1 0.8478
+recall0    0.8409
+recall1    0.8762
+
+[VALIDATION] 83 ----------------
+accuracy   0.7509
+auc        0.8422
+f1macro    0.7509
+f1micro    0.7509
+loss       287.8806
+precision0 0.7904
+precision1 0.7157
+recall0    0.7119
+recall1    0.7935
+
+2046 254 362 1965
+224 78 69 207
+Epoch 84 TimeSince 0m 34s
+
+[TRAINING] 84 ----------------
+accuracy   0.8669
+auc        0.9405
+f1macro    0.8668
+f1micro    0.8669
+loss       1525.9965
+precision0 0.8497
+precision1 0.8855
+recall0    0.8896
+recall1    0.8444
+
+[VALIDATION] 84 ----------------
+accuracy   0.7457
+auc        0.8406
+f1macro    0.7455
+f1micro    0.7457
+loss       284.5180
+precision0 0.7645
+precision1 0.7263
+recall0    0.7417
+recall1    0.7500
+
+2031 269 343 1984
+231 71 64 212
+Epoch 85 TimeSince 0m 34s
+
+[TRAINING] 85 ----------------
+accuracy   0.8677
+auc        0.9431
+f1macro    0.8677
+f1micro    0.8677
+loss       1505.0452
+precision0 0.8555
+precision1 0.8806
+recall0    0.8830
+recall1    0.8526
+
+[VALIDATION] 85 ----------------
+accuracy   0.7664
+auc        0.8380
+f1macro    0.7662
+f1micro    0.7664
+loss       284.3378
+precision0 0.7831
+precision1 0.7491
+recall0    0.7649
+recall1    0.7681
+
+2031 269 333 1994
+224 78 65 211
+Epoch 86 TimeSince 0m 35s
+
+[TRAINING] 86 ----------------
+accuracy   0.8699
+auc        0.9452
+f1macro    0.8699
+f1micro    0.8699
+loss       1511.9434
+precision0 0.8591
+precision1 0.8811
+recall0    0.8830
+recall1    0.8569
+
+[VALIDATION] 86 ----------------
+accuracy   0.7526
+auc        0.8434
+f1macro    0.7525
+f1micro    0.7526
+loss       282.4825
+precision0 0.7751
+precision1 0.7301
+recall0    0.7417
+recall1    0.7645
+
+1920 380 256 2071
+209 93 54 222
+Epoch 87 TimeSince 0m 35s
+
+[TRAINING] 87 ----------------
+accuracy   0.8625
+auc        0.9447
+f1macro    0.8624
+f1micro    0.8625
+loss       1499.5879
+precision0 0.8824
+precision1 0.8450
+recall0    0.8348
+recall1    0.8900
+
+[VALIDATION] 87 ----------------
+accuracy   0.7457
+auc        0.8408
+f1macro    0.7455
+f1micro    0.7457
+loss       294.5034
+precision0 0.7947
+precision1 0.7048
+recall0    0.6921
+recall1    0.8043
+
+1982 318 290 2037
+217 85 61 215
+Epoch 88 TimeSince 0m 35s
+
+[TRAINING] 88 ----------------
+accuracy   0.8686
+auc        0.9458
+f1macro    0.8686
+f1micro    0.8686
+loss       1493.5895
+precision0 0.8724
+precision1 0.8650
+recall0    0.8617
+recall1    0.8754
+
+[VALIDATION] 88 ----------------
+accuracy   0.7474
+auc        0.8393
+f1macro    0.7474
+f1micro    0.7474
+loss       287.5125
+precision0 0.7806
+precision1 0.7167
+recall0    0.7185
+recall1    0.7790
+
+1932 368 259 2068
+208 94 57 219
+Epoch 89 TimeSince 0m 36s
+
+[TRAINING] 89 ----------------
+accuracy   0.8645
+auc        0.9466
+f1macro    0.8644
+f1micro    0.8645
+loss       1498.3439
+precision0 0.8818
+precision1 0.8489
+recall0    0.8400
+recall1    0.8887
+
+[VALIDATION] 89 ----------------
+accuracy   0.7388
+auc        0.8405
+f1macro    0.7387
+f1micro    0.7388
+loss       290.6670
+precision0 0.7849
+precision1 0.6997
+recall0    0.6887
+recall1    0.7935
+
+2056 244 306 2021
+223 79 64 212
+Epoch 90 TimeSince 0m 36s
+
+[TRAINING] 90 ----------------
+accuracy   0.8811
+auc        0.9495
+f1macro    0.8811
+f1micro    0.8811
+loss       1449.6166
+precision0 0.8704
+precision1 0.8923
+recall0    0.8939
+recall1    0.8685
+
+[VALIDATION] 90 ----------------
+accuracy   0.7526
+auc        0.8403
+f1macro    0.7525
+f1micro    0.7526
+loss       283.5476
+precision0 0.7770
+precision1 0.7285
+recall0    0.7384
+recall1    0.7681
+
+2013 287 291 2036
+218 84 59 217
+Epoch 91 TimeSince 0m 37s
+
+[TRAINING] 91 ----------------
+accuracy   0.8751
+auc        0.9490
+f1macro    0.8751
+f1micro    0.8751
+loss       1447.1599
+precision0 0.8737
+precision1 0.8765
+recall0    0.8752
+recall1    0.8749
+
+[VALIDATION] 91 ----------------
+accuracy   0.7526
+auc        0.8411
+f1macro    0.7526
+f1micro    0.7526
+loss       284.9746
+precision0 0.7870
+precision1 0.7209
+recall0    0.7219
+recall1    0.7862
+
+2038 262 298 2029
+227 75 58 218
+Epoch 92 TimeSince 0m 37s
+
+[TRAINING] 92 ----------------
+accuracy   0.8790
+auc        0.9512
+f1macro    0.8790
+f1micro    0.8790
+loss       1442.0085
+precision0 0.8724
+precision1 0.8856
+recall0    0.8861
+recall1    0.8719
+
+[VALIDATION] 92 ----------------
+accuracy   0.7699
+auc        0.8519
+f1macro    0.7698
+f1micro    0.7699
+loss       273.3632
+precision0 0.7965
+precision1 0.7440
+recall0    0.7517
+recall1    0.7899
+
+2043 257 318 2009
+223 79 67 209
+Epoch 93 TimeSince 0m 37s
+
+[TRAINING] 93 ----------------
+accuracy   0.8757
+auc        0.9499
+f1macro    0.8757
+f1micro    0.8757
+loss       1445.7493
+precision0 0.8653
+precision1 0.8866
+recall0    0.8883
+recall1    0.8633
+
+[VALIDATION] 93 ----------------
+accuracy   0.7474
+auc        0.8416
+f1macro    0.7473
+f1micro    0.7474
+loss       281.7300
+precision0 0.7690
+precision1 0.7257
+recall0    0.7384
+recall1    0.7572
+
+2038 262 316 2011
+228 74 63 213
+Epoch 94 TimeSince 0m 38s
+
+[TRAINING] 94 ----------------
+accuracy   0.8751
+auc        0.9511
+f1macro    0.8751
+f1micro    0.8751
+loss       1408.9067
+precision0 0.8658
+precision1 0.8847
+recall0    0.8861
+recall1    0.8642
+
+[VALIDATION] 94 ----------------
+accuracy   0.7630
+auc        0.8426
+f1macro    0.7628
+f1micro    0.7630
+loss       283.7132
+precision0 0.7835
+precision1 0.7422
+recall0    0.7550
+recall1    0.7717
+
+2079 221 348 1979
+235 67 68 208
+Epoch 95 TimeSince 0m 38s
+
+[TRAINING] 95 ----------------
+accuracy   0.8770
+auc        0.9510
+f1macro    0.8770
+f1micro    0.8770
+loss       1413.6509
+precision0 0.8566
+precision1 0.8995
+recall0    0.9039
+recall1    0.8505
+
+[VALIDATION] 95 ----------------
+accuracy   0.7664
+auc        0.8377
+f1macro    0.7659
+f1micro    0.7664
+loss       285.7894
+precision0 0.7756
+precision1 0.7564
+recall0    0.7781
+recall1    0.7536
+
+2030 270 272 2055
+225 77 65 211
+Epoch 96 TimeSince 0m 39s
+
+[TRAINING] 96 ----------------
+accuracy   0.8829
+auc        0.9539
+f1macro    0.8829
+f1micro    0.8829
+loss       1376.3351
+precision0 0.8818
+precision1 0.8839
+recall0    0.8826
+recall1    0.8831
+
+[VALIDATION] 96 ----------------
+accuracy   0.7543
+auc        0.8464
+f1macro    0.7542
+f1micro    0.7543
+loss       285.3358
+precision0 0.7759
+precision1 0.7326
+recall0    0.7450
+recall1    0.7645
+
+2001 299 241 2086
+218 84 57 219
+Epoch 97 TimeSince 0m 39s
+
+[TRAINING] 97 ----------------
+accuracy   0.8833
+auc        0.9552
+f1macro    0.8833
+f1micro    0.8833
+loss       1385.7263
+precision0 0.8925
+precision1 0.8746
+recall0    0.8700
+recall1    0.8964
+
+[VALIDATION] 97 ----------------
+accuracy   0.7561
+auc        0.8465
+f1macro    0.7561
+f1micro    0.7561
+loss       284.8014
+precision0 0.7927
+precision1 0.7228
+recall0    0.7219
+recall1    0.7935
+
+2042 258 295 2032
+229 73 62 214
+Epoch 98 TimeSince 0m 40s
+
+[TRAINING] 98 ----------------
+accuracy   0.8805
+auc        0.9542
+f1macro    0.8805
+f1micro    0.8805
+loss       1406.2937
+precision0 0.8738
+precision1 0.8873
+recall0    0.8878
+recall1    0.8732
+
+[VALIDATION] 98 ----------------
+accuracy   0.7664
+auc        0.8492
+f1macro    0.7663
+f1micro    0.7664
+loss       277.2152
+precision0 0.7869
+precision1 0.7456
+recall0    0.7583
+recall1    0.7754
+
+2067 233 283 2044
+226 76 62 214
+Epoch 99 TimeSince 0m 40s
+
+[TRAINING] 99 ----------------
+accuracy   0.8885
+auc        0.9571
+f1macro    0.8885
+f1micro    0.8885
+loss       1363.9221
+precision0 0.8796
+precision1 0.8977
+recall0    0.8987
+recall1    0.8784
+
+[VALIDATION] 99 ----------------
+accuracy   0.7612
+auc        0.8491
+f1macro    0.7611
+f1micro    0.7612
+loss       277.9533
+precision0 0.7847
+precision1 0.7379
+recall0    0.7483
+recall1    0.7754
+
+1994 306 259 2068
+221 81 59 217
+Epoch 100 TimeSince 0m 40s
+
+[TRAINING] 100 ----------------
+accuracy   0.8779
+auc        0.9542
+f1macro    0.8779
+f1micro    0.8779
+loss       1389.6248
+precision0 0.8850
+precision1 0.8711
+recall0    0.8670
+recall1    0.8887
+
+[VALIDATION] 100 ----------------
+accuracy   0.7578
+auc        0.8450
+f1macro    0.7578
+f1micro    0.7578
+loss       286.1829
+precision0 0.7893
+precision1 0.7282
+recall0    0.7318
+recall1    0.7862
+
+2096 204 313 2014
+247 55 70 206
+Epoch 101 TimeSince 0m 41s
+
+[TRAINING] 101 ----------------
+accuracy   0.8883
+auc        0.9571
+f1macro    0.8882
+f1micro    0.8883
+loss       1364.8694
+precision0 0.8701
+precision1 0.9080
+recall0    0.9113
+recall1    0.8655
+
+[VALIDATION] 101 ----------------
+accuracy   0.7837
+auc        0.8495
+f1macro    0.7826
+f1micro    0.7837
+loss       276.1107
+precision0 0.7792
+precision1 0.7893
+recall0    0.8179
+recall1    0.7464
+
+2046 254 288 2039
+229 73 61 215
+Epoch 102 TimeSince 0m 41s
+
+[TRAINING] 102 ----------------
+accuracy   0.8829
+auc        0.9553
+f1macro    0.8829
+f1micro    0.8829
+loss       1380.3441
+precision0 0.8766
+precision1 0.8892
+recall0    0.8896
+recall1    0.8762
+
+[VALIDATION] 102 ----------------
+accuracy   0.7682
+auc        0.8407
+f1macro    0.7680
+f1micro    0.7682
+loss       284.9491
+precision0 0.7897
+precision1 0.7465
+recall0    0.7583
+recall1    0.7790
+
+2082 218 282 2045
+233 69 62 214
+Epoch 103 TimeSince 0m 42s
+
+[TRAINING] 103 ----------------
+accuracy   0.8919
+auc        0.9596
+f1macro    0.8919
+f1micro    0.8919
+loss       1320.5481
+precision0 0.8807
+precision1 0.9037
+recall0    0.9052
+recall1    0.8788
+
+[VALIDATION] 103 ----------------
+accuracy   0.7734
+auc        0.8557
+f1macro    0.7731
+f1micro    0.7734
+loss       273.3456
+precision0 0.7898
+precision1 0.7562
+recall0    0.7715
+recall1    0.7754
+
+2009 291 236 2091
+218 84 52 224
+Epoch 104 TimeSince 0m 42s
+
+[TRAINING] 104 ----------------
+accuracy   0.8861
+auc        0.9574
+f1macro    0.8861
+f1micro    0.8861
+loss       1353.5369
+precision0 0.8949
+precision1 0.8778
+recall0    0.8735
+recall1    0.8986
+
+[VALIDATION] 104 ----------------
+accuracy   0.7647
+auc        0.8577
+f1macro    0.7647
+f1micro    0.7647
+loss       276.1792
+precision0 0.8074
+precision1 0.7273
+recall0    0.7219
+recall1    0.8116
+
+2073 227 291 2036
+229 73 64 212
+Epoch 105 TimeSince 0m 42s
+
+[TRAINING] 105 ----------------
+accuracy   0.8880
+auc        0.9588
+f1macro    0.8880
+f1micro    0.8880
+loss       1329.7998
+precision0 0.8769
+precision1 0.8997
+recall0    0.9013
+recall1    0.8749
+
+[VALIDATION] 105 ----------------
+accuracy   0.7630
+auc        0.8480
+f1macro    0.7628
+f1micro    0.7630
+loss       279.2059
+precision0 0.7816
+precision1 0.7439
+recall0    0.7583
+recall1    0.7681
+
+1999 301 216 2111
+214 88 54 222
+Epoch 106 TimeSince 0m 43s
+
+[TRAINING] 106 ----------------
+accuracy   0.8883
+auc        0.9602
+f1macro    0.8882
+f1micro    0.8883
+loss       1337.5387
+precision0 0.9025
+precision1 0.8752
+recall0    0.8691
+recall1    0.9072
+
+[VALIDATION] 106 ----------------
+accuracy   0.7543
+auc        0.8562
+f1macro    0.7543
+f1micro    0.7543
+loss       281.5050
+precision0 0.7985
+precision1 0.7161
+recall0    0.7086
+recall1    0.8043
+
+2039 261 242 2085
+227 75 59 217
+Epoch 107 TimeSince 0m 43s
+
+[TRAINING] 107 ----------------
+accuracy   0.8913
+auc        0.9593
+f1macro    0.8913
+f1micro    0.8913
+loss       1345.4658
+precision0 0.8939
+precision1 0.8887
+recall0    0.8865
+recall1    0.8960
+
+[VALIDATION] 107 ----------------
+accuracy   0.7682
+auc        0.8470
+f1macro    0.7681
+f1micro    0.7682
+loss       283.4693
+precision0 0.7937
+precision1 0.7432
+recall0    0.7517
+recall1    0.7862
+
+2024 276 240 2087
+219 83 53 223
+Epoch 108 TimeSince 0m 44s
+
+[TRAINING] 108 ----------------
+accuracy   0.8885
+auc        0.9604
+f1macro    0.8885
+f1micro    0.8885
+loss       1329.0701
+precision0 0.8940
+precision1 0.8832
+recall0    0.8800
+recall1    0.8969
+
+[VALIDATION] 108 ----------------
+accuracy   0.7647
+auc        0.8537
+f1macro    0.7647
+f1micro    0.7647
+loss       279.5518
+precision0 0.8051
+precision1 0.7288
+recall0    0.7252
+recall1    0.8080
+
+2047 253 269 2058
+232 70 63 213
+Epoch 109 TimeSince 0m 44s
+
+[TRAINING] 109 ----------------
+accuracy   0.8872
+auc        0.9591
+f1macro    0.8872
+f1micro    0.8872
+loss       1344.5698
+precision0 0.8839
+precision1 0.8905
+recall0    0.8900
+recall1    0.8844
+
+[VALIDATION] 109 ----------------
+accuracy   0.7699
+auc        0.8444
+f1macro    0.7696
+f1micro    0.7699
+loss       281.9372
+precision0 0.7864
+precision1 0.7527
+recall0    0.7682
+recall1    0.7717
+
+2088 212 266 2061
+237 65 61 215
+Epoch 110 TimeSince 0m 44s
+
+[TRAINING] 110 ----------------
+accuracy   0.8967
+auc        0.9629
+f1macro    0.8967
+f1micro    0.8967
+loss       1279.5345
+precision0 0.8870
+precision1 0.9067
+recall0    0.9078
+recall1    0.8857
+
+[VALIDATION] 110 ----------------
+accuracy   0.7820
+auc        0.8510
+f1macro    0.7817
+f1micro    0.7820
+loss       276.7206
+precision0 0.7953
+precision1 0.7679
+recall0    0.7848
+recall1    0.7790
+
+2171 129 379 1948
+255 47 76 200
+Epoch 111 TimeSince 0m 45s
+
+[TRAINING] 111 ----------------
+accuracy   0.8902
+auc        0.9650
+f1macro    0.8900
+f1micro    0.8902
+loss       1268.7167
+precision0 0.8514
+precision1 0.9379
+recall0    0.9439
+recall1    0.8371
+
+[VALIDATION] 111 ----------------
+accuracy   0.7872
+auc        0.8495
+f1macro    0.7853
+f1micro    0.7872
+loss       277.7413
+precision0 0.7704
+precision1 0.8097
+recall0    0.8444
+recall1    0.7246
+
+2040 260 235 2092
+224 78 57 219
+Epoch 112 TimeSince 0m 45s
+
+[TRAINING] 112 ----------------
+accuracy   0.8930
+auc        0.9648
+f1macro    0.8930
+f1micro    0.8930
+loss       1257.2673
+precision0 0.8967
+precision1 0.8895
+recall0    0.8870
+recall1    0.8990
+
+[VALIDATION] 112 ----------------
+accuracy   0.7664
+auc        0.8511
+f1macro    0.7664
+f1micro    0.7664
+loss       280.3412
+precision0 0.7972
+precision1 0.7374
+recall0    0.7417
+recall1    0.7935
+
+2096 204 259 2068
+241 61 60 216
+Epoch 113 TimeSince 0m 46s
+
+[TRAINING] 113 ----------------
+accuracy   0.8999
+auc        0.9644
+f1macro    0.8999
+f1micro    0.8999
+loss       1237.9925
+precision0 0.8900
+precision1 0.9102
+recall0    0.9113
+recall1    0.8887
+
+[VALIDATION] 113 ----------------
+accuracy   0.7907
+auc        0.8519
+f1macro    0.7903
+f1micro    0.7907
+loss       276.7312
+precision0 0.8007
+precision1 0.7798
+recall0    0.7980
+recall1    0.7826
+
+2119 181 271 2056
+236 66 66 210
+Epoch 114 TimeSince 0m 46s
+
+[TRAINING] 114 ----------------
+accuracy   0.9023
+auc        0.9667
+f1macro    0.9023
+f1micro    0.9023
+loss       1236.0836
+precision0 0.8866
+precision1 0.9191
+recall0    0.9213
+recall1    0.8835
+
+[VALIDATION] 114 ----------------
+accuracy   0.7716
+auc        0.8495
+f1macro    0.7712
+f1micro    0.7716
+loss       279.8908
+precision0 0.7815
+precision1 0.7609
+recall0    0.7815
+recall1    0.7609
+
+2011 289 205 2122
+213 89 53 223
+Epoch 115 TimeSince 0m 46s
+
+[TRAINING] 115 ----------------
+accuracy   0.8932
+auc        0.9647
+f1macro    0.8932
+f1micro    0.8932
+loss       1279.6393
+precision0 0.9075
+precision1 0.8801
+recall0    0.8743
+recall1    0.9119
+
+[VALIDATION] 115 ----------------
+accuracy   0.7543
+auc        0.8474
+f1macro    0.7543
+f1micro    0.7543
+loss       289.6854
+precision0 0.8008
+precision1 0.7147
+recall0    0.7053
+recall1    0.8080
+
+2002 298 204 2123
+212 90 53 223
+Epoch 116 TimeSince 0m 47s
+
+[TRAINING] 116 ----------------
+accuracy   0.8915
+auc        0.9658
+f1macro    0.8914
+f1micro    0.8915
+loss       1256.4029
+precision0 0.9075
+precision1 0.8769
+recall0    0.8704
+recall1    0.9123
+
+[VALIDATION] 116 ----------------
+accuracy   0.7526
+auc        0.8467
+f1macro    0.7525
+f1micro    0.7526
+loss       295.4073
+precision0 0.8000
+precision1 0.7125
+recall0    0.7020
+recall1    0.8080
+
+2124 176 270 2057
+237 65 64 212
+Epoch 117 TimeSince 0m 47s
+
+[TRAINING] 117 ----------------
+accuracy   0.9036
+auc        0.9675
+f1macro    0.9036
+f1micro    0.9036
+loss       1216.3679
+precision0 0.8872
+precision1 0.9212
+recall0    0.9235
+recall1    0.8840
+
+[VALIDATION] 117 ----------------
+accuracy   0.7768
+auc        0.8547
+f1macro    0.7764
+f1micro    0.7768
+loss       276.7894
+precision0 0.7874
+precision1 0.7653
+recall0    0.7848
+recall1    0.7681
+
+2075 225 224 2103
+228 74 55 221
+Epoch 118 TimeSince 0m 48s
+
+[TRAINING] 118 ----------------
+accuracy   0.9030
+auc        0.9658
+f1macro    0.9030
+f1micro    0.9030
+loss       1227.4093
+precision0 0.9026
+precision1 0.9034
+recall0    0.9022
+recall1    0.9037
+
+[VALIDATION] 118 ----------------
+accuracy   0.7768
+auc        0.8590
+f1macro    0.7768
+f1micro    0.7768
+loss       278.5798
+precision0 0.8057
+precision1 0.7492
+recall0    0.7550
+recall1    0.8007
+
+2123 177 277 2050
+242 60 59 217
+Epoch 119 TimeSince 0m 48s
+
+[TRAINING] 119 ----------------
+accuracy   0.9019
+auc        0.9671
+f1macro    0.9019
+f1micro    0.9019
+loss       1222.6789
+precision0 0.8846
+precision1 0.9205
+recall0    0.9230
+recall1    0.8810
+
+[VALIDATION] 119 ----------------
+accuracy   0.7941
+auc        0.8564
+f1macro    0.7937
+f1micro    0.7941
+loss       275.7697
+precision0 0.8040
+precision1 0.7834
+recall0    0.8013
+recall1    0.7862
+
+2098 202 244 2083
+232 70 57 219
+Epoch 120 TimeSince 0m 48s
+
+[TRAINING] 120 ----------------
+accuracy   0.9036
+auc        0.9675
+f1macro    0.9036
+f1micro    0.9036
+loss       1206.9643
+precision0 0.8958
+precision1 0.9116
+recall0    0.9122
+recall1    0.8951
+
+[VALIDATION] 120 ----------------
+accuracy   0.7803
+auc        0.8565
+f1macro    0.7802
+f1micro    0.7803
+loss       279.0001
+precision0 0.8028
+precision1 0.7578
+recall0    0.7682
+recall1    0.7935
+
+2128 172 275 2052
+238 64 63 213
+Epoch 121 TimeSince 0m 49s
+
+[TRAINING] 121 ----------------
+accuracy   0.9034
+auc        0.9676
+f1macro    0.9034
+f1micro    0.9034
+loss       1212.5365
+precision0 0.8856
+precision1 0.9227
+recall0    0.9252
+recall1    0.8818
+
+[VALIDATION] 121 ----------------
+accuracy   0.7803
+auc        0.8538
+f1macro    0.7799
+f1micro    0.7803
+loss       277.6688
+precision0 0.7907
+precision1 0.7690
+recall0    0.7881
+recall1    0.7717
+
+2119 181 267 2060
+235 67 63 213
+Epoch 122 TimeSince 0m 49s
+
+[TRAINING] 122 ----------------
+accuracy   0.9032
+auc        0.9698
+f1macro    0.9032
+f1micro    0.9032
+loss       1171.2457
+precision0 0.8881
+precision1 0.9192
+recall0    0.9213
+recall1    0.8853
+
+[VALIDATION] 122 ----------------
+accuracy   0.7751
+auc        0.8582
+f1macro    0.7748
+f1micro    0.7751
+loss       274.6674
+precision0 0.7886
+precision1 0.7607
+recall0    0.7781
+recall1    0.7717
+
+2067 233 206 2121
+224 78 56 220
+Epoch 123 TimeSince 0m 50s
+
+[TRAINING] 123 ----------------
+accuracy   0.9051
+auc        0.9701
+f1macro    0.9051
+f1micro    0.9051
+loss       1179.9061
+precision0 0.9094
+precision1 0.9010
+recall0    0.8987
+recall1    0.9115
+
+[VALIDATION] 123 ----------------
+accuracy   0.7682
+auc        0.8540
+f1macro    0.7682
+f1micro    0.7682
+loss       281.8734
+precision0 0.8000
+precision1 0.7383
+recall0    0.7417
+recall1    0.7971
+
+2092 208 225 2102
+233 69 54 222
+Epoch 124 TimeSince 0m 50s
+
+[TRAINING] 124 ----------------
+accuracy   0.9064
+auc        0.9710
+f1macro    0.9064
+f1micro    0.9064
+loss       1171.2806
+precision0 0.9029
+precision1 0.9100
+recall0    0.9096
+recall1    0.9033
+
+[VALIDATION] 124 ----------------
+accuracy   0.7872
+auc        0.8608
+f1macro    0.7871
+f1micro    0.7872
+loss       273.8900
+precision0 0.8118
+precision1 0.7629
+recall0    0.7715
+recall1    0.8043
+
+2104 196 219 2108
+231 71 54 222
+Epoch 125 TimeSince 0m 51s
+
+[TRAINING] 125 ----------------
+accuracy   0.9103
+auc        0.9714
+f1macro    0.9103
+f1micro    0.9103
+loss       1162.7717
+precision0 0.9057
+precision1 0.9149
+recall0    0.9148
+recall1    0.9059
+
+[VALIDATION] 125 ----------------
+accuracy   0.7837
+auc        0.8601
+f1macro    0.7837
+f1micro    0.7837
+loss       274.9781
+precision0 0.8105
+precision1 0.7577
+recall0    0.7649
+recall1    0.8043
+
+2110 190 216 2111
+234 68 61 215
+Epoch 126 TimeSince 0m 51s
+
+[TRAINING] 126 ----------------
+accuracy   0.9123
+auc        0.9717
+f1macro    0.9123
+f1micro    0.9123
+loss       1156.4625
+precision0 0.9071
+precision1 0.9174
+recall0    0.9174
+recall1    0.9072
+
+[VALIDATION] 126 ----------------
+accuracy   0.7768
+auc        0.8553
+f1macro    0.7766
+f1micro    0.7768
+loss       279.6535
+precision0 0.7932
+precision1 0.7597
+recall0    0.7748
+recall1    0.7790
+
+2092 208 191 2136
+225 77 50 226
+Epoch 127 TimeSince 0m 51s
+
+[TRAINING] 127 ----------------
+accuracy   0.9138
+auc        0.9727
+f1macro    0.9138
+f1micro    0.9138
+loss       1159.3587
+precision0 0.9163
+precision1 0.9113
+recall0    0.9096
+recall1    0.9179
+
+[VALIDATION] 127 ----------------
+accuracy   0.7803
+auc        0.8620
+f1macro    0.7803
+f1micro    0.7803
+loss       275.1631
+precision0 0.8182
+precision1 0.7459
+recall0    0.7450
+recall1    0.8188
+
+2075 225 184 2143
+222 80 48 228
+Epoch 128 TimeSince 0m 52s
+
+[TRAINING] 128 ----------------
+accuracy   0.9116
+auc        0.9724
+f1macro    0.9116
+f1micro    0.9116
+loss       1149.6503
+precision0 0.9185
+precision1 0.9050
+recall0    0.9022
+recall1    0.9209
+
+[VALIDATION] 128 ----------------
+accuracy   0.7785
+auc        0.8632
+f1macro    0.7785
+f1micro    0.7785
+loss       279.7844
+precision0 0.8222
+precision1 0.7403
+recall0    0.7351
+recall1    0.8261
+
+2131 169 242 2085
+239 63 63 213
+Epoch 129 TimeSince 0m 52s
+
+[TRAINING] 129 ----------------
+accuracy   0.9112
+auc        0.9727
+f1macro    0.9112
+f1micro    0.9112
+loss       1136.5001
+precision0 0.8980
+precision1 0.9250
+recall0    0.9265
+recall1    0.8960
+
+[VALIDATION] 129 ----------------
+accuracy   0.7820
+auc        0.8600
+f1macro    0.7816
+f1micro    0.7820
+loss       274.1279
+precision0 0.7914
+precision1 0.7717
+recall0    0.7914
+recall1    0.7717
+
+2077 223 214 2113
+224 78 56 220
+Epoch 130 TimeSince 0m 53s
+
+[TRAINING] 130 ----------------
+accuracy   0.9056
+auc        0.9720
+f1macro    0.9055
+f1micro    0.9056
+loss       1154.0145
+precision0 0.9066
+precision1 0.9045
+recall0    0.9030
+recall1    0.9080
+
+[VALIDATION] 130 ----------------
+accuracy   0.7682
+auc        0.8524
+f1macro    0.7682
+f1micro    0.7682
+loss       285.1189
+precision0 0.8000
+precision1 0.7383
+recall0    0.7417
+recall1    0.7971
+
+2108 192 213 2114
+234 68 56 220
+Epoch 131 TimeSince 0m 53s
+
+[TRAINING] 131 ----------------
+accuracy   0.9125
+auc        0.9738
+f1macro    0.9125
+f1micro    0.9125
+loss       1118.7883
+precision0 0.9082
+precision1 0.9167
+recall0    0.9165
+recall1    0.9085
+
+[VALIDATION] 131 ----------------
+accuracy   0.7855
+auc        0.8597
+f1macro    0.7853
+f1micro    0.7855
+loss       276.3827
+precision0 0.8069
+precision1 0.7639
+recall0    0.7748
+recall1    0.7971
+
+2159 141 249 2078
+241 61 60 216
+Epoch 132 TimeSince 0m 53s
+
+[TRAINING] 132 ----------------
+accuracy   0.9157
+auc        0.9758
+f1macro    0.9157
+f1micro    0.9157
+loss       1100.7636
+precision0 0.8966
+precision1 0.9365
+recall0    0.9387
+recall1    0.8930
+
+[VALIDATION] 132 ----------------
+accuracy   0.7907
+auc        0.8643
+f1macro    0.7903
+f1micro    0.7907
+loss       270.7062
+precision0 0.8007
+precision1 0.7798
+recall0    0.7980
+recall1    0.7826
+
+2089 211 189 2138
+227 75 54 222
+Epoch 133 TimeSince 0m 54s
+
+[TRAINING] 133 ----------------
+accuracy   0.9136
+auc        0.9751
+f1macro    0.9135
+f1micro    0.9136
+loss       1124.5067
+precision0 0.9170
+precision1 0.9102
+recall0    0.9083
+recall1    0.9188
+
+[VALIDATION] 133 ----------------
+accuracy   0.7768
+auc        0.8637
+f1macro    0.7768
+f1micro    0.7768
+loss       272.7184
+precision0 0.8078
+precision1 0.7475
+recall0    0.7517
+recall1    0.8043
+
+2122 178 203 2124
+232 70 56 220
+Epoch 134 TimeSince 0m 54s
+
+[TRAINING] 134 ----------------
+accuracy   0.9177
+auc        0.9758
+f1macro    0.9177
+f1micro    0.9177
+loss       1111.3968
+precision0 0.9127
+precision1 0.9227
+recall0    0.9226
+recall1    0.9128
+
+[VALIDATION] 134 ----------------
+accuracy   0.7820
+auc        0.8610
+f1macro    0.7819
+f1micro    0.7820
+loss       273.2845
+precision0 0.8056
+precision1 0.7586
+recall0    0.7682
+recall1    0.7971
+
+2108 192 204 2123
+227 75 62 214
+Epoch 135 TimeSince 0m 55s
+
+[TRAINING] 135 ----------------
+accuracy   0.9144
+auc        0.9757
+f1macro    0.9144
+f1micro    0.9144
+loss       1102.6203
+precision0 0.9118
+precision1 0.9171
+recall0    0.9165
+recall1    0.9123
+
+[VALIDATION] 135 ----------------
+accuracy   0.7630
+auc        0.8584
+f1macro    0.7629
+f1micro    0.7630
+loss       275.5430
+precision0 0.7855
+precision1 0.7405
+recall0    0.7517
+recall1    0.7754
+
+2178 122 280 2047
+249 53 67 209
+Epoch 136 TimeSince 0m 55s
+
+[TRAINING] 136 ----------------
+accuracy   0.9131
+auc        0.9752
+f1macro    0.9130
+f1micro    0.9131
+loss       1068.9223
+precision0 0.8861
+precision1 0.9438
+recall0    0.9470
+recall1    0.8797
+
+[VALIDATION] 136 ----------------
+accuracy   0.7924
+auc        0.8623
+f1macro    0.7914
+f1micro    0.7924
+loss       272.1328
+precision0 0.7880
+precision1 0.7977
+recall0    0.8245
+recall1    0.7572
+
+2145 155 216 2111
+244 58 63 213
+Epoch 137 TimeSince 0m 55s
+
+[TRAINING] 137 ----------------
+accuracy   0.9198
+auc        0.9777
+f1macro    0.9198
+f1micro    0.9198
+loss       1042.7151
+precision0 0.9085
+precision1 0.9316
+recall0    0.9326
+recall1    0.9072
+
+[VALIDATION] 137 ----------------
+accuracy   0.7907
+auc        0.8586
+f1macro    0.7901
+f1micro    0.7907
+loss       276.4605
+precision0 0.7948
+precision1 0.7860
+recall0    0.8079
+recall1    0.7717
+
+2086 214 159 2168
+220 82 51 225
+Epoch 138 TimeSince 0m 56s
+
+[TRAINING] 138 ----------------
+accuracy   0.9194
+auc        0.9772
+f1macro    0.9194
+f1micro    0.9194
+loss       1087.5481
+precision0 0.9292
+precision1 0.9102
+recall0    0.9070
+recall1    0.9317
+
+[VALIDATION] 138 ----------------
+accuracy   0.7699
+auc        0.8612
+f1macro    0.7699
+f1micro    0.7699
+loss       281.6256
+precision0 0.8118
+precision1 0.7329
+recall0    0.7285
+recall1    0.8152
+
+2162 138 241 2086
+238 64 68 208
+Epoch 139 TimeSince 0m 56s
+
+[TRAINING] 139 ----------------
+accuracy   0.9181
+auc        0.9781
+f1macro    0.9181
+f1micro    0.9181
+loss       1072.3962
+precision0 0.8997
+precision1 0.9379
+recall0    0.9400
+recall1    0.8964
+
+[VALIDATION] 139 ----------------
+accuracy   0.7716
+auc        0.8563
+f1macro    0.7710
+f1micro    0.7716
+loss       274.7493
+precision0 0.7778
+precision1 0.7647
+recall0    0.7881
+recall1    0.7536
+
+2136 164 209 2118
+233 69 59 217
+Epoch 140 TimeSince 0m 57s
+
+[TRAINING] 140 ----------------
+accuracy   0.9194
+auc        0.9774
+f1macro    0.9194
+f1micro    0.9194
+loss       1070.6056
+precision0 0.9109
+precision1 0.9281
+recall0    0.9287
+recall1    0.9102
+
+[VALIDATION] 140 ----------------
+accuracy   0.7785
+auc        0.8584
+f1macro    0.7784
+f1micro    0.7785
+loss       276.1977
+precision0 0.7979
+precision1 0.7587
+recall0    0.7715
+recall1    0.7862
+
+2040 260 140 2187
+214 88 50 226
+Epoch 141 TimeSince 0m 57s
+
+[TRAINING] 141 ----------------
+accuracy   0.9136
+auc        0.9756
+f1macro    0.9135
+f1micro    0.9136
+loss       1094.9958
+precision0 0.9358
+precision1 0.8937
+recall0    0.8870
+recall1    0.9398
+
+[VALIDATION] 141 ----------------
+accuracy   0.7612
+auc        0.8578
+f1macro    0.7611
+f1micro    0.7612
+loss       287.4225
+precision0 0.8106
+precision1 0.7197
+recall0    0.7086
+recall1    0.8188
+
+2070 230 143 2184
+210 92 50 226
+Epoch 142 TimeSince 0m 57s
+
+[TRAINING] 142 ----------------
+accuracy   0.9194
+auc        0.9785
+f1macro    0.9193
+f1micro    0.9194
+loss       1093.4413
+precision0 0.9354
+precision1 0.9047
+recall0    0.9000
+recall1    0.9385
+
+[VALIDATION] 142 ----------------
+accuracy   0.7543
+auc        0.8593
+f1macro    0.7541
+f1micro    0.7543
+loss       284.2397
+precision0 0.8077
+precision1 0.7107
+recall0    0.6954
+recall1    0.8188
+
+2101 199 145 2182
+219 83 49 227
+Epoch 143 TimeSince 0m 58s
+
+[TRAINING] 143 ----------------
+accuracy   0.9257
+auc        0.9787
+f1macro    0.9256
+f1micro    0.9257
+loss       1046.8627
+precision0 0.9354
+precision1 0.9164
+recall0    0.9135
+recall1    0.9377
+
+[VALIDATION] 143 ----------------
+accuracy   0.7716
+auc        0.8625
+f1macro    0.7716
+f1micro    0.7716
+loss       278.0436
+precision0 0.8172
+precision1 0.7323
+recall0    0.7252
+recall1    0.8225
+
+2131 169 181 2146
+228 74 59 217
+Epoch 144 TimeSince 0m 58s
+
+[TRAINING] 144 ----------------
+accuracy   0.9244
+auc        0.9786
+f1macro    0.9244
+f1micro    0.9244
+loss       1044.2083
+precision0 0.9217
+precision1 0.9270
+recall0    0.9265
+recall1    0.9222
+
+[VALIDATION] 144 ----------------
+accuracy   0.7699
+auc        0.8572
+f1macro    0.7698
+f1micro    0.7699
+loss       279.1291
+precision0 0.7944
+precision1 0.7457
+recall0    0.7550
+recall1    0.7862
+
+2134 166 197 2130
+231 71 61 215
+Epoch 145 TimeSince 0m 59s
+
+[TRAINING] 145 ----------------
+accuracy   0.9215
+auc        0.9780
+f1macro    0.9215
+f1micro    0.9215
+loss       1039.7995
+precision0 0.9155
+precision1 0.9277
+recall0    0.9278
+recall1    0.9153
+
+[VALIDATION] 145 ----------------
+accuracy   0.7716
+auc        0.8539
+f1macro    0.7715
+f1micro    0.7716
+loss       284.8687
+precision0 0.7911
+precision1 0.7517
+recall0    0.7649
+recall1    0.7790
+
+2156 144 200 2127
+233 69 64 212
+Epoch 146 TimeSince 0m 59s
+
+[TRAINING] 146 ----------------
+accuracy   0.9257
+auc        0.9809
+f1macro    0.9257
+f1micro    0.9257
+loss       979.8703
+precision0 0.9151
+precision1 0.9366
+recall0    0.9374
+recall1    0.9141
+
+[VALIDATION] 146 ----------------
+accuracy   0.7699
+auc        0.8551
+f1macro    0.7696
+f1micro    0.7699
+loss       283.5319
+precision0 0.7845
+precision1 0.7544
+recall0    0.7715
+recall1    0.7681
+
+2168 132 208 2119
+238 64 62 214
+Epoch 147 TimeSince 0m 59s
+
+[TRAINING] 147 ----------------
+accuracy   0.9265
+auc        0.9801
+f1macro    0.9265
+f1micro    0.9265
+loss       1025.2806
+precision0 0.9125
+precision1 0.9414
+recall0    0.9426
+recall1    0.9106
+
+[VALIDATION] 147 ----------------
+accuracy   0.7820
+auc        0.8567
+f1macro    0.7816
+f1micro    0.7820
+loss       278.2496
+precision0 0.7933
+precision1 0.7698
+recall0    0.7881
+recall1    0.7754
+
+2124 176 170 2157
+224 78 60 216
+Epoch 148 TimeSince 1m 0s
+
+[TRAINING] 148 ----------------
+accuracy   0.9252
+auc        0.9807
+f1macro    0.9252
+f1micro    0.9252
+loss       1007.2881
+precision0 0.9259
+precision1 0.9246
+recall0    0.9235
+recall1    0.9269
+
+[VALIDATION] 148 ----------------
+accuracy   0.7612
+auc        0.8581
+f1macro    0.7612
+f1micro    0.7612
+loss       280.0362
+precision0 0.7887
+precision1 0.7347
+recall0    0.7417
+recall1    0.7826
+
+2123 177 153 2174
+225 77 55 221
+Epoch 149 TimeSince 1m 0s
+
+[TRAINING] 149 ----------------
+accuracy   0.9287
+auc        0.9811
+f1macro    0.9287
+f1micro    0.9287
+loss       993.8089
+precision0 0.9328
+precision1 0.9247
+recall0    0.9230
+recall1    0.9343
+
+[VALIDATION] 149 ----------------
+accuracy   0.7716
+auc        0.8571
+f1macro    0.7716
+f1micro    0.7716
+loss       283.2229
+precision0 0.8036
+precision1 0.7416
+recall0    0.7450
+recall1    0.8007
+
+2142 158 193 2134
+230 72 65 211
+Epoch 150 TimeSince 1m 1s
+
+[TRAINING] 150 ----------------
+accuracy   0.9241
+auc        0.9796
+f1macro    0.9241
+f1micro    0.9241
+loss       989.2342
+precision0 0.9173
+precision1 0.9311
+recall0    0.9313
+recall1    0.9171
+
+[VALIDATION] 150 ----------------
+accuracy   0.7630
+auc        0.8485
+f1macro    0.7627
+f1micro    0.7630
+loss       291.3307
+precision0 0.7797
+precision1 0.7456
+recall0    0.7616
+recall1    0.7645
+
+2139 161 180 2147
+228 74 59 217
+Epoch 151 TimeSince 1m 1s
+
+[TRAINING] 151 ----------------
+accuracy   0.9263
+auc        0.9803
+f1macro    0.9263
+f1micro    0.9263
+loss       1031.4539
+precision0 0.9224
+precision1 0.9302
+recall0    0.9300
+recall1    0.9226
+
+[VALIDATION] 151 ----------------
+accuracy   0.7699
+auc        0.8527
+f1macro    0.7698
+f1micro    0.7699
+loss       284.5498
+precision0 0.7944
+precision1 0.7457
+recall0    0.7550
+recall1    0.7862
+
+2117 183 161 2166
+225 77 53 223
+Epoch 152 TimeSince 1m 2s
+
+[TRAINING] 152 ----------------
+accuracy   0.9257
+auc        0.9805
+f1macro    0.9256
+f1micro    0.9257
+loss       990.5417
+precision0 0.9293
+precision1 0.9221
+recall0    0.9204
+recall1    0.9308
+
+[VALIDATION] 152 ----------------
+accuracy   0.7751
+auc        0.8560
+f1macro    0.7751
+f1micro    0.7751
+loss       286.9837
+precision0 0.8094
+precision1 0.7433
+recall0    0.7450
+recall1    0.8080
+
+2117 183 152 2175
+219 83 47 229
+Epoch 153 TimeSince 1m 2s
+
+[TRAINING] 153 ----------------
+accuracy   0.9276
+auc        0.9816
+f1macro    0.9276
+f1micro    0.9276
+loss       998.6528
+precision0 0.9330
+precision1 0.9224
+recall0    0.9204
+recall1    0.9347
+
+[VALIDATION] 153 ----------------
+accuracy   0.7751
+auc        0.8588
+f1macro    0.7750
+f1micro    0.7751
+loss       286.0324
+precision0 0.8233
+precision1 0.7340
+recall0    0.7252
+recall1    0.8297
+
+2159 141 192 2135
+231 71 60 216
+Epoch 154 TimeSince 1m 2s
+
+[TRAINING] 154 ----------------
+accuracy   0.9280
+auc        0.9812
+f1macro    0.9280
+f1micro    0.9280
+loss       981.7690
+precision0 0.9183
+precision1 0.9380
+recall0    0.9387
+recall1    0.9175
+
+[VALIDATION] 154 ----------------
+accuracy   0.7734
+auc        0.8607
+f1macro    0.7732
+f1micro    0.7734
+loss       277.9619
+precision0 0.7938
+precision1 0.7526
+recall0    0.7649
+recall1    0.7826
+
+2141 159 160 2167
+221 81 53 223
+Epoch 155 TimeSince 1m 3s
+
+[TRAINING] 155 ----------------
+accuracy   0.9311
+auc        0.9823
+f1macro    0.9311
+f1micro    0.9311
+loss       973.5147
+precision0 0.9305
+precision1 0.9316
+recall0    0.9309
+recall1    0.9312
+
+[VALIDATION] 155 ----------------
+accuracy   0.7682
+auc        0.8627
+f1macro    0.7682
+f1micro    0.7682
+loss       280.2688
+precision0 0.8066
+precision1 0.7336
+recall0    0.7318
+recall1    0.8080
+
+2122 178 150 2177
+221 81 50 226
+Epoch 156 TimeSince 1m 3s
+
+[TRAINING] 156 ----------------
+accuracy   0.9291
+auc        0.9821
+f1macro    0.9291
+f1micro    0.9291
+loss       945.5502
+precision0 0.9340
+precision1 0.9244
+recall0    0.9226
+recall1    0.9355
+
+[VALIDATION] 156 ----------------
+accuracy   0.7734
+auc        0.8617
+f1macro    0.7733
+f1micro    0.7734
+loss       288.0998
+precision0 0.8155
+precision1 0.7362
+recall0    0.7318
+recall1    0.8188
+
+2115 185 136 2191
+217 85 44 232
+Epoch 157 TimeSince 1m 4s
+
+[TRAINING] 157 ----------------
+accuracy   0.9306
+auc        0.9832
+f1macro    0.9306
+f1micro    0.9306
+loss       945.6128
+precision0 0.9396
+precision1 0.9221
+recall0    0.9196
+recall1    0.9416
+
+[VALIDATION] 157 ----------------
+accuracy   0.7768
+auc        0.8627
+f1macro    0.7767
+f1micro    0.7768
+loss       284.2266
+precision0 0.8314
+precision1 0.7319
+recall0    0.7185
+recall1    0.8406
+
+2093 207 117 2210
+220 82 49 227
+Epoch 158 TimeSince 1m 4s
+
+[TRAINING] 158 ----------------
+accuracy   0.9300
+auc        0.9832
+f1macro    0.9299
+f1micro    0.9300
+loss       959.2506
+precision0 0.9471
+precision1 0.9144
+recall0    0.9100
+recall1    0.9497
+
+[VALIDATION] 158 ----------------
+accuracy   0.7734
+auc        0.8585
+f1macro    0.7733
+f1micro    0.7734
+loss       291.9592
+precision0 0.8178
+precision1 0.7346
+recall0    0.7285
+recall1    0.8225
+
+2134 166 136 2191
+223 79 52 224
+Epoch 159 TimeSince 1m 4s
+
+[TRAINING] 159 ----------------
+accuracy   0.9347
+auc        0.9843
+f1macro    0.9347
+f1micro    0.9347
+loss       924.0653
+precision0 0.9401
+precision1 0.9296
+recall0    0.9278
+recall1    0.9416
+
+[VALIDATION] 159 ----------------
+accuracy   0.7734
+auc        0.8637
+f1macro    0.7734
+f1micro    0.7734
+loss       281.3754
+precision0 0.8109
+precision1 0.7393
+recall0    0.7384
+recall1    0.8116
+
+2156 144 166 2161
+225 77 57 219
+Epoch 160 TimeSince 1m 5s
+
+[TRAINING] 160 ----------------
+accuracy   0.9330
+auc        0.9844
+f1macro    0.9330
+f1micro    0.9330
+loss       930.4326
+precision0 0.9285
+precision1 0.9375
+recall0    0.9374
+recall1    0.9287
+
+[VALIDATION] 160 ----------------
+accuracy   0.7682
+auc        0.8629
+f1macro    0.7681
+f1micro    0.7682
+loss       278.1670
+precision0 0.7979
+precision1 0.7399
+recall0    0.7450
+recall1    0.7935
+
+2160 140 167 2160
+236 66 56 220
+Epoch 161 TimeSince 1m 5s
+
+[TRAINING] 161 ----------------
+accuracy   0.9337
+auc        0.9836
+f1macro    0.9337
+f1micro    0.9337
+loss       946.8554
+precision0 0.9282
+precision1 0.9391
+recall0    0.9391
+recall1    0.9282
+
+[VALIDATION] 161 ----------------
+accuracy   0.7889
+auc        0.8637
+f1macro    0.7888
+f1micro    0.7889
+loss       277.2381
+precision0 0.8082
+precision1 0.7692
+recall0    0.7815
+recall1    0.7971
+
+2225 75 233 2094
+247 55 71 205
+Epoch 162 TimeSince 1m 6s
+
+[TRAINING] 162 ----------------
+accuracy   0.9334
+auc        0.9852
+f1macro    0.9334
+f1micro    0.9334
+loss       908.4622
+precision0 0.9052
+precision1 0.9654
+recall0    0.9674
+recall1    0.8999
+
+[VALIDATION] 162 ----------------
+accuracy   0.7820
+auc        0.8696
+f1macro    0.7808
+f1micro    0.7820
+loss       271.4110
+precision0 0.7767
+precision1 0.7885
+recall0    0.8179
+recall1    0.7428
+
+2161 139 180 2147
+233 69 62 214
+Epoch 163 TimeSince 1m 6s
+
+[TRAINING] 163 ----------------
+accuracy   0.9311
+auc        0.9847
+f1macro    0.9311
+f1micro    0.9311
+loss       922.0954
+precision0 0.9231
+precision1 0.9392
+recall0    0.9396
+recall1    0.9226
+
+[VALIDATION] 163 ----------------
+accuracy   0.7734
+auc        0.8662
+f1macro    0.7731
+f1micro    0.7734
+loss       273.8936
+precision0 0.7898
+precision1 0.7562
+recall0    0.7715
+recall1    0.7754
+
+2168 132 173 2154
+232 70 56 220
+Epoch 164 TimeSince 1m 6s
+
+[TRAINING] 164 ----------------
+accuracy   0.9341
+auc        0.9850
+f1macro    0.9341
+f1micro    0.9341
+loss       906.6001
+precision0 0.9261
+precision1 0.9423
+recall0    0.9426
+recall1    0.9257
+
+[VALIDATION] 164 ----------------
+accuracy   0.7820
+auc        0.8666
+f1macro    0.7819
+f1micro    0.7820
+loss       275.8782
+precision0 0.8056
+precision1 0.7586
+recall0    0.7682
+recall1    0.7971
+
+2144 156 143 2184
+220 82 58 218
+Epoch 165 TimeSince 1m 7s
+
+[TRAINING] 165 ----------------
+accuracy   0.9354
+auc        0.9849
+f1macro    0.9354
+f1micro    0.9354
+loss       918.4979
+precision0 0.9375
+precision1 0.9333
+recall0    0.9322
+recall1    0.9385
+
+[VALIDATION] 165 ----------------
+accuracy   0.7578
+auc        0.8646
+f1macro    0.7578
+f1micro    0.7578
+loss       281.7358
+precision0 0.7914
+precision1 0.7267
+recall0    0.7285
+recall1    0.7899
+
+2157 143 153 2174
+232 70 58 218
+Epoch 166 TimeSince 1m 7s
+
+[TRAINING] 166 ----------------
+accuracy   0.9360
+auc        0.9858
+f1macro    0.9360
+f1micro    0.9360
+loss       876.4438
+precision0 0.9338
+precision1 0.9383
+recall0    0.9378
+recall1    0.9343
+
+[VALIDATION] 166 ----------------
+accuracy   0.7785
+auc        0.8659
+f1macro    0.7784
+f1micro    0.7785
+loss       279.4304
+precision0 0.8000
+precision1 0.7569
+recall0    0.7682
+recall1    0.7899
+
+2178 122 146 2181
+231 71 57 219
+Epoch 167 TimeSince 1m 8s
+
+[TRAINING] 167 ----------------
+accuracy   0.9421
+auc        0.9871
+f1macro    0.9421
+f1micro    0.9421
+loss       863.1650
+precision0 0.9372
+precision1 0.9470
+recall0    0.9470
+recall1    0.9373
+
+[VALIDATION] 167 ----------------
+accuracy   0.7785
+auc        0.8638
+f1macro    0.7785
+f1micro    0.7785
+loss       279.3143
+precision0 0.8021
+precision1 0.7552
+recall0    0.7649
+recall1    0.7935
+
+2167 133 150 2177
+229 73 54 222
+Epoch 168 TimeSince 1m 8s
+
+[TRAINING] 168 ----------------
+accuracy   0.9388
+auc        0.9863
+f1macro    0.9388
+f1micro    0.9388
+loss       866.1768
+precision0 0.9353
+precision1 0.9424
+recall0    0.9422
+recall1    0.9355
+
+[VALIDATION] 168 ----------------
+accuracy   0.7803
+auc        0.8718
+f1macro    0.7802
+f1micro    0.7803
+loss       274.3471
+precision0 0.8092
+precision1 0.7525
+recall0    0.7583
+recall1    0.8043
+
+2165 135 140 2187
+224 78 58 218
+Epoch 169 TimeSince 1m 8s
+
+[TRAINING] 169 ----------------
+accuracy   0.9406
+auc        0.9864
+f1macro    0.9406
+f1micro    0.9406
+loss       868.5534
+precision0 0.9393
+precision1 0.9419
+recall0    0.9413
+recall1    0.9398
+
+[VALIDATION] 169 ----------------
+accuracy   0.7647
+auc        0.8667
+f1macro    0.7647
+f1micro    0.7647
+loss       276.0077
+precision0 0.7943
+precision1 0.7365
+recall0    0.7417
+recall1    0.7899
+
+2105 195 100 2227
+210 92 46 230
+Epoch 170 TimeSince 1m 9s
+
+[TRAINING] 170 ----------------
+accuracy   0.9362
+auc        0.9860
+f1macro    0.9362
+f1micro    0.9362
+loss       912.3400
+precision0 0.9546
+precision1 0.9195
+recall0    0.9152
+recall1    0.9570
+
+[VALIDATION] 170 ----------------
+accuracy   0.7612
+auc        0.8640
+f1macro    0.7610
+f1micro    0.7612
+loss       293.5905
+precision0 0.8203
+precision1 0.7143
+recall0    0.6954
+recall1    0.8333
+
+2134 166 110 2217
+223 79 49 227
+Epoch 171 TimeSince 1m 9s
+
+[TRAINING] 171 ----------------
+accuracy   0.9404
+auc        0.9871
+f1macro    0.9403
+f1micro    0.9404
+loss       858.1372
+precision0 0.9510
+precision1 0.9303
+recall0    0.9278
+recall1    0.9527
+
+[VALIDATION] 171 ----------------
+accuracy   0.7785
+auc        0.8651
+f1macro    0.7785
+f1micro    0.7785
+loss       288.7221
+precision0 0.8199
+precision1 0.7418
+recall0    0.7384
+recall1    0.8225
+
+2208 92 169 2158
+240 62 57 219
+Epoch 172 TimeSince 1m 10s
+
+[TRAINING] 172 ----------------
+accuracy   0.9436
+auc        0.9876
+f1macro    0.9436
+f1micro    0.9436
+loss       835.5529
+precision0 0.9289
+precision1 0.9591
+recall0    0.9600
+recall1    0.9274
+
+[VALIDATION] 172 ----------------
+accuracy   0.7941
+auc        0.8684
+f1macro    0.7938
+f1micro    0.7941
+loss       274.8728
+precision0 0.8081
+precision1 0.7794
+recall0    0.7947
+recall1    0.7935
+
+2203 97 190 2137
+240 62 61 215
+Epoch 173 TimeSince 1m 10s
+
+[TRAINING] 173 ----------------
+accuracy   0.9380
+auc        0.9880
+f1macro    0.9380
+f1micro    0.9380
+loss       822.6225
+precision0 0.9206
+precision1 0.9566
+recall0    0.9578
+recall1    0.9183
+
+[VALIDATION] 173 ----------------
+accuracy   0.7872
+auc        0.8685
+f1macro    0.7868
+f1micro    0.7872
+loss       276.8661
+precision0 0.7973
+precision1 0.7762
+recall0    0.7947
+recall1    0.7790
+
+2172 128 134 2193
+224 78 48 228
+Epoch 174 TimeSince 1m 10s
+
+[TRAINING] 174 ----------------
+accuracy   0.9434
+auc        0.9883
+f1macro    0.9434
+f1micro    0.9434
+loss       841.7216
+precision0 0.9419
+precision1 0.9449
+recall0    0.9443
+recall1    0.9424
+
+[VALIDATION] 174 ----------------
+accuracy   0.7820
+auc        0.8681
+f1macro    0.7820
+f1micro    0.7820
+loss       278.8322
+precision0 0.8235
+precision1 0.7451
+recall0    0.7417
+recall1    0.8261
+
+2149 151 110 2217
+217 85 50 226
+Epoch 175 TimeSince 1m 11s
+
+[TRAINING] 175 ----------------
+accuracy   0.9436
+auc        0.9878
+f1macro    0.9436
+f1micro    0.9436
+loss       862.2738
+precision0 0.9513
+precision1 0.9362
+recall0    0.9343
+recall1    0.9527
+
+[VALIDATION] 175 ----------------
+accuracy   0.7664
+auc        0.8615
+f1macro    0.7664
+f1micro    0.7664
+loss       289.0933
+precision0 0.8127
+precision1 0.7267
+recall0    0.7185
+recall1    0.8188
+
+2191 109 148 2179
+229 73 51 225
+Epoch 176 TimeSince 1m 11s
+
+[TRAINING] 176 ----------------
+accuracy   0.9445
+auc        0.9882
+f1macro    0.9445
+f1micro    0.9445
+loss       828.4299
+precision0 0.9367
+precision1 0.9524
+recall0    0.9526
+recall1    0.9364
+
+[VALIDATION] 176 ----------------
+accuracy   0.7855
+auc        0.8675
+f1macro    0.7855
+f1micro    0.7855
+loss       281.7245
+precision0 0.8179
+precision1 0.7550
+recall0    0.7583
+recall1    0.8152
+
+2098 202 87 2240
+207 95 43 233
+Epoch 177 TimeSince 1m 12s
+
+[TRAINING] 177 ----------------
+accuracy   0.9375
+auc        0.9880
+f1macro    0.9375
+f1micro    0.9375
+loss       871.9123
+precision0 0.9602
+precision1 0.9173
+recall0    0.9122
+recall1    0.9626
+
+[VALIDATION] 177 ----------------
+accuracy   0.7612
+auc        0.8646
+f1macro    0.7608
+f1micro    0.7612
+loss       298.2592
+precision0 0.8280
+precision1 0.7104
+recall0    0.6854
+recall1    0.8442
+
+2166 134 127 2200
+222 80 50 226
+Epoch 178 TimeSince 1m 12s
+
+[TRAINING] 178 ----------------
+accuracy   0.9436
+auc        0.9884
+f1macro    0.9436
+f1micro    0.9436
+loss       835.1039
+precision0 0.9446
+precision1 0.9426
+recall0    0.9417
+recall1    0.9454
+
+[VALIDATION] 178 ----------------
+accuracy   0.7751
+auc        0.8654
+f1macro    0.7751
+f1micro    0.7751
+loss       285.4501
+precision0 0.8162
+precision1 0.7386
+recall0    0.7351
+recall1    0.8188
+
+2129 171 113 2214
+215 87 49 227
+Epoch 179 TimeSince 1m 12s
+
+[TRAINING] 179 ----------------
+accuracy   0.9386
+auc        0.9874
+f1macro    0.9386
+f1micro    0.9386
+loss       863.1736
+precision0 0.9496
+precision1 0.9283
+recall0    0.9257
+recall1    0.9514
+
+[VALIDATION] 179 ----------------
+accuracy   0.7647
+auc        0.8677
+f1macro    0.7646
+f1micro    0.7647
+loss       288.5340
+precision0 0.8144
+precision1 0.7229
+recall0    0.7119
+recall1    0.8225
+
+2217 83 146 2181
+240 62 58 218
+Epoch 180 TimeSince 1m 13s
+
+[TRAINING] 180 ----------------
+accuracy   0.9505
+auc        0.9892
+f1macro    0.9505
+f1micro    0.9505
+loss       804.6398
+precision0 0.9382
+precision1 0.9633
+recall0    0.9639
+recall1    0.9373
+
+[VALIDATION] 180 ----------------
+accuracy   0.7924
+auc        0.8639
+f1macro    0.7921
+f1micro    0.7924
+loss       284.6043
+precision0 0.8054
+precision1 0.7786
+recall0    0.7947
+recall1    0.7899
+
+2197 103 148 2179
+234 68 58 218
+Epoch 181 TimeSince 1m 13s
+
+[TRAINING] 181 ----------------
+accuracy   0.9458
+auc        0.9889
+f1macro    0.9458
+f1micro    0.9458
+loss       806.0831
+precision0 0.9369
+precision1 0.9549
+recall0    0.9552
+recall1    0.9364
+
+[VALIDATION] 181 ----------------
+accuracy   0.7820
+auc        0.8687
+f1macro    0.7818
+f1micro    0.7820
+loss       274.4727
+precision0 0.8014
+precision1 0.7622
+recall0    0.7748
+recall1    0.7899
+
+2145 155 117 2210
+232 70 52 224
+Epoch 182 TimeSince 1m 14s
+
+[TRAINING] 182 ----------------
+accuracy   0.9412
+auc        0.9887
+f1macro    0.9412
+f1micro    0.9412
+loss       820.1075
+precision0 0.9483
+precision1 0.9345
+recall0    0.9326
+recall1    0.9497
+
+[VALIDATION] 182 ----------------
+accuracy   0.7889
+auc        0.8700
+f1macro    0.7889
+f1micro    0.7889
+loss       279.7683
+precision0 0.8169
+precision1 0.7619
+recall0    0.7682
+recall1    0.8116
+
+2153 147 107 2220
+217 85 47 229
+Epoch 183 TimeSince 1m 14s
+
+[TRAINING] 183 ----------------
+accuracy   0.9451
+auc        0.9890
+f1macro    0.9451
+f1micro    0.9451
+loss       821.1664
+precision0 0.9527
+precision1 0.9379
+recall0    0.9361
+recall1    0.9540
+
+[VALIDATION] 183 ----------------
+accuracy   0.7716
+auc        0.8701
+f1macro    0.7715
+f1micro    0.7716
+loss       285.4057
+precision0 0.8220
+precision1 0.7293
+recall0    0.7185
+recall1    0.8297
+
+2187 113 125 2202
+236 66 52 224
+Epoch 184 TimeSince 1m 15s
+
+[TRAINING] 184 ----------------
+accuracy   0.9486
+auc        0.9896
+f1macro    0.9486
+f1micro    0.9486
+loss       772.1692
+precision0 0.9459
+precision1 0.9512
+recall0    0.9509
+recall1    0.9463
+
+[VALIDATION] 184 ----------------
+accuracy   0.7958
+auc        0.8716
+f1macro    0.7958
+f1micro    0.7958
+loss       279.6647
+precision0 0.8194
+precision1 0.7724
+recall0    0.7815
+recall1    0.8116
+
+2199 101 139 2188
+237 65 53 223
+Epoch 185 TimeSince 1m 15s
+
+[TRAINING] 185 ----------------
+accuracy   0.9481
+auc        0.9897
+f1macro    0.9481
+f1micro    0.9481
+loss       779.6557
+precision0 0.9405
+precision1 0.9559
+recall0    0.9561
+recall1    0.9403
+
+[VALIDATION] 185 ----------------
+accuracy   0.7958
+auc        0.8691
+f1macro    0.7957
+f1micro    0.7958
+loss       277.6181
+precision0 0.8172
+precision1 0.7743
+recall0    0.7848
+recall1    0.8080
+
+2186 114 144 2183
+239 63 56 220
+Epoch 186 TimeSince 1m 15s
+
+[TRAINING] 186 ----------------
+accuracy   0.9442
+auc        0.9896
+f1macro    0.9442
+f1micro    0.9442
+loss       769.0291
+precision0 0.9382
+precision1 0.9504
+recall0    0.9504
+recall1    0.9381
+
+[VALIDATION] 186 ----------------
+accuracy   0.7941
+auc        0.8709
+f1macro    0.7939
+f1micro    0.7941
+loss       278.0084
+precision0 0.8102
+precision1 0.7774
+recall0    0.7914
+recall1    0.7971
+
+2160 140 112 2215
+231 71 50 226
+Epoch 187 TimeSince 1m 16s
+
+[TRAINING] 187 ----------------
+accuracy   0.9455
+auc        0.9894
+f1macro    0.9455
+f1micro    0.9455
+loss       788.4996
+precision0 0.9507
+precision1 0.9406
+recall0    0.9391
+recall1    0.9519
+
+[VALIDATION] 187 ----------------
+accuracy   0.7907
+auc        0.8671
+f1macro    0.7906
+f1micro    0.7907
+loss       288.2120
+precision0 0.8221
+precision1 0.7609
+recall0    0.7649
+recall1    0.8188
+
+2166 134 106 2221
+228 74 46 230
+Epoch 188 TimeSince 1m 16s
+
+[TRAINING] 188 ----------------
+accuracy   0.9481
+auc        0.9908
+f1macro    0.9481
+f1micro    0.9481
+loss       774.8123
+precision0 0.9533
+precision1 0.9431
+recall0    0.9417
+recall1    0.9544
+
+[VALIDATION] 188 ----------------
+accuracy   0.7924
+auc        0.8700
+f1macro    0.7924
+f1micro    0.7924
+loss       286.1523
+precision0 0.8321
+precision1 0.7566
+recall0    0.7550
+recall1    0.8333
+
+2149 151 95 2232
+227 75 49 227
+Epoch 189 TimeSince 1m 17s
+
+[TRAINING] 189 ----------------
+accuracy   0.9468
+auc        0.9899
+f1macro    0.9468
+f1micro    0.9468
+loss       781.9677
+precision0 0.9577
+precision1 0.9366
+recall0    0.9343
+recall1    0.9592
+
+[VALIDATION] 189 ----------------
+accuracy   0.7855
+auc        0.8693
+f1macro    0.7855
+f1micro    0.7855
+loss       289.2761
+precision0 0.8225
+precision1 0.7517
+recall0    0.7517
+recall1    0.8225
+
+2205 95 131 2196
+233 69 51 225
+Epoch 190 TimeSince 1m 17s
+
+[TRAINING] 190 ----------------
+accuracy   0.9512
+auc        0.9912
+f1macro    0.9512
+f1micro    0.9512
+loss       745.5046
+precision0 0.9439
+precision1 0.9585
+recall0    0.9587
+recall1    0.9437
+
+[VALIDATION] 190 ----------------
+accuracy   0.7924
+auc        0.8714
+f1macro    0.7923
+f1micro    0.7924
+loss       280.1774
+precision0 0.8204
+precision1 0.7653
+recall0    0.7715
+recall1    0.8152
+
+2140 160 82 2245
+217 85 48 228
+Epoch 191 TimeSince 1m 17s
+
+[TRAINING] 191 ----------------
+accuracy   0.9477
+auc        0.9906
+f1macro    0.9477
+f1micro    0.9477
+loss       806.2709
+precision0 0.9631
+precision1 0.9335
+recall0    0.9304
+recall1    0.9648
+
+[VALIDATION] 191 ----------------
+accuracy   0.7699
+auc        0.8631
+f1macro    0.7698
+f1micro    0.7699
+loss       295.7075
+precision0 0.8189
+precision1 0.7284
+recall0    0.7185
+recall1    0.8261
+
+2135 165 87 2240
+216 86 45 231
+Epoch 192 TimeSince 1m 18s
+
+[TRAINING] 192 ----------------
+accuracy   0.9455
+auc        0.9908
+f1macro    0.9455
+f1micro    0.9455
+loss       790.5856
+precision0 0.9608
+precision1 0.9314
+recall0    0.9283
+recall1    0.9626
+
+[VALIDATION] 192 ----------------
+accuracy   0.7734
+auc        0.8685
+f1macro    0.7732
+f1micro    0.7734
+loss       293.4420
+precision0 0.8276
+precision1 0.7287
+recall0    0.7152
+recall1    0.8370
+
+2158 142 92 2235
+220 82 46 230
+Epoch 193 TimeSince 1m 18s
+
+[TRAINING] 193 ----------------
+accuracy   0.9494
+auc        0.9902
+f1macro    0.9494
+f1micro    0.9494
+loss       777.2822
+precision0 0.9591
+precision1 0.9403
+recall0    0.9383
+recall1    0.9605
+
+[VALIDATION] 193 ----------------
+accuracy   0.7785
+auc        0.8662
+f1macro    0.7785
+f1micro    0.7785
+loss       295.3045
+precision0 0.8271
+precision1 0.7372
+recall0    0.7285
+recall1    0.8333
+
+2145 155 110 2217
+221 81 46 230
+Epoch 194 TimeSince 1m 19s
+
+[TRAINING] 194 ----------------
+accuracy   0.9427
+auc        0.9905
+f1macro    0.9427
+f1micro    0.9427
+loss       765.7977
+precision0 0.9512
+precision1 0.9347
+recall0    0.9326
+recall1    0.9527
+
+[VALIDATION] 194 ----------------
+accuracy   0.7803
+auc        0.8666
+f1macro    0.7802
+f1micro    0.7803
+loss       297.4787
+precision0 0.8277
+precision1 0.7395
+recall0    0.7318
+recall1    0.8333
+
+2191 109 124 2203
+234 68 48 228
+Epoch 195 TimeSince 1m 19s
+
+[TRAINING] 195 ----------------
+accuracy   0.9496
+auc        0.9903
+f1macro    0.9496
+f1micro    0.9496
+loss       751.8542
+precision0 0.9464
+precision1 0.9529
+recall0    0.9526
+recall1    0.9467
+
+[VALIDATION] 195 ----------------
+accuracy   0.7993
+auc        0.8726
+f1macro    0.7993
+f1micro    0.7993
+loss       282.6213
+precision0 0.8298
+precision1 0.7703
+recall0    0.7748
+recall1    0.8261
+
+2196 104 118 2209
+231 71 49 227
+Epoch 196 TimeSince 1m 19s
+
+[TRAINING] 196 ----------------
+accuracy   0.9520
+auc        0.9906
+f1macro    0.9520
+f1micro    0.9520
+loss       753.9086
+precision0 0.9490
+precision1 0.9550
+recall0    0.9548
+recall1    0.9493
+
+[VALIDATION] 196 ----------------
+accuracy   0.7924
+auc        0.8678
+f1macro    0.7924
+f1micro    0.7924
+loss       281.4160
+precision0 0.8250
+precision1 0.7617
+recall0    0.7649
+recall1    0.8225
+
+2176 124 95 2232
+223 79 47 229
+Epoch 197 TimeSince 1m 20s
+
+[TRAINING] 197 ----------------
+accuracy   0.9527
+auc        0.9910
+f1macro    0.9527
+f1micro    0.9527
+loss       780.2517
+precision0 0.9582
+precision1 0.9474
+recall0    0.9461
+recall1    0.9592
+
+[VALIDATION] 197 ----------------
+accuracy   0.7820
+auc        0.8670
+f1macro    0.7820
+f1micro    0.7820
+loss       283.2336
+precision0 0.8259
+precision1 0.7435
+recall0    0.7384
+recall1    0.8297
+
+2205 95 105 2222
+227 75 49 227
+Epoch 198 TimeSince 1m 20s
+
+[TRAINING] 198 ----------------
+accuracy   0.9568
+auc        0.9922
+f1macro    0.9568
+f1micro    0.9568
+loss       733.4438
+precision0 0.9545
+precision1 0.9590
+recall0    0.9587
+recall1    0.9549
+
+[VALIDATION] 198 ----------------
+accuracy   0.7855
+auc        0.8699
+f1macro    0.7855
+f1micro    0.7855
+loss       278.5125
+precision0 0.8225
+precision1 0.7517
+recall0    0.7517
+recall1    0.8225
+
+2209 91 110 2217
+235 67 50 226
+Epoch 199 TimeSince 1m 21s
+
+[TRAINING] 199 ----------------
+accuracy   0.9566
+auc        0.9923
+f1macro    0.9566
+f1micro    0.9566
+loss       710.5347
+precision0 0.9526
+precision1 0.9606
+recall0    0.9604
+recall1    0.9527
+
+[VALIDATION] 199 ----------------
+accuracy   0.7976
+auc        0.8716
+f1macro    0.7975
+f1micro    0.7976
+loss       279.1975
+precision0 0.8246
+precision1 0.7713
+recall0    0.7781
+recall1    0.8188
+
+2207 93 129 2198
+236 66 60 216
+Epoch 200 TimeSince 1m 21s
+
+[TRAINING] 200 ----------------
+accuracy   0.9520
+auc        0.9922
+f1macro    0.9520
+f1micro    0.9520
+loss       709.9717
+precision0 0.9448
+precision1 0.9594
+recall0    0.9596
+recall1    0.9446
+
+[VALIDATION] 200 ----------------
+accuracy   0.7820
+auc        0.8714
+f1macro    0.7817
+f1micro    0.7820
+loss       278.3375
+precision0 0.7973
+precision1 0.7660
+recall0    0.7815
+recall1    0.7826
+
+[TESTING] 200 ----------------
+227 63 71 218
+accuracy   0.7686
+auc        0.8370
+f1macro    0.7685
+f1micro    0.7686
+loss       327.8130
+precision0 0.7617
+precision1 0.7758
+recall0    0.7828
+recall1    0.7543
+
