@@ -1,0 +1,11 @@
+# Notebook Checkpoints #
+########################
+.ipynb_checkpoints
+
+# Pycache #
+###########
+/__pycache__
+
+# VS Code Configuration Files #
+###############################
+/.vscode
