@@ -9,3 +9,8 @@
 # VS Code Configuration Files #
 ###############################
 /.vscode
+
+# Data Files Too Large To Store #
+###############################
+data/iedb_mhc_class_ii.csv
+data/iedb_mhc_class_i.csv
