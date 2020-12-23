@@ -1,9 +1,11 @@
-netTCR_data.txt - Positive data downloaded from the netTCR repository
-tcrgp_data.txt - Positive and Negative pairs downloaded from the TCRGP repository
+## data_analytics.ipynb
+A Jupyter Notebook which contains the summary statistics of the data
+It also combines all of the datasets into a single file
 
 ## McPAS-TCR.csv
 http://friedmanlab.weizmann.ac.il/McPAS-TCR/
 Downloaded on December 23rd, 2020
+
 This is the entirety of the McPAS database
 
 ## VDJDB.csv
@@ -38,3 +40,6 @@ Search Settings for IEDB Data
 - Any Disease
 - Any Reference Type
 
+## Miscellaneous
+netTCR_data.txt - Positive data downloaded from the netTCR repository
+tcrgp_data.txt - Positive and Negative pairs downloaded from the TCRGP repository
