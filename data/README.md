@@ -1,6 +1,14 @@
+# Data
+
+## blosum
+Contains various blosum matrices
+
 ## data_analytics.ipynb
 A Jupyter Notebook which contains the summary statistics of the data
 It also combines all of the datasets into a single file
+
+## combined_data.csv
+Contains the combined datasets as defined by data_analytics.ipynb
 
 ## McPAS-TCR.csv
 http://friedmanlab.weizmann.ac.il/McPAS-TCR/
@@ -40,7 +48,12 @@ Search Settings for IEDB Data
 - Any Disease
 - Any Reference Type
 
-## Miscellaneous
-netTCR_data.txt - Positive data downloaded from the netTCR repository
+# Miscellaneous
 
-tcrgp_data.txt - Positive and Negative pairs downloaded from the TCRGP repository
+## netTCR_data.txt
+Downloaded February 13th, 2020
+Positive data from the netTCR repository
+
+tcrgp_data.txt
+## Downloaded February 13th, 2020
+Positive and Negative pairs downloaded from the TCRGP repository
