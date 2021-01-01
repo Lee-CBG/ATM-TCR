@@ -1,22 +1,23 @@
 # Data
 
-## blosum
+### blosum
 Contains various blosum matrices
 
-## data_analytics.ipynb
+### data_analytics.ipynb
 A Jupyter Notebook which contains the summary statistics of the data
+
 It also combines all of the datasets into a single file
 
-## combined_data.csv
+### combined_data.csv
 Contains the combined datasets as defined by data_analytics.ipynb
 
-## McPAS-TCR.csv
+### McPAS-TCR.csv
 http://friedmanlab.weizmann.ac.il/McPAS-TCR/
 Downloaded on December 23rd, 2020
 
 This is the entirety of the McPAS database
 
-## VDJDB.csv
+### VDJDB.csv
 https://vdjdb.cdr3.net/
 Downloaded on December 23rd, 2020
 
@@ -31,7 +32,7 @@ VDJDB Search Settings
     - All Sequencing Types
     - Minimal Confidence Score: 0
 
-## iedb_mhc_class_*.csv
+### iedb_mhc_class_*.csv
 https://www.iedb.org/
 Downloaded on December 23rd, 2020
 
@@ -50,10 +51,12 @@ Search Settings for IEDB Data
 
 # Miscellaneous
 
-## netTCR_data.txt
+### netTCR_data.txt
 Downloaded February 13th, 2020
+
 Positive data from the netTCR repository
 
-tcrgp_data.txt
-## Downloaded February 13th, 2020
+### tcrgp_data.txt
+Downloaded February 13th, 2020
+
 Positive and Negative pairs downloaded from the TCRGP repository
