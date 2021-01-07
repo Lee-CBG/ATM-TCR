@@ -10,7 +10,12 @@
 ###############################
 /.vscode
 
-# Data Files Too Large To Store #
+# Data Files #
 ###############################
 data/iedb_mhc_class_ii.csv
 data/iedb_mhc_class_i.csv
+data/McPAS-TCR.csv
+data/VDJDB.tsv
+data/netTCR_data.txt
+data/tcrgp_data.txt
+data/combined_dataset.csv
