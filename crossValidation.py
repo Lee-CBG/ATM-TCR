@@ -38,7 +38,7 @@ testingFolds = range(10)
 save_model = False
 
 # Parameters for cross Validation
-dropRate = [0.3]
+dropRate = [0.3, 0.5]
 hid = [16, 64, 128]
 maxTcrLen = [None, 10, 15]
 maxPepLen = [None, 8, 12]
