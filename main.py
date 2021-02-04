@@ -1,3 +1,4 @@
+import argparse
 import os
 import sys
 import csv
@@ -10,14 +11,12 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 from data_loader import define_dataloader, load_embedding
-from utils import timeSince, get_performance_batchiter, print_performance, write_blackbox_output_batchiter
+from utils import str2bool, timeSince, get_performance_batchiter, print_performance, write_blackbox_output_batchiter
 
 import data_io_tf
 
-sys.path.append('../')
-
+# Constants
 PRINT_EVERY_EPOCH = 1
-
 
 def train(model, device, train_loader, optimizer, epoch):
 
@@ -25,11 +24,11 @@ def train(model, device, train_loader, optimizer, epoch):
 
     for batch in train_loader:
 
-        X_pep, X_tcr, y = batch.X_pep.to(
+        x_pep, x_tcr, y = batch.X_pep.to(
             device), batch.X_tcr.to(device), batch.y.to(device)
 
         optimizer.zero_grad()
-        yhat = model(X_pep, X_tcr)
+        yhat = model(x_pep, x_tcr)
         y = y.unsqueeze(-1).expand_as(yhat)
         loss = F.binary_cross_entropy(yhat, y)
         loss.backward()
@@ -39,103 +38,139 @@ def train(model, device, train_loader, optimizer, epoch):
         print('[TRAIN] Epoch {} Loss {:.4f}'.format(epoch, loss.item()))
 
 
-def run(
-    infile, indepfile=None, blosum='data/BLOSUM45',
-    batch_size=100, model_name='original.ckpt',
-    epoch=200, lr=0.001, cuda=True, seed=7405,
-    mode='train', model='cnn',
-    dropRate=0.3, hid=10, linearSize=16, filters=100,
-    padding='mid', maxTcrLen=None, maxPepLen=None,
-    folds=10, testFold=9, validationFold=0,
-    save_model=False
-):
+def main():
 
-    if mode == 'test':
-        assert indepfile is not None, '--indepfile is missing!'
-    assert testFold < folds, '--testFold should be smaller than --folds'
-    assert validationFold < folds, '--validationFold should be smaller than --folds'
-    assert validationFold != testFold, '--validationFold and --testFold should not be equal to each other'
+    parser = argparse.ArgumentParser(description='Prediction of TCR binding to peptide-MHC complexes')
 
-    # cuda
-    if torch.cuda.is_available() and not cuda:
+    parser.add_argument('--infile', type=str,
+                        help='input file for training')
+    parser.add_argument('--indepfile', type=str, default=None,
+                        help='independent test file')
+    parser.add_argument('--blosum', type=str, default='data/BLOSUM50',
+                        help='file with BLOSUM matrix')
+    parser.add_argument('--batch_size', type=int, default=20, metavar='N',
+                        help='batch size')
+    parser.add_argument('--model_name', type=str, default='original.ckpt',
+                        help = 'if train is True, model name to be saved, otherwise model name to be loaded')
+    parser.add_argument('--epoch', type=int, default=300, metavar='N',
+                        help='maximum number of epoch to train')
+    parser.add_argment('--min_epoch', type=int, default=50,
+                        help='minimum number of epoch to train, early stopping will not be applied until we reach min_epoch')
+    parser.add_argument('--early_stop', type=str2bool, default=True,
+                        help='use early stopping method')
+    parser.add_argument('--lr', type=float, default=0.001, metavar='LR',
+                        help='learning rate')
+    parser.add_argument('--cuda', type=str2bool, default=True,
+                        help = 'enable cuda')
+    parser.add_argument('--seed', type=int, default=7405,
+                        help='random seed')
+    parser.add_argument('--mode', type=str, default='train',
+                        help = 'train or test')
+    parser.add_argument('--save_model', type=str2bool, default=False,
+                        help = 'save model')
+    parser.add_argument('--model', type=str, default='nettcr',
+                        help='cnn, nettcr')
+    parser.add_argument('--drop_rate', type=float, default=0.3, 
+                        help='dropout rate')
+    parser.add_argument('--n_hid', type=int, default=10, 
+                        help='number of hidden variables')
+    parser.add_argument('--lin_size', type=int, default=16, 
+                        help='size of linear transformations')
+    parser.add_argument('--n_filters', type=int, default=100, 
+                        help='number of filters in CNN module in netTCR')
+    parser.add_argument('--padding', type=str, default='mid',
+                        help='front, end, mid, alignment')
+    parser.add_argument('--max_len_tcr', type=int, default=None,
+                        help='maximum TCR length allowed')
+    parser.add_argument('--max_len_pep', type=int, default=None,
+                        help='maximum peptide length allowed')
+    parser.add_argument('--n_fold', type=int, default=10,
+                        help='number of cross-validation folds')  
+    parser.add_argument('--idx_test_fold', type=int, default=9,
+                        help='fold index for test set (0, ..., n_fold-1)')
+    parser.add_argument('--idx_val_fold', type=int, default=0,
+                        help='fold index for validation set (-1, 0, ..., n_fold-1). \
+                              If -1, the option will be ignored \
+                              If >= 0, the test set will be set aside and the validation set is used as test set') 
+    parser.add_argument('--splt_type', type=str, default='random',
+                        help='how to split the dataset')
+    args = parser.parse_args()
+
+    if args.mode is 'test':
+        assert args.indepfile is not None, '--indepfile is missing!'
+    assert args.idx_test_fold < args.n_fold, '--idx_test_fold should be smaller than --n_fold'
+    assert args.idx_val_fold < args.n_fold, '--idx_val_fold should be smaller than --n_fold'
+    assert args.idx_val_fold != args.idx_test_fold, '--idx_val_fold and --idx_test_fold should not be equal to each other'
+
+    # Set Cuda
+    if torch.cuda.is_available() and not args.cuda:
         print("WARNING: You have a CUDA device, so you should probably run with --cuda")
-    cuda = (cuda and torch.cuda.is_available())
-    device = torch.device('cuda' if cuda else 'cpu')
+    args.cuda = (args.cuda and torch.cuda.is_available())
+    device = torch.device('cuda' if args.cuda else 'cpu')
 
-    # set random seed
-    torch.manual_seed(seed)
-    if cuda:
-        torch.cuda.manual_seed(seed)
+    # Set random seed
+    torch.manual_seed(args.seed)
+    if args.cuda:
+        torch.cuda.manual_seed(args.seed)
 
-    # embedding matrix
-    blosumFlag = True
-    if blosum == None:
-        blosumFlag = False
-        blosum = 'data/BLOSUM45'
-    embedding = load_embedding(blosum)
+    # Load embedding matrix
+    embedding_matrix = load_embedding(args.blosum)
 
-    # read data
-    X_pep, X_tcr, y = data_io_tf.read_pTCR(infile)
+    # Read data
+    x_pep, x_tcr, y = data_io_tf.read_pTCR(args.infile)
     y = np.array(y)
 
+    # Determine data split from folds
     n_total = len(y)
-    n_test = int(round(n_total / folds))
+    n_test = int(round(n_total / args.n_folds))
     n_train = n_total - n_test
 
-    indexfile = re.sub('.txt', '_shuffleIdx.txt', infile)
-    if os.path.exists(indexfile):
-        idx_shuffled = np.loadtxt(indexfile, dtype=np.int32)
-    else:
-        idx_shuffled = np.arange(n_total)
-        np.random.shuffle(idx_shuffled)
-        np.savetxt(indexfile, idx_shuffled, fmt='%d')
+    # Shuffle data into folds for cross validation
+    load_data_split(x_pep, x_tcr, args.split_type, n_total, n_test, args)
 
-    if validationFold < 0:
-        idx_test = idx_shuffled[testFold*n_test:(testFold+1)*n_test]
-        idx_train = list(set(idx_shuffled).difference(set(idx_test)))
-    else:
-        idx_test_remove = idx_shuffled[testFold*n_test:(testFold+1)*n_test]
-        idx_test = idx_shuffled[validationFold *
-                                n_test:(validationFold+1)*n_test]
-        idx_train = list(set(idx_shuffled).difference(
-            set(idx_test)).difference(set(idx_test_remove)))
-
-    # define dataloader
-
-    train_loader = define_dataloader(X_pep[idx_train], X_tcr[idx_train], y[idx_train],
-                                     maxPepLen, maxTcrLen,
-                                     padding=padding,
-                                     batch_size=batch_size, device=device)
-    test_loader = define_dataloader(X_pep[idx_test], X_tcr[idx_test], y[idx_test],
+    # Define dataloader
+    train_loader = define_dataloader(x_pep[idx_train], x_tcr[idx_train], y[idx_train],
+                                     args.max_len_pep, args.max_len_tcr,
+                                     padding=args.padding,
+                                     batch_size=args.batch_size, device=device)
+    test_loader = define_dataloader(x_pep[idx_test], x_tcr[idx_test], y[idx_test],
                                     maxlen_pep=train_loader['pep_length'],
                                     maxlen_tcr=train_loader['tcr_length'],
-                                    padding=padding,
-                                    batch_size=batch_size, device=device)
+                                    padding=args.padding,
+                                    batch_size=args.batch_size, device=device)
+    if args.indepfile is not None:
+        x_indep_pep, x_indep_tcr, y_indep = data_io_tf.read_pTCR(args.indepfile)
+        y_indep = np.array(y_indep)
+        indep_loader = define_dataloader(x_indep_pep, x_indep_tcr, y_indep, 
+                                         maxlen_pep=train_loader['pep_length'],
+                                         maxlen_tcr=train_loader['tcr_length'],
+                                         padding=args.padding,
+                                         batch_size=args.batch_size, device=device)
 
-    pep_length = train_loader['pep_length']
-    tcr_length = train_loader['tcr_length']
 
-    # define model
+    args.pep_length = train_loader['pep_length']
+    args.tcr_length = train_loader['tcr_length']
+
+    # Define model
     if model == 'cnn':
 
         from cnn import Net
-        model = Net(embedding, pep_length, tcr_length, dropRate,
-                    hid, linearSize, blosumFlag).to(device)
+        model = Net(embedding_matrix, args).to(device)
     else:
         raise ValueError('unknown model name')
 
-    optimizer = optim.Adam(model.parameters(), lr=lr)
+    optimizer = optim.Adam(model.parameters(), lr=args.lr)
 
+    # Create Required Directories
     if 'models' not in os.listdir('.'):
         os.mkdir('models')
     if 'result' not in os.listdir('.'):
         os.mkdir('result')
 
     # fit model
-    if mode == 'train':
-
+    if args.mode == 'train':
         wf_open = open(
-            'result/perf_' + os.path.splitext(os.path.basename(model_name))[0] + '.csv', 'w')
+            'result/perf_' + os.path.splitext(os.path.basename(args.model_name))[0] + '.csv', 'w')
         wf_colnames = ['loss', 'accuracy',
                        'precision1', 'precision0',
                        'recall1', 'recall0',
@@ -145,7 +180,7 @@ def run(
         t0 = time.time()
         lossArraySize = 10
         lossArray = deque([sys.maxsize], maxlen=lossArraySize)
-        for epoch in range(1, epoch + 1):
+        for epoch in range(1, args.epoch + 1):
 
             train(model, device, train_loader['loader'], optimizer, epoch)
             perf_test = get_performance_batchiter(
@@ -160,27 +195,27 @@ def run(
             # Check for early stopping
             min_epoch = 125
             lossArray.append(perf_test['loss'])
-            averageLossChange = sum(np.abs(np.diff(lossArray))) / lossArraySize
-            if epoch > min_epoch and averageLossChange < 10:
+            average_loss_change = sum(np.abs(np.diff(lossArray))) / lossArraySize
+            if epoch > min_epoch and average_loss_change < 10:
                 print('Early stopping at epoch {}'.format(epoch))
                 break
 
-        print(os.path.splitext(os.path.basename(model_name))[0])
+        print(os.path.splitext(os.path.basename(args.model_name))[0])
         print(timeSince(t0))
 
         # evaluate and print independent-test-set performance
-        if indepfile is not None:
+        if args.indepfile is not None:
             print('[INDEP] {} ----------------')
             perf_indep = get_performance_batchiter(
                 indep_loader['loader'], model, device)
 
-            wf_open = open('result/perf_' + os.path.splitext(os.path.basename(model_name))[0] + '_' +
-                           os.path.basename(indepfile), 'w')
+            wf_open = open('result/perf_' + os.path.splitext(os.path.basename(args.model_name))[0] + '_' +
+                           os.path.basename(args.indepfile), 'w')
             wf = csv.DictWriter(wf_open, wf_colnames, delimiter='\t')
             print_performance(perf_indep, writeif=True, wf=wf)
 
-            wf_open1 = open('data/pred_' + os.path.splitext(os.path.basename(model_name))[0] + '_' +
-                            os.path.basename(indepfile), 'w')
+            wf_open1 = open('data/pred_' + os.path.splitext(os.path.basename(args.model_name))[0] + '_' +
+                            os.path.basename(args.indepfile), 'w')
             wf1 = csv.writer(wf_open1, delimiter='\t')
             write_blackbox_output_batchiter(
                 indep_loader, model, wf1, device, ifscore=True)
@@ -250,3 +285,6 @@ def run(
 
     else:
         print('\nError: "--mode train" or "--mode test" expected')
+
+if __name__ == '__main__':
+    main()

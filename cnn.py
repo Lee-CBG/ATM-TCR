@@ -6,7 +6,7 @@ SIZE_KERNEL2 = 3
 
 
 class Net(nn.Module):
-    def __init__(self, embedding, pep_length, tcr_length, drop, hiddenDimension, linearSize, blosumFlag):
+    def __init__(self, embedding, args):
 
         super(Net, self).__init__()
 
@@ -15,19 +15,19 @@ class Net(nn.Module):
         self.embedding_dim = len(embedding[0])
         self.embedding = nn.Embedding(
             self.num_amino, self.embedding_dim, padding_idx=self.num_amino-1)
-        if blosumFlag:
+        if embedding:
             self.embedding = self.embedding.from_pretrained(
                 torch.FloatTensor(embedding), freeze=False)
 
-        self.size_hidden1_cnn = 2 * hiddenDimension
-        self.size_hidden2_cnn = hiddenDimension
+        self.size_hidden1_cnn = 2 * args.n_hid
+        self.size_hidden2_cnn = args.n_hid
         self.size_kernel1 = SIZE_KERNEL1
         self.size_kernel2 = SIZE_KERNEL2
         self.size_padding = (self.size_kernel1-1)//2
 
         # Peptide Encoding Layer
         self.encode_pep = nn.Sequential(
-            nn.Dropout(drop),
+            nn.Dropout(args.drop_rate),
             nn.Conv1d(self.embedding_dim,
                       self.size_hidden1_cnn,
                       kernel_size=self.size_kernel1),
@@ -46,7 +46,7 @@ class Net(nn.Module):
 
         # TCR Encoding Layer
         self.encode_tcr = nn.Sequential(
-            nn.Dropout(drop),
+            nn.Dropout(args.drop_rate),
             nn.Conv1d(self.embedding_dim,
                       self.size_hidden1_cnn,
                       kernel_size=self.size_kernel1),
@@ -64,13 +64,13 @@ class Net(nn.Module):
         )
 
         # Dense Layer
-        self.size_hidden1_dense = 4 * linearSize
-        self.size_hidden2_dense = 2 * linearSize
-        self.size_hidden3_dense = 1 * linearSize
+        self.size_hidden1_dense = 4 * args.lin_size
+        self.size_hidden2_dense = 2 * args.lin_size
+        self.size_hidden3_dense = 1 * args.lin_size
         self.net_pep_dim = self.size_hidden2_cnn * \
-            ((pep_length-self.size_kernel1+1-self.size_kernel2+1)//self.size_kernel2)
+            ((args.pep_length-self.size_kernel1+1-self.size_kernel2+1)//self.size_kernel2)
         self.net_tcr_dim = self.size_hidden2_cnn * \
-            ((tcr_length-self.size_kernel1+1-self.size_kernel2+1)//self.size_kernel2)
+            ((args.tcr_length-self.size_kernel1+1-self.size_kernel2+1)//self.size_kernel2)
         self.net = nn.Sequential(
             nn.Dropout(0.3),
             nn.Linear(self.net_pep_dim+self.net_tcr_dim,

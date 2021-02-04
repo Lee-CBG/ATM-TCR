@@ -1,4 +1,5 @@
 import re
+import os
 import torch
 import numpy as np
 from torchtext import data
@@ -80,10 +81,8 @@ def tokenizer(sequence):
     sequence = [x for x in sequence]
 
     return sequence
-    
 
 def load_embedding(filename):
-
     '''
     read in BLOSUM matrix
 
@@ -91,26 +90,77 @@ def load_embedding(filename):
         - filename : file containing BLOSUM matrix
 
     returns:
-        - blosum embedding matrix: list 
+        - blosum embedding matrix: list
     '''
-    
-    f = open(filename, "r")
-    lines = f.readlines()[7:]
-    f.close()
+    if filename is None:
+        embedding = None
+    else:
+        embedding_file = open(filename, "r")
+        lines = embedding_file.readlines()[7:]
+        embedding_file.close()
 
-    embedding = [[float(x) for x in l.strip().split()[1:]] for l in lines]
-    embedding.append([0.0] * len(embedding[0]))
-    '''    
-    blosum = data_io_tf.read_blosum_MN(filename)
-    print(blosum)
-    amino_map_rev = AMINO_MAP_REV
+        embedding = [[float(x) for x in l.strip().split()[1:]] for l in lines]
+        embedding.append([0.0] * len(embedding[0]))
+    return embedding
 
-    embedding = []
-    for amino in amino_map_rev:
-        embedding.append(blosum[amino])
+def load_data_split(x_pep, x_tcr, split_type, n_total, n_test, args):
     '''
-    return(embedding)
+    Split the data based on the method specified
+
+    parameters:
+        - x_pep
+        - x_tcr
+        - split_typle
+        - n_total
+        - n_test
+        - idx_val_fold
+
+    returns:
+        - blosum embedding matrix: list
+    '''
+
+    idx_test_remove = None
+    idx_test = None
+    idx_train = None
+
+    indexfile = re.sub('.txt', '_shuffleIdx.txt', args.infile)
+    if os.path.exists(indexfile):
+        idx_shuffled = np.loadtxt(indexfile, dtype=np.int32)
+    else:
+        idx_shuffled = np.arange(n_total)
+        np.random.shuffle(idx_shuffled)
+        np.savetxt(indexfile, idx_shuffled, fmt='%d')
     
+    test_fold_start_index = args.idx_test_fold * n_test
+    test_fold_end_index = (args.idx_test_fold + 1) * n_test
+
+    # Find a split such that no training TCRs are in the test set
+    if split_type == 'tcr_split':
+        if args.idx_val_fold < 0:
+            idx_test = idx_shuffled[test_fold_start_index:test_fold_end_index]
+            idx_train = list(set(idx_shuffled).difference(set(idx_test)))
+            tcrs_in_test = x_tcr[idx_test].unique()
+            tcrs_in_train = x_tcr[idx_train].unique()
+            np.intersect1d(tcrs_in_train, tcrs_in_test)
+
+        else:
+            validation_fold_start_index = args.idx_val_fold * n_test
+            validation_fold_end_index = (args.idx_val_fold + 1) * n_test
+            idx_test_remove = idx_shuffled[test_fold_start_index:test_fold_end_index]
+            idx_test = idx_shuffled[validation_fold_start_index:validation_fold_end_index]
+            idx_train = list(set(idx_shuffled).difference(set(idx_test)).difference(set(idx_test_remove)))
+    else:
+        if args.idx_val_fold < 0:
+            idx_test = idx_shuffled[test_fold_start_index:test_fold_end_index]
+            idx_train = list(set(idx_shuffled).difference(set(idx_test)))
+        else:
+            validation_fold_start_index = args.idx_val_fold * n_test
+            validation_fold_end_index = (args.idx_val_fold + 1) * n_test
+            idx_test_remove = idx_shuffled[test_fold_start_index:test_fold_end_index]
+            idx_test = idx_shuffled[validation_fold_start_index:validation_fold_end_index]
+            idx_train = list(set(idx_shuffled).difference(set(idx_test)).difference(set(idx_test_remove)))
+
+    return idx_train, idx_test, idx_test_remove
 
 class Field_modified(RawField):
     """Modification of class Field
@@ -323,13 +373,13 @@ class Field_modified(RawField):
                     + ([] if self.eos_token is None else [self.eos_token]))
             else:
                 raise ValueError('pad_type should be "front", "mid", or "end"')
-                
+         
             lengths.append(len(padded[-1]) - max(0, max_len - len(x)))
         if self.include_lengths:
             return (padded, lengths)
-        
+
         return padded
-    
+   
     def build_vocab(self, *args, **kwargs):
         """Construct the Vocab object for this field from one or more datasets.
         Arguments:
@@ -362,7 +412,7 @@ class Field_modified(RawField):
                             self.eos_token] + kwargs.pop('specials', [])
             if tok is not None))
         self.vocab = self.vocab_cls(counter, specials=specials, **kwargs)
-    
+
     def numericalize(self, arr, device=None):
         """Turn a batch of examples that use this field into a Variable.
         If the field has include_lengths=True, a tensor of lengths will be
