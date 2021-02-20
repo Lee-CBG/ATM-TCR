@@ -31,18 +31,18 @@ def read_pTCR(filename):
     infile=open(filename,"r")
     for l in infile:
         if l[0] != "#":
-            l=l.strip().split("\t")
-            if len(l)<2:
-                l.strip().split(",")
-            if len(l)<2:
+            data = l.strip().split("\t")
+            if len(data) < 2:
+                data = l.strip().split(",")
+            if len(data) < 2:
                 sys.stderr.write("Problem with input file format!\n")
                 sys.stderr.write(l)
                 sys.exit(2)
             else:
                 if l[0] != "peptide":
-                    peptides.append(l[0])
-                    tcrs.append(l[1])
-                    bound.append(l[2])
+                    peptides.append(data[0])
+                    tcrs.append(data[1])
+                    bound.append(data[2])
     infile.close()
 
     # return data:
