@@ -46,7 +46,7 @@ def main():
                         help='input file for training')
     parser.add_argument('--indepfile', type=str, default=None,
                         help='independent test file')
-    parser.add_argument('--blosum', type=str, default='data/BLOSUM50',
+    parser.add_argument('--blosum', type=str, default=None,
                         help='file with BLOSUM matrix')
     parser.add_argument('--batch_size', type=int, default=20, metavar='N',
                         help='batch size')
@@ -54,7 +54,7 @@ def main():
                         help = 'if train is True, model name to be saved, otherwise model name to be loaded')
     parser.add_argument('--epoch', type=int, default=300, metavar='N',
                         help='maximum number of epoch to train')
-    parser.add_argument('--min_epoch', type=int, default=50,
+    parser.add_argument('--min_epoch', type=int, default=100,
                         help='minimum number of epoch to train, early stopping will not be applied until we reach min_epoch')
     parser.add_argument('--early_stop', type=str2bool, default=True,
                         help='use early stopping method')
@@ -62,21 +62,21 @@ def main():
                         help='learning rate')
     parser.add_argument('--cuda', type=str2bool, default=True,
                         help = 'enable cuda')
-    parser.add_argument('--seed', type=int, default=7405,
+    parser.add_argument('--seed', type=int, default=621,
                         help='random seed')
     parser.add_argument('--mode', type=str, default='train',
                         help = 'train or test')
     parser.add_argument('--save_model', type=str2bool, default=False,
                         help = 'save model')
-    parser.add_argument('--model', type=str, default='nettcr',
+    parser.add_argument('--model', type=str, default='cnn',
                         help='cnn, nettcr')
-    parser.add_argument('--drop_rate', type=float, default=0.3, 
+    parser.add_argument('--drop_rate', type=float, default=0.3,
                         help='dropout rate')
-    parser.add_argument('--n_hid', type=int, default=10, 
+    parser.add_argument('--n_hid', type=int, default=64,
                         help='number of hidden variables')
-    parser.add_argument('--lin_size', type=int, default=16, 
+    parser.add_argument('--lin_size', type=int, default=32,
                         help='size of linear transformations')
-    parser.add_argument('--n_filters', type=int, default=100, 
+    parser.add_argument('--n_filters', type=int, default=100,
                         help='number of filters in CNN module in netTCR')
     parser.add_argument('--padding', type=str, default='mid',
                         help='front, end, mid, alignment')
@@ -85,10 +85,10 @@ def main():
     parser.add_argument('--max_len_pep', type=int, default=None,
                         help='maximum peptide length allowed')
     parser.add_argument('--n_fold', type=int, default=10,
-                        help='number of cross-validation folds')  
+                        help='number of cross-validation folds')
     parser.add_argument('--idx_test_fold', type=int, default=9,
                         help='fold index for test set (0, ..., n_fold-1)')
-    parser.add_argument('--idx_val_fold', type=int, default=0,
+    parser.add_argument('--idx_val_fold', type=int, default=-1,
                         help='fold index for validation set (-1, 0, ..., n_fold-1). \
                               If -1, the option will be ignored \
                               If >= 0, the test set will be set aside and the validation set is used as test set') 
@@ -96,7 +96,7 @@ def main():
                         help='how to split the dataset')
     args = parser.parse_args()
 
-    if args.mode is 'test':
+    if args.mode == 'test':
         assert args.indepfile is not None, '--indepfile is missing!'
     assert args.idx_test_fold < args.n_fold, '--idx_test_fold should be smaller than --n_fold'
     assert args.idx_val_fold < args.n_fold, '--idx_val_fold should be smaller than --n_fold'
@@ -147,7 +147,7 @@ def main():
     args.tcr_length = train_loader['tcr_length']
 
     # Define model
-    if model == 'cnn':
+    if args.model == 'cnn':
 
         from cnn import Net
         model = Net(embedding_matrix, args).to(device)
@@ -188,10 +188,9 @@ def main():
                                   writeif=True, wf=wf)
 
             # Check for early stopping
-            min_epoch = 125
             lossArray.append(perf_test['loss'])
             average_loss_change = sum(np.abs(np.diff(lossArray))) / lossArraySize
-            if epoch > min_epoch and average_loss_change < 10:
+            if epoch > args.min_epoch and average_loss_change < 10:
                 print('Early stopping at epoch {}'.format(epoch))
                 break
 

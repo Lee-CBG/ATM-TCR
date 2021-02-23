@@ -92,7 +92,7 @@ def load_embedding(filename):
     returns:
         - blosum embedding matrix: list
     '''
-    if filename is None:
+    if filename is None or filename.lower() == 'none':
         embedding = None
     else:
         embedding_file = open(filename, "r")
@@ -126,7 +126,7 @@ def load_data_split(x_pep, x_tcr, args):
     idx_test = None
     idx_train = None
 
-    indexfile = re.sub('.txt', f'{args.split_type}_data_shuffle.txt', args.infile)
+    indexfile = re.sub('.csv', f'_{args.split_type}_data_shuffle.txt', args.infile)
     if os.path.exists(indexfile):
         idx_shuffled = np.loadtxt(indexfile, dtype=np.int32)
     else:
@@ -143,13 +143,14 @@ def load_data_split(x_pep, x_tcr, args):
         np.random.shuffle(idx_shuffled)
         np.savetxt(indexfile, idx_shuffled, fmt='%d')
 
-        # Determine data split from folds
-        n_test = int(round(n_total / args.n_folds))
-        n_train = n_total - n_test
+    # Determine data split from folds
+    n_total = len(idx_shuffled)
+    n_test = int(round(n_total / args.n_fold))
+    n_train = n_total - n_test
 
-        # Determine position of current test fold
-        test_fold_start_index = args.idx_test_fold * n_test
-        test_fold_end_index = (args.idx_test_fold + 1) * n_test
+    # Determine position of current test fold
+    test_fold_start_index = args.idx_test_fold * n_test
+    test_fold_end_index = (args.idx_test_fold + 1) * n_test
 
     if split_type == 'random':
         # Split data evenly among evenly spaced folds

@@ -6,6 +6,10 @@
 ###########
 /__pycache__
 
+# Virtual Environment #
+###########
+/tcr-env
+
 # VS Code Configuration Files #
 ###############################
 /.vscode
