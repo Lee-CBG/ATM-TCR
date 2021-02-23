@@ -8,12 +8,7 @@ Credit: netTCR
 
 from __future__ import print_function
 import sys
-import os
-import time
-
-import math
 import numpy as np
-import tensorflow as tf
 
 
 def read_pTCR(filename):
@@ -36,18 +31,18 @@ def read_pTCR(filename):
     infile=open(filename,"r")
     for l in infile:
         if l[0] != "#":
-            l=l.strip().split("\t")
-            if len(l)<2:
-                l.strip().split(",")
-            if len(l)<2:
+            data = l.strip().split("\t")
+            if len(data) < 2:
+                data = l.strip().split(",")
+            if len(data) < 2:
                 sys.stderr.write("Problem with input file format!\n")
                 sys.stderr.write(l)
                 sys.exit(2)
             else:
                 if l[0] != "peptide":
-                    peptides.append(l[0])
-                    tcrs.append(l[1])
-                    bound.append(l[2])
+                    peptides.append(data[0])
+                    tcrs.append(data[1])
+                    bound.append(data[2])
     infile.close()
 
     # return data:
@@ -215,50 +210,3 @@ def enc_list_bl_start_stop(aa_seqs, blosum):
         enc_aa_seq[i, :sequences[i].shape[0], :n_features] = sequences[i]
 
     return enc_aa_seq
-
-"""
-def enc_list_sparse(aa_seqs):
-    '''
-    blosum encoding of a list of amino acid sequences with padding
-
-    parameters:
-        - aa_seqs : list with AA sequences
-    returns:
-        - enc_aa_seq : list of np.ndarrays containing padded, encoded amino acid sequences
-    '''
-
-    # define sparse AA alphabet:
-    alphabet=["A","R","N","D","C","Q","E","G","H","I","L","K","M","F","P","S","T","W","Y","V"]
-    sparse={}
-    count=0
-    for aa in alphabet:
-        sparse[aa]=np.ones(20)*0.05
-        sparse[aa][count]=0.9
-        count+=1
-    sparse["X"]=np.ones(20)*0.05
-
-    # encode sequences:
-    sequences=[]
-    for seq in aa_seqs:
-        e_seq=np.zeros((len(seq),len(blosum["A"])))
-        count=0
-        for aa in seq:
-            if aa in blosum:
-                e_seq[count]=sparse[aa]
-                count+=1
-            else:
-                sys.stderr.write("Unknown amino acid in peptides: "+ aa +", encoding aborted!\n")
-                sys.exit(2)
-        sequences.append(e_seq)
-
-    # pad sequences:
-    max_seq_len = max([len(x) for x in aa_seqs])
-    n_seqs = len(aa_seqs)
-    n_features = sequences[0].shape[1]
-
-    enc_aa_seq = np.zeros((n_seqs, max_seq_len, n_features))
-    for i in range(0,n_seqs):
-        enc_aa_seq[i, :sequences[i].shape[0], :n_features] = sequences[i]
-
-    return enc_aa_seq
-"""
