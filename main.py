@@ -10,7 +10,7 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
-from data_loader import define_dataloader, load_embedding
+from data_loader import define_dataloader, load_embedding, load_data_split
 from utils import str2bool, timeSince, get_performance_batchiter, print_performance, write_blackbox_output_batchiter
 
 import data_io_tf
@@ -54,7 +54,7 @@ def main():
                         help = 'if train is True, model name to be saved, otherwise model name to be loaded')
     parser.add_argument('--epoch', type=int, default=300, metavar='N',
                         help='maximum number of epoch to train')
-    parser.add_argment('--min_epoch', type=int, default=50,
+    parser.add_argument('--min_epoch', type=int, default=50,
                         help='minimum number of epoch to train, early stopping will not be applied until we reach min_epoch')
     parser.add_argument('--early_stop', type=str2bool, default=True,
                         help='use early stopping method')
@@ -92,7 +92,7 @@ def main():
                         help='fold index for validation set (-1, 0, ..., n_fold-1). \
                               If -1, the option will be ignored \
                               If >= 0, the test set will be set aside and the validation set is used as test set') 
-    parser.add_argument('--splt_type', type=str, default='random',
+    parser.add_argument('--split_type', type=str, default='random',
                         help='how to split the dataset')
     args = parser.parse_args()
 
@@ -120,13 +120,8 @@ def main():
     x_pep, x_tcr, y = data_io_tf.read_pTCR(args.infile)
     y = np.array(y)
 
-    # Determine data split from folds
-    n_total = len(y)
-    n_test = int(round(n_total / args.n_folds))
-    n_train = n_total - n_test
-
     # Shuffle data into folds for cross validation
-    load_data_split(x_pep, x_tcr, args.split_type, n_total, n_test, args)
+    idx_train, idx_test, idx_test_remove = load_data_split(x_pep, x_tcr, args)
 
     # Define dataloader
     train_loader = define_dataloader(x_pep[idx_train], x_tcr[idx_train], y[idx_train],
@@ -226,7 +221,7 @@ def main():
             test_loader['loader'], model, device)
         print_performance(perf_test)
 
-        if save_model:
+        if args.save_model:
 
             wf_open1 = open(
                 'result/pred_' + os.path.splitext(os.path.basename(model_name))[0] + '.csv', 'w')
@@ -237,9 +232,10 @@ def main():
             model_name = './models/' + \
                 os.path.splitext(os.path.basename(model_name))[0] + '.ckpt'
             torch.save(model.state_dict(), model_name)
-    elif mode == 'indeptest':
+    
+    elif args.mode == 'indeptest':
 
-        model_name = model_name
+        model_name = args.model_name
 
         assert model_name in os.listdir('./models')
 
@@ -254,34 +250,10 @@ def main():
 
         # write blackbox output
         wf_bb_open1 = open('result/pred_' + os.path.splitext(os.path.basename(model_name))[0] + '_' +
-                           os.path.basename(indepfile), 'w')
+                           os.path.basename(args.indepfile), 'w')
         wf_bb1 = csv.writer(wf_bb_open1, delimiter='\t')
         write_blackbox_output_batchiter(
             indep_loader, model, wf_bb1, device, ifscore=True)
-
-    elif mode == 'physchm':
-        loader = define_dataloader(X_pep, X_tcr, y,
-                                   maxPepLen, maxTcrLen,
-                                   padding=padding,
-                                   batch_size=batch_size, device=device)
-        features = get_physchem_properties_batchiter(
-            loader["loader"], maxPepLen, maxTcrLen)
-
-        directory = Path('psychmproperties')
-        if not directory.exists():
-            directory.mkdir(parents=True)
-        with open('psychmproperties/tcrProperties.csv', 'w', newline='') as f:
-            writer = csv.writer(f)
-            attributes = ['pepName', 'tcrName', 'basicity',
-                          'hydrophobicity', 'helicity', 'mutation_stability']
-            writer.writerow(attributes)
-            for i in features.keys():
-                properties = features[i]
-                for j in range(len(properties['tcr'])):
-                    rowToAppend = [i]
-                    for item in properties:
-                        rowToAppend.append(properties[item][j])
-                    writer.writerow(rowToAppend)
 
     else:
         print('\nError: "--mode train" or "--mode test" expected')
