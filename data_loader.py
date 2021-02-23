@@ -103,61 +103,97 @@ def load_embedding(filename):
         embedding.append([0.0] * len(embedding[0]))
     return embedding
 
-def load_data_split(x_pep, x_tcr, split_type, n_total, n_test, args):
+def load_data_split(x_pep, x_tcr, args):
     '''
     Split the data based on the method specified
+    random - The data is split randomly into equal sized folds.
+    peptide - The data is split such that no training peptides are present in the testing peptides
+    tcr - The data is split such that no training tcrs are present in the testing tcrs.
 
     parameters:
         - x_pep
         - x_tcr
-        - split_typle
-        - n_total
-        - n_test
-        - idx_val_fold
+        - args
 
     returns:
-        - blosum embedding matrix: list
+        - idx_train - Indices for training data
+        - idx_test - Indices for testing data
+        - idx_test_remove - Indices for removed data (outer loop cross validation)
     '''
 
+    split_type = args.split_type
     idx_test_remove = None
     idx_test = None
     idx_train = None
 
-    indexfile = re.sub('.txt', '_shuffleIdx.txt', args.infile)
+    indexfile = re.sub('.txt', f'{args.split_type}_data_shuffle.txt', args.infile)
     if os.path.exists(indexfile):
         idx_shuffled = np.loadtxt(indexfile, dtype=np.int32)
     else:
+        if split_type == 'random':
+            n_total = len(x_pep)
+        elif split_type == 'peptide':
+            unique_peptides = list(set(x_pep))
+            n_total = len(unique_peptides)
+        elif split_type == 'tcr':
+            unique_tcrs = list(set(x_tcr))
+            n_total = len(unique_tcrs)
+        
         idx_shuffled = np.arange(n_total)
         np.random.shuffle(idx_shuffled)
         np.savetxt(indexfile, idx_shuffled, fmt='%d')
-    
-    test_fold_start_index = args.idx_test_fold * n_test
-    test_fold_end_index = (args.idx_test_fold + 1) * n_test
 
-    # Find a split such that no training TCRs are in the test set
-    if split_type == 'tcr_split':
+        # Determine data split from folds
+        n_test = int(round(n_total / args.n_folds))
+        n_train = n_total - n_test
+
+        # Determine position of current test fold
+        test_fold_start_index = args.idx_test_fold * n_test
+        test_fold_end_index = (args.idx_test_fold + 1) * n_test
+
+    if split_type == 'random':
+        # Split data evenly among evenly spaced folds
+        # Determine if there is an outer testing fold
         if args.idx_val_fold < 0:
             idx_test = idx_shuffled[test_fold_start_index:test_fold_end_index]
             idx_train = list(set(idx_shuffled).difference(set(idx_test)))
-            tcrs_in_test = x_tcr[idx_test].unique()
-            tcrs_in_train = x_tcr[idx_train].unique()
-            np.intersect1d(tcrs_in_train, tcrs_in_test)
-
         else:
             validation_fold_start_index = args.idx_val_fold * n_test
             validation_fold_end_index = (args.idx_val_fold + 1) * n_test
             idx_test_remove = idx_shuffled[test_fold_start_index:test_fold_end_index]
             idx_test = idx_shuffled[validation_fold_start_index:validation_fold_end_index]
             idx_train = list(set(idx_shuffled).difference(set(idx_test)).difference(set(idx_test_remove)))
-    else:
+    elif split_type == 'peptide':
         if args.idx_val_fold < 0:
-            idx_test = idx_shuffled[test_fold_start_index:test_fold_end_index]
+            idx_test_pep = idx_shuffled[test_fold_start_index:test_fold_end_index]
+            test_peptides = unique_peptides[idx_test_pep]
+            idx_test = [index for index, pep in enumerate(x_pep) if pep in test_peptides]
             idx_train = list(set(idx_shuffled).difference(set(idx_test)))
         else:
             validation_fold_start_index = args.idx_val_fold * n_test
             validation_fold_end_index = (args.idx_val_fold + 1) * n_test
-            idx_test_remove = idx_shuffled[test_fold_start_index:test_fold_end_index]
-            idx_test = idx_shuffled[validation_fold_start_index:validation_fold_end_index]
+            idx_test_remove_pep = idx_shuffled[test_fold_start_index:test_fold_end_index]
+            test_remove_peptides = unique_peptides[idx_test_remove_pep]
+            idx_test_pep = idx_shuffled[validation_fold_start_index:validation_fold_end_index]
+            test_peptides = unique_peptides[idx_test_pep]
+            idx_test = [index for index, pep in enumerate(x_pep) if pep in test_peptides]
+            idx_test_remove = [index for index, pep in enumerate(x_pep) if pep in test_remove_peptides]
+            idx_train = list(set(idx_shuffled).difference(set(idx_test)).difference(set(idx_test_remove)))
+    elif split_type == 'tcr':
+        if args.idx_val_fold < 0:
+            idx_test_tcr = idx_shuffled[test_fold_start_index:test_fold_end_index]
+            test_tcrs = unique_tcrs[idx_test_pep]
+            idx_test = [index for index, tcr in enumerate(x_tcr) if tcr in test_tcrs]
+            idx_train = list(set(idx_shuffled).difference(set(idx_test)))
+        else:
+            validation_fold_start_index = args.idx_val_fold * n_test
+            validation_fold_end_index = (args.idx_val_fold + 1) * n_test
+            idx_test_remove_tcr = idx_shuffled[test_fold_start_index:test_fold_end_index]
+            test_remove_tcrs = unique_tcrs[idx_test_remove_tcr]
+            idx_test_tcr = idx_shuffled[validation_fold_start_index:validation_fold_end_index]
+            test_tcrs = unique_peptides[idx_test_tcr]
+            idx_test = [index for index, tcr in enumerate(x_tcr) if tcr in test_tcrs]
+            idx_test_remove = [index for index, tcr in enumerate(x_tcr) if tcr in test_remove_tcrs]
             idx_train = list(set(idx_shuffled).difference(set(idx_test)).difference(set(idx_test_remove)))
 
     return idx_train, idx_test, idx_test_remove
