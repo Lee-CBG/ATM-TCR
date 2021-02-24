@@ -1,29 +1,27 @@
 import torch
 import torch.nn as nn
 
+# Constants
 SIZE_KERNEL1 = 3
 SIZE_KERNEL2 = 3
 
-
 class Net(nn.Module):
     def __init__(self, embedding, args):
-
         super(Net, self).__init__()
 
         # Embedding Layer
         self.num_amino = len(embedding)
         self.embedding_dim = len(embedding[0])
-        self.embedding = nn.Embedding(
-            self.num_amino, self.embedding_dim, padding_idx=self.num_amino-1)
-        if embedding:
-            self.embedding = self.embedding.from_pretrained(
-                torch.FloatTensor(embedding), freeze=False)
+        self.embedding = nn.Embedding(self.num_amino, self.embedding_dim, padding_idx=self.num_amino-1)
+        if not (args.blosum is None or args.blosum.lower() == 'none'):
+            self.embedding = self.embedding.from_pretrained(torch.FloatTensor(embedding), freeze=False)
 
+        # Establish Layer, Kernel, and Padding Sizes
         self.size_hidden1_cnn = 2 * args.n_hid
         self.size_hidden2_cnn = args.n_hid
         self.size_kernel1 = SIZE_KERNEL1
         self.size_kernel2 = SIZE_KERNEL2
-        self.size_padding = (self.size_kernel1-1)//2
+        self.size_padding = (self.size_kernel1 - 1) // 2
 
         # Peptide Encoding Layer
         self.encode_pep = nn.Sequential(
@@ -68,12 +66,12 @@ class Net(nn.Module):
         self.size_hidden2_dense = 2 * args.lin_size
         self.size_hidden3_dense = 1 * args.lin_size
         self.net_pep_dim = self.size_hidden2_cnn * \
-            ((args.pep_length-self.size_kernel1+1-self.size_kernel2+1)//self.size_kernel2)
+            ((args.pep_length - self.size_kernel1 + 1 - self.size_kernel2 + 1) // self.size_kernel2)
         self.net_tcr_dim = self.size_hidden2_cnn * \
-            ((args.tcr_length-self.size_kernel1+1-self.size_kernel2+1)//self.size_kernel2)
+            ((args.tcr_length - self.size_kernel1 + 1 - self.size_kernel2 + 1) // self.size_kernel2)
         self.net = nn.Sequential(
             nn.Dropout(0.3),
-            nn.Linear(self.net_pep_dim+self.net_tcr_dim,
+            nn.Linear(self.net_pep_dim + self.net_tcr_dim,
                       self.size_hidden1_dense),
             nn.LeakyReLU(),
             nn.Linear(self.size_hidden1_dense, self.size_hidden2_dense),
@@ -91,8 +89,7 @@ class Net(nn.Module):
         pep = self.encode_pep(pep.transpose(1, 2))
         tcr = self.encode_tcr(tcr.transpose(1, 2))
         peptcr = torch.cat((pep, tcr), -1)
-        peptcr = peptcr.view(-1, 1, peptcr.size(-1) *
-                             peptcr.size(-2)).squeeze(-2)
+        peptcr = peptcr.view(-1, 1, peptcr.size(-1) * peptcr.size(-2)).squeeze(-2)
         peptcr = self.net(peptcr)
 
         return peptcr

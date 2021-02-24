@@ -6,12 +6,16 @@
 ###########
 /__pycache__
 
+# Virtual Environment #
+###########
+/tcr-env
+
 # VS Code Configuration Files #
 ###############################
 /.vscode
 
 # Data Files #
-###############################
+##############
 data/iedb_mhc_class_ii.csv
 data/iedb_mhc_class_i.csv
 data/McPAS-TCR.csv
@@ -20,3 +24,11 @@ data/netTCR_data.txt
 data/tcrgp_data.txt
 data/combined_dataset.csv
 data/combined_metadata.csv
+
+# Data Indexing Files #
+#######################
+data/*_data_shuffle.txt
+
+# Output Files#
+/result
+/models
