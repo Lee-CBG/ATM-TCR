@@ -28,3 +28,7 @@ data/combined_metadata.csv
 # Data Indexing Files #
 #######################
 data/*_data_shuffle.txt
+
+# Output Files#
+/result
+/models
