@@ -93,14 +93,15 @@ def load_embedding(filename):
         - blosum embedding matrix: list
     '''
     if filename is None or filename.lower() == 'none':
-        embedding = None
-    else:
-        embedding_file = open(filename, "r")
-        lines = embedding_file.readlines()[7:]
-        embedding_file.close()
+        filename = 'data/blosum/BLOSUM45'
+    
+    embedding_file = open(filename, "r")
+    lines = embedding_file.readlines()[7:]
+    embedding_file.close()
 
-        embedding = [[float(x) for x in l.strip().split()[1:]] for l in lines]
-        embedding.append([0.0] * len(embedding[0]))
+    embedding = [[float(x) for x in l.strip().split()[1:]] for l in lines]
+    embedding.append([0.0] * len(embedding[0]))
+    
     return embedding
 
 def load_data_split(x_pep, x_tcr, args):
