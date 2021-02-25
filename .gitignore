@@ -23,6 +23,7 @@ data/VDJDB.tsv
 data/netTCR_data.txt
 data/tcrgp_data.txt
 data/combined_dataset.csv
+data/combined_dataset_positive_only.csv
 data/combined_metadata.csv
 
 # Data Indexing Files #
