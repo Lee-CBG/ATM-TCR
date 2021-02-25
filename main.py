@@ -48,7 +48,7 @@ def main():
                         help='independent test file')
     parser.add_argument('--blosum', type=str, default=None,
                         help='file with BLOSUM matrix')
-    parser.add_argument('--batch_size', type=int, default=20, metavar='N',
+    parser.add_argument('--batch_size', type=int, default=32, metavar='N',
                         help='batch size')
     parser.add_argument('--model_name', type=str, default='original.ckpt',
                         help = 'if train is True, model name to be saved, otherwise model name to be loaded')
