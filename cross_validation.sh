@@ -26,7 +26,7 @@ for blosum in "${blosum_matrix[@]}"
 do
 if [[ "$blosum" != "none" ]]
 then
-    blosum_path="/data/blosum/BLOSUM${blosum}"
+    blosum_path="data/blosum/BLOSUM${blosum}"
 else
     blosum_path="none"
 fi
