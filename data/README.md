@@ -6,10 +6,13 @@ Contains various blosum matrices
 ### data_analytics.ipynb
 A Jupyter Notebook which contains the summary statistics of the data
 
-It also combines all of the datasets into a single file
+It also combines the datasets and generates negative data
 
-### combined_data.csv
-Contains the combined datasets as defined by data_analytics.ipynb
+### combined_dataset.csv
+Contains the combined datasets as defined by data_analytics.ipynb including negative data for training
+
+### combied_dataset_positive_only.csv
+Contains only the positively binding pairs (sourced by others)
 
 ### McPAS-TCR.csv
 http://friedmanlab.weizmann.ac.il/McPAS-TCR/
