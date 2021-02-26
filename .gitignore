@@ -26,6 +26,7 @@ data/combined_dataset.csv
 data/combined_dataset_positive_only.csv
 data/combined_metadata.csv
 data/epitope_distribution.csv
+data/tcr_distribution.csv
 
 # Data Indexing Files #
 #######################
