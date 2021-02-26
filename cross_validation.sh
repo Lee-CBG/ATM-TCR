@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # Number of parallel processes
 N=2
