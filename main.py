@@ -52,9 +52,9 @@ def main():
                         help='batch size')
     parser.add_argument('--model_name', type=str, default='original.ckpt',
                         help = 'if train is True, model name to be saved, otherwise model name to be loaded')
-    parser.add_argument('--epoch', type=int, default=300, metavar='N',
+    parser.add_argument('--epoch', type=int, default=30, metavar='N',
                         help='maximum number of epoch to train')
-    parser.add_argument('--min_epoch', type=int, default=100,
+    parser.add_argument('--min_epoch', type=int, default=10,
                         help='minimum number of epoch to train, early stopping will not be applied until we reach min_epoch')
     parser.add_argument('--early_stop', type=str2bool, default=True,
                         help='use early stopping method')
@@ -84,7 +84,7 @@ def main():
                         help='maximum TCR length allowed')
     parser.add_argument('--max_len_pep', type=int, default=None,
                         help='maximum peptide length allowed')
-    parser.add_argument('--n_fold', type=int, default=10,
+    parser.add_argument('--n_fold', type=int, default=5,
                         help='number of cross-validation folds')
     parser.add_argument('--idx_test_fold', type=int, default=9,
                         help='fold index for test set (0, ..., n_fold-1)')
