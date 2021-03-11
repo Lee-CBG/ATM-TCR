@@ -14,7 +14,7 @@ N_FOLD=10
 cnn_size=( 64 128 256 )
 linear_size=( 32 64 128 )
 drop_rate=( 0.3 0.5 )
-blosum_matrix=( "50" "45" "none" )
+blosum_matrix=( "62" "50" "none" )
 
 for cnn in "${cnn_size[@]}"
 do
@@ -30,11 +30,16 @@ then
 else
     blosum_path="none"
 fi
-for idx_test_fold in {0..9}
+for idx_test_fold in {0..4}
 do
-for idx_validation_fold in {0..9}
-do
-    if [ ${idx_test_fold} != ${idx_validation_fold} ]
+#for idx_validation_fold in {0..9}
+#do
+    # Pick random validation fold
+    idx_validation_fold = $((( RANDOM % 10 ) + 1 ))
+    while [ ${idx_test_fold} == ${idx_validation_fold} ]
+    do 
+        idx_validation_fold = $((( RANDOM % 10 ) + 1 ))
+    done
     then
         # Wait for last N jobs to finish
         if !(($i % N))
@@ -55,7 +60,7 @@ do
             
         fi
     fi
-done
+#done
 # Wait for last N jobs to finish
 if !(($i % N))
     then wait
