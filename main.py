@@ -80,6 +80,8 @@ def main():
                         help='number of filters in CNN module in netTCR')
     parser.add_argument('--padding', type=str, default='mid',
                         help='front, end, mid, alignment')
+    parser.add_argument('--heads', type=int, default=1,
+                        help='Multihead attention head')
     parser.add_argument('--max_len_tcr', type=int, default=None,
                         help='maximum TCR length allowed')
     parser.add_argument('--max_len_pep', type=int, default=None,
@@ -148,11 +150,13 @@ def main():
 
     # Define model
     if args.model == 'cnn':
-
         from cnn import Net
-        model = Net(embedding_matrix, args).to(device)
+    elif args.model == 'cnnattn':
+        from cnn_attn import Net
     else:
         raise ValueError('unknown model name')
+
+    model = Net(embedding_matrix, args).to(device)
 
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
 
