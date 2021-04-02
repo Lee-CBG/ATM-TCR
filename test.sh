@@ -1,18 +1,17 @@
 #!/bin/bash
 
 # Number of parallel processes
-gpu=1
+gpu=0
 SPLIT=tcr
 INFILE=combined_dataset.csv
 INDEX_FILE=data/combined_dataset_${SPLIT}_data_shuffle.txt
 N_FOLD=5
 
-
-idx_test_fold=1
 blosum_path="none"
 drop=0.3
-cnn=128
 linear=32
+tcr_len=15
+pep_len=15
 
 # Outer cross validation
 #modeltype="cnn"
@@ -20,7 +19,7 @@ linear=32
 #CUDA_VISIBLE_DEVICES=$gpu python main.py --model ${modeltype} --infile data/${INFILE} --split_type $SPLIT --idx_test_fold $idx_test_fold --idx_val_fold -1 --blosum $blosum_path --model_name $MODELNAME --drop_rate $drop --n_hid $cnn --lin_size $linear --early_stop False
 
 modeltype="cnn_attn"
-for i in 5 1; do
+for test_fold in {0..4} do
 MODELNAME=${INFILE}_split${SPLIT}_outerloop_foldtest${idx_test_fold}_blosum${blosum}_drop${drop}_hid${cnn}_linear${linear}_head${i}.ckpt
-CUDA_VISIBLE_DEVICES=$gpu python main.py --model ${modeltype} --infile data/${INFILE} --split_type $SPLIT --idx_test_fold $idx_test_fold --idx_val_fold -1 --blosum $blosum_path --model_name $MODELNAME --drop_rate $drop --n_hid $cnn --lin_size $linear --heads $i --early_stop False --epoch 50 --max_len_tcr 20 --max_len_pep 20
+CUDA_VISIBLE_DEVICES=$gpu python main.py --model ${modeltype} --infile data/${INFILE} --split_type $SPLIT --idx_test_fold test_fold --idx_val_fold -1 --blosum $blosum_path --model_name $MODELNAME --drop_rate $drop --lin_size $linear --heads 5 --early_stop False --epoch 50 --max_len_tcr $tcr_len --max_len_pep $pep_len
 done

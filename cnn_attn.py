@@ -16,8 +16,9 @@ class Net(nn.Module):
         if not (args.blosum is None or args.blosum.lower() == 'none'):
             self.embedding = self.embedding.from_pretrained(torch.FloatTensor(embedding), freeze=False)
 
-        self.attn_tcr = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads)
-        self.attn_pep = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads)
+        self.attn_tcr = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads, dropout=args.drop_rate/2)
+        self.attn_pep = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads, dropout=args.drop_rate/2)
+        self.layer_norm = nn.LayerNorm(self.embedding_dim)
 
         # Dense Layer
         self.size_hidden1_dense = 4 * args.lin_size
@@ -27,8 +28,7 @@ class Net(nn.Module):
         self.net_tcr_dim = args.max_len_tcr * self.embedding_dim
         self.net = nn.Sequential(
             nn.Dropout(args.drop_rate),
-            nn.Linear(self.net_pep_dim + self.net_tcr_dim,
-                      self.size_hidden1_dense),
+            nn.Linear(self.net_pep_dim + self.net_tcr_dim, self.size_hidden1_dense),
             nn.BatchNorm1d(self.size_hidden1_dense),
             nn.LeakyReLU(),
             nn.Linear(self.size_hidden1_dense, self.size_hidden2_dense),
@@ -43,15 +43,17 @@ class Net(nn.Module):
 
     def forward(self, pep, tcr):
 
-        ## embedding
+        # Embedding
         pep = self.embedding(pep) # batch * len * dim (25)
         tcr = self.embedding(tcr) # batch * len * dim
 
-        ## attention
+        # Attention
         pep, _ = self.attn_pep(pep,pep,pep)
+        pep = self.layer_norm(pep)
         tcr, _ = self.attn_tcr(tcr,tcr,tcr)
+        tcr = self.layer_norm(tcr)
 
-        ## linear
+        # Dense Layer
         pep = pep.view(-1, 1, pep.size(-2) * pep.size(-1))
         tcr = tcr.view(-1, 1, tcr.size(-2) * tcr.size(-1))
         peptcr = torch.cat((pep, tcr), -1).squeeze(-2)
