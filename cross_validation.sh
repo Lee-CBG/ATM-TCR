@@ -10,7 +10,7 @@ SPLIT=tcr
 INFILE=combined_dataset.csv
 INDEX_FILE=data/combined_dataset_${SPLIT}_data_shuffle.txt
 N_FOLD=10
-
+MODEL="cnn_attn"
 cnn_size=( 64 128 256 )
 linear_size=( 32 64 128 )
 drop_rate=( 0.3 0.5 )

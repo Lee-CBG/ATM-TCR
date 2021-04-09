@@ -12,6 +12,7 @@ class Net(nn.Module):
         # Embedding Layer
         self.num_amino = len(embedding)
         self.embedding_dim = len(embedding[0])
+        print("embedding dim", self.embedding_dim)
         self.embedding = nn.Embedding(self.num_amino, self.embedding_dim, padding_idx=self.num_amino-1)
         if not (args.blosum is None or args.blosum.lower() == 'none'):
             self.embedding = self.embedding.from_pretrained(torch.FloatTensor(embedding), freeze=False)

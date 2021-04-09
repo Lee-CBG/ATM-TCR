@@ -151,7 +151,7 @@ def main():
     # Define model
     if args.model == 'cnn':
         from cnn import Net
-    elif args.model == 'cnnattn':
+    elif args.model == 'cnn_attn':
         from cnn_attn import Net
     else:
         raise ValueError('unknown model name')
