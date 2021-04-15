@@ -11,7 +11,7 @@ drop=0.5
 linear=256
 tcr_len=20
 pep_len=15
-heads=3
+heads=5
 epoch=100
 
 modeltype="cnn_attn"
