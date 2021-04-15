@@ -11,7 +11,8 @@ drop=0.5
 linear=256
 tcr_len=20
 pep_len=15
-heads=5
+heads=3
+epoch=100
 
 modeltype="cnn_attn"
 for test_fold in {0..4} do
