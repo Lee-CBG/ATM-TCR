@@ -16,9 +16,14 @@ class Net(nn.Module):
         if not (args.blosum is None or args.blosum.lower() == 'none'):
             self.embedding = self.embedding.from_pretrained(torch.FloatTensor(embedding), freeze=False)
 
-        self.attn_tcr = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads, dropout=args.drop_rate/2)
-        self.attn_pep = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads, dropout=args.drop_rate/2)
-        self.layer_norm = nn.LayerNorm(self.embedding_dim)
+        self.attn_tcr = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads, dropout=0.1)
+        self.attn_tcr2 = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads, dropout=0.1)
+        self.attn_pep = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads, dropout=0.1)
+        self.attn_pep2 = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads, dropout=0.1)
+        self.layer_norm_tcr = nn.LayerNorm(self.embedding_dim)
+        self.layer_norm_tcr2 = nn.LayerNorm(self.embedding_dim)
+        self.layer_norm_pep = nn.LayerNorm(self.embedding_dim)
+        self.layer_norm_pep2 = nn.LayerNorm(self.embedding_dim)
 
         # Dense Layer
         self.size_hidden1_dense = 4 * args.lin_size
@@ -49,9 +54,13 @@ class Net(nn.Module):
 
         # Attention
         pep, _ = self.attn_pep(pep,pep,pep)
-        pep = self.layer_norm(pep)
+        pep = self.layer_norm_pep(pep)
+        pep, _ = self.attn_pep2(pep,pep,pep)
+        pep = self.layer_norm_pep2(pep)
         tcr, _ = self.attn_tcr(tcr,tcr,tcr)
-        tcr = self.layer_norm(tcr)
+        tcr = self.layer_norm_tcr(tcr)
+        tcr, _ = self.attn_tcr2(tcr,tcr,tcr)
+        tcr = self.layer_norm_tcr2(tcr)
 
         # Dense Layer
         pep = pep.view(-1, 1, pep.size(-2) * pep.size(-1))
