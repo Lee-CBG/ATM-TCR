@@ -16,9 +16,14 @@ class Net(nn.Module):
         if not (args.blosum is None or args.blosum.lower() == 'none'):
             self.embedding = self.embedding.from_pretrained(torch.FloatTensor(embedding), freeze=False)
 
+        self.attn_tcr = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads)
+        self.attn_pep = nn.MultiheadAttention(embed_dim = self.embedding_dim, num_heads = args.heads)
+
+        """
         # Establish Layer, Kernel, and Padding Sizes
         self.size_hidden1_cnn = 2 * args.n_hid
-        self.size_hidden2_cnn = args.n_hid
+        self.size_hidden2_cnn = 1 * args.n_hid
+        #self.size_hidden3_cnn = args.n_hid
         self.size_kernel1 = SIZE_KERNEL1
         self.size_kernel2 = SIZE_KERNEL2
         self.size_padding = (self.size_kernel1 - 1) // 2
@@ -39,6 +44,14 @@ class Net(nn.Module):
                       kernel_size=self.size_kernel2),
             nn.BatchNorm1d(self.size_hidden2_cnn),
             nn.LeakyReLU(True),
+            #nn.MaxPool1d(kernel_size=self.size_kernel2,
+            #             stride=1,
+            #             padding=self.size_padding),
+            #nn.Conv1d(self.size_hidden2_cnn,
+            #          self.size_hidden3_cnn,
+            #          kernel_size=self.size_kernel2),
+            #nn.BatchNorm1d(self.size_hidden3_cnn),
+            #nn.LeakyReLU(True),
             nn.MaxPool1d(kernel_size=self.size_kernel2)
         )
 
@@ -58,38 +71,62 @@ class Net(nn.Module):
                       kernel_size=self.size_kernel2),
             nn.BatchNorm1d(self.size_hidden2_cnn),
             nn.LeakyReLU(True),
+            #nn.MaxPool1d(kernel_size=self.size_kernel2,
+            #             stride=1,
+            #             padding=self.size_padding),
+            #nn.Conv1d(self.size_hidden2_cnn,
+            #          self.size_hidden3_cnn,
+            #          kernel_size=self.size_kernel2),
+            #nn.BatchNorm1d(self.size_hidden3_cnn),
+            #nn.LeakyReLU(True),
             nn.MaxPool1d(kernel_size=self.size_kernel2)
         )
-
+        """
         # Dense Layer
-        self.size_hidden1_dense = 4 * args.lin_size
-        self.size_hidden2_dense = 2 * args.lin_size
-        self.size_hidden3_dense = 1 * args.lin_size
-        self.net_pep_dim = self.size_hidden2_cnn * \
-            ((args.pep_length - self.size_kernel1 + 1 - self.size_kernel2 + 1) // self.size_kernel2)
-        self.net_tcr_dim = self.size_hidden2_cnn * \
-            ((args.tcr_length - self.size_kernel1 + 1 - self.size_kernel2 + 1) // self.size_kernel2)
+        self.size_hidden1_dense = 2 * args.lin_size
+        self.size_hidden2_dense = 1 * args.lin_size
+        #self.size_hidden3_dense = 1 * args.lin_size
+        #self.net_pep_dim = self.size_hidden2_cnn * \
+        #    ((args.pep_length - self.size_kernel1 + 1 - self.size_kernel2 + 1) // self.size_kernel2)
+        #self.net_tcr_dim = self.size_hidden2_cnn * \
+        #    ((args.tcr_length - self.size_kernel1 + 1 - self.size_kernel2 + 1) // self.size_kernel2)
+        self.net_pep_dim = args.max_len_pep * self.embedding_dim
+        self.net_tcr_dim = args.max_len_tcr * self.embedding_dim
         self.net = nn.Sequential(
-            nn.Dropout(0.3),
             nn.Linear(self.net_pep_dim + self.net_tcr_dim,
                       self.size_hidden1_dense),
+            nn.BatchNorm1d(self.size_hidden1_dense),
+            nn.Dropout(args.drop_rate),
             nn.LeakyReLU(),
             nn.Linear(self.size_hidden1_dense, self.size_hidden2_dense),
+            nn.BatchNorm1d(self.size_hidden2_dense),
+            nn.Dropout(args.drop_rate),
             nn.LeakyReLU(),
-            nn.Linear(self.size_hidden2_dense, self.size_hidden3_dense),
-            nn.LeakyReLU(),
-            nn.Linear(self.size_hidden3_dense, 1),
+            nn.Linear(self.size_hidden2_dense, 1),
             nn.Sigmoid()
         )
 
     def forward(self, pep, tcr):
 
-        pep = self.embedding(pep)
-        tcr = self.embedding(tcr)
-        pep = self.encode_pep(pep.transpose(1, 2))
-        tcr = self.encode_tcr(tcr.transpose(1, 2))
-        peptcr = torch.cat((pep, tcr), -1)
-        peptcr = peptcr.view(-1, 1, peptcr.size(-1) * peptcr.size(-2)).squeeze(-2)
+        ## embedding
+        pep = self.embedding(pep) # batch * len * dim (25)
+        tcr = self.embedding(tcr) # batch * len * dim
+
+        ## attention
+        pep, _ = self.attn_pep(pep,pep,pep)
+        tcr, _ = self.attn_tcr(tcr,tcr,tcr)
+
+        ## encoder
+        #pep = self.encode_pep(pep.transpose(1, 2))
+        #tcr = self.encode_tcr(tcr.transpose(1, 2))
+        #print(pep.size()) # [32, 43, 25]
+        #print(tcr.size()) # [32, 32, 25]
+
+        ## linear
+        pep = pep.view(-1, 1, pep.size(-2) * pep.size(-1))
+        tcr = tcr.view(-1, 1, tcr.size(-2) * tcr.size(-1))
+        peptcr = torch.cat((pep, tcr), -1).squeeze(-2)
         peptcr = self.net(peptcr)
+        #print(peptcr.size())
 
         return peptcr

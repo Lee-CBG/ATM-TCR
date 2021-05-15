@@ -62,7 +62,7 @@ def main():
                         help='learning rate')
     parser.add_argument('--cuda', type=str2bool, default=True,
                         help = 'enable cuda')
-    parser.add_argument('--seed', type=int, default=621,
+    parser.add_argument('--seed', type=int, default=1039,
                         help='random seed')
     parser.add_argument('--mode', type=str, default='train',
                         help = 'train or test')
@@ -227,13 +227,13 @@ def main():
         if args.save_model:
 
             wf_open1 = open(
-                'result/pred_' + os.path.splitext(os.path.basename(model_name))[0] + '.csv', 'w')
+                'result/pred_' + os.path.splitext(os.path.basename(args.model_name))[0] + '.csv', 'w')
             wf1 = csv.writer(wf_open1, delimiter='\t')
             write_blackbox_output_batchiter(
                 test_loader, model, wf1, device, ifscore=True)
 
             model_name = './models/' + \
-                os.path.splitext(os.path.basename(model_name))[0] + '.ckpt'
+                os.path.splitext(os.path.basename(args.model_name))[0] + '.ckpt'
             torch.save(model.state_dict(), model_name)
     
     elif args.mode == 'indeptest':
