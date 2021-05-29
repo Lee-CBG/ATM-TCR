@@ -112,9 +112,15 @@ class Net(nn.Module):
         pep = self.embedding(pep) # batch * len * dim (25)
         tcr = self.embedding(tcr) # batch * len * dim
 
+        pep = torch.transpose(pep, 0, 1)
+        tcr = torch.transpose(tcr, 0, 1)
+
         ## attention
-        pep, _ = self.attn_pep(pep,pep,pep)
-        tcr, _ = self.attn_tcr(tcr,tcr,tcr)
+        pep, pep_attn = self.attn_pep(pep,pep,pep)
+        tcr, tcr_attn = self.attn_tcr(tcr,tcr,tcr)
+
+        pep = torch.transpose(pep, 0, 1)
+        tcr = torch.transpose(tcr, 0, 1)
 
         ## encoder
         #pep = self.encode_pep(pep.transpose(1, 2))
@@ -123,8 +129,8 @@ class Net(nn.Module):
         #print(tcr.size()) # [32, 32, 25]
 
         ## linear
-        pep = pep.view(-1, 1, pep.size(-2) * pep.size(-1))
-        tcr = tcr.view(-1, 1, tcr.size(-2) * tcr.size(-1))
+        pep = pep.reshape(-1, 1, pep.size(-2) * pep.size(-1))
+        tcr = tcr.reshape(-1, 1, tcr.size(-2) * tcr.size(-1))
         peptcr = torch.cat((pep, tcr), -1).squeeze(-2)
         peptcr = self.net(peptcr)
         #print(peptcr.size())

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Number of parallel processes
 N=2
 i=0
@@ -8,7 +7,7 @@ i=0
 gpu=0
 epoch=300
 
-SPLIT=peptide
+SPLIT=tcr
 INFILE=combined_dataset.csv
 INDEX_FILE=data/combined_dataset_${SPLIT}_data_shuffle.txt
 N_FOLD=5
@@ -24,7 +23,7 @@ for tcr_len in "${tcr_size[@]}"
 do
 for pep_len in "${pep_size[@]}"
 do
-for idx_test_fold in {0..4}
+for idx_test_fold in {0..1}
 do
 #    idx_validation_fold=$(( RANDOM % 5 ))
 #    while [ ${idx_test_fold} == ${idx_validation_fold} ]
