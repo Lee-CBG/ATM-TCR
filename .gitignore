@@ -27,11 +27,16 @@ data/combined_dataset_positive_only.csv
 data/combined_metadata.csv
 data/epitope_distribution.csv
 data/tcr_distribution.csv
+data/full_information_positive_only.csv
+data/BM_data_formatted.csv
+data/autoencoder_data.csv
+data/autoencoder_sample_data.csv
 
 # Data Indexing Files #
 #######################
 data/*_data_shuffle.txt
 
-# Output Files#
+# Output Files #
 /result
 /models
+/autoencoder
