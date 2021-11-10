@@ -151,8 +151,6 @@ def main():
     # Define model
     if args.model == 'cnn':
         from cnn import Net
-    elif args.model == 'cnn_attn':
-        from cnn_attn import Net
     else:
         raise ValueError('unknown model name')
 
@@ -243,7 +241,7 @@ def main():
         assert model_name in os.listdir('./models')
 
         model_name = './models/' + model_name
-        model.load_state_dict(torch.load(model_name))
+        model.load_state_dict(torch.load(model_name, map_location=torch.device('cpu')))
 
         # evaluate and print independent-test-set performance
         print('[INDEP] {} ----------------')

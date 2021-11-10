@@ -31,6 +31,9 @@ data/full_information_positive_only.csv
 data/BM_data_formatted.csv
 data/autoencoder_data.csv
 data/autoencoder_sample_data.csv
+data/covid19test.csv
+data/ergo_training_data.csv
+data/blosum/ELMo_embeds_combined_dataset.pkl
 
 # Data Indexing Files #
 #######################
