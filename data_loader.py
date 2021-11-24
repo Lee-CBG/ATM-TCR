@@ -2,10 +2,8 @@ import re
 import os
 import torch
 import numpy as np
-from torchtext import data
-from torchtext.data import Pipeline, Dataset
-from torchtext.data import RawField,get_tokenizer
-from torchtext.vocab import Vocab
+from torchtext.legacy.data import Pipeline, Dataset, Field, Iterator, Example, RawField, get_tokenizer
+from torchtext.legacy.vocab import Vocab
 from torchtext.data.utils import is_tokenizer_serializable, dtype_to_attr
 from itertools import chain
 from collections import Counter,OrderedDict
@@ -37,7 +35,7 @@ def define_dataloader(X_pep, X_tcr, y=None,
                             pad_type=padding, fix_length=maxlen_pep)                       
     field_tcr = Field_modified(tokenize=tokenizer, batch_first=True, 
                             pad_type=padding, fix_length=maxlen_tcr)
-    field_y = data.Field(sequential=False, use_vocab=False, dtype=torch.float32)
+    field_y = Field(sequential=False, use_vocab=False, dtype=torch.float32)
 
     # Define vocab
     amino_map = AMINO_MAP
@@ -55,13 +53,13 @@ def define_dataloader(X_pep, X_tcr, y=None,
     # Define dataloader
     if y is None:
         fields = [('X_pep',field_pep), ('X_tcr',field_tcr), ('y',field_y)]
-        example = [data.Example.fromlist([x1,x2,1.0], fields) for x1,x2 in zip(X_pep,X_tcr)]
+        example = [Example.fromlist([x1,x2,1.0], fields) for x1,x2 in zip(X_pep,X_tcr)]
     else:
         fields = [('X_pep',field_pep), ('X_tcr',field_tcr), ('y',field_y)]
-        example = [data.Example.fromlist([x1,x2,x3], fields) for x1,x2,x3 in zip(X_pep,X_tcr,y)]
+        example = [Example.fromlist([x1,x2,x3], fields) for x1,x2,x3 in zip(X_pep,X_tcr,y)]
 
-    dataset = data.Dataset(example, fields)
-    loader = data.Iterator(dataset, batch_size=batch_size, device=device0, repeat=False, shuffle=True)
+    dataset = Dataset(example, fields)
+    loader = Iterator(dataset, batch_size=batch_size, device=device0, repeat=False, shuffle=True)
 
     data_loader = dict()
     data_loader['pep_amino_idx'] = field_pep.vocab.itos

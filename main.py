@@ -2,9 +2,7 @@ import argparse
 import os
 import sys
 import csv
-import re
 import time
-from pathlib import Path
 from collections import deque
 import numpy as np
 import torch
@@ -150,7 +148,7 @@ def main():
 
     # Define model
     if args.model == 'cnn':
-        from cnn import Net
+        from attention import Net
     else:
         raise ValueError('unknown model name')
 
@@ -192,7 +190,7 @@ def main():
             # Check for early stopping
             lossArray.append(perf_test['loss'])
             average_loss_change = sum(np.abs(np.diff(lossArray))) / lossArraySize
-            if epoch > args.min_epoch and average_loss_change < 10:
+            if epoch > args.min_epoch and average_loss_change < 10 and args.early_stop:
                 print('Early stopping at epoch {}'.format(epoch))
                 break
 
