@@ -1,10 +1,6 @@
 import torch
 import torch.nn as nn
 
-# Constants
-SIZE_KERNEL1 = 3
-SIZE_KERNEL2 = 3
-
 class Net(nn.Module):
     def __init__(self, embedding, args):
         super(Net, self).__init__()
@@ -28,7 +24,7 @@ class Net(nn.Module):
             nn.Linear(self.net_pep_dim + self.net_tcr_dim,
                       self.size_hidden1_dense),
             nn.BatchNorm1d(self.size_hidden1_dense),
-            nn.Dropout(args.drop_rate),
+            nn.Dropout(args.drop_rate * 2),
             nn.SiLU(),
             nn.Linear(self.size_hidden1_dense, self.size_hidden2_dense),
             nn.BatchNorm1d(self.size_hidden2_dense),

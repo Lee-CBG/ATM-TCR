@@ -8,13 +8,10 @@ import argparse
 import numpy as np
 from pathlib import Path
 import torch.nn.functional as F
-from torch import nn
 from tensorboardX import SummaryWriter
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, roc_auc_score, confusion_matrix
 from data_loader import AMINO_MAP, AMINO_MAP_REV, AMINO_MAP_REV_
-#from pyteomics import electrochem,mass,parser
-from collections import defaultdict, Counter
-from scipy.stats import ks_2samp, chisquare
+from collections import defaultdict
 
 BASICITY = {'A': 206.4, 'B': 210.7, 'C': 206.2, 'D': 208.6, 'E': 215.6, 'F': 212.1, 'G': 202.7,
             'H': 223.7, 'I': 210.8, 'K': 221.8, 'L': 209.6, 'M': 213.3, 'N': 212.8, 'P': 214.4,
