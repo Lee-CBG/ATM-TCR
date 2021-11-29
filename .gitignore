@@ -24,6 +24,8 @@ data/netTCR_data.txt
 data/tcrgp_data.txt
 data/combined_dataset.csv
 data/combined_dataset_positive_only.csv
+data/combined_dataset_old_2021.csv
+data/combined_dataset_positive_only_old_2021.csv
 data/combined_metadata.csv
 data/epitope_distribution.csv
 data/tcr_distribution.csv
@@ -32,7 +34,9 @@ data/BM_data_formatted.csv
 data/autoencoder_data.csv
 data/autoencoder_sample_data.csv
 data/covid19test.csv
+data/covid19_data.csv
 data/ergo_training_data.csv
+data/ergo_2_training_data.csv
 data/blosum/ELMo_embeds_combined_dataset.pkl
 
 # Data Indexing Files #
