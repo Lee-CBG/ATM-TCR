@@ -127,7 +127,7 @@ def load_data_split(x_pep, x_tcr, args):
 
     if split_type == 'random':
         n_total = len(x_pep)
-    elif split_type == 'peptide':
+    elif split_type == 'epitope':
         unique_peptides = np.unique(x_pep)
         n_total = len(unique_peptides)
     elif split_type == 'tcr':
@@ -162,7 +162,7 @@ def load_data_split(x_pep, x_tcr, args):
             idx_test_remove = idx_shuffled[test_fold_start_index:test_fold_end_index]
             idx_test = idx_shuffled[validation_fold_start_index:validation_fold_end_index]
             idx_train = list(set(idx_shuffled).difference(set(idx_test)).difference(set(idx_test_remove)))
-    elif split_type == 'peptide':
+    elif split_type == 'epitope':
         if args.idx_val_fold < 0:
             idx_test_pep = idx_shuffled[test_fold_start_index:test_fold_end_index]
             test_peptides = unique_peptides[idx_test_pep]
