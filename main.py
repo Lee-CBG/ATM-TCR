@@ -64,7 +64,7 @@ def main():
                         help='random seed')
     parser.add_argument('--mode', type=str, default='train',
                         help = 'train or test')
-    parser.add_argument('--save_model', type=str2bool, default=False,
+    parser.add_argument('--save_model', type=str2bool, default=True,
                         help = 'save model')
     parser.add_argument('--model', type=str, default='attention',
                         help='Model to import')

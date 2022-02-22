@@ -1,18 +1,22 @@
-# Data
+<h1 align="center">
+    Data
+</h1>
 
-### blosum
+## blosum
 Contains various blosum matrices
 
-### data_analytics.ipynb
-A Jupyter Notebook which contains the summary statistics of the data
+## combined_dataset.csv
+Our training and testing dataset sourced from three databases [VDJdb](https://vdjdb.cdr3.net/), [McPAS](http://friedmanlab.weizmann.ac.il/McPAS-TCR/), and [IEDB](https://www.iedb.org/). Further information about the dataset creation and contents can be found in ```data_analytics.ipynb```
 
-It also combines the datasets and generates negative data
+## covid19_data.csv
+A SARS-CoV-2 dataset sourced from [IEDB](https://www.iedb.org/) that is independent of the data found in combined_dataset.csv.
 
-### combined_dataset.csv
-Contains the combined datasets as defined by data_analytics.ipynb including negative data for training
+## data_analytics.ipynb
+A Jupyter Notebook which contains the summary statistics of the data. It also contains functions for generating negative examples from datasets.
 
-### combied_dataset_positive_only.csv
-Contains only the positively binding pairs (sourced by others)
+<hr/>
+
+## Original Data Files
 
 ### McPAS-TCR.csv
 http://friedmanlab.weizmann.ac.il/McPAS-TCR/
@@ -51,15 +55,3 @@ Search Settings for IEDB Data
 - Humans
 - Any Disease
 - Any Reference Type
-
-# Miscellaneous
-
-### netTCR_data.txt
-Downloaded February 13th, 2020
-
-Positive data from the netTCR repository
-
-### tcrgp_data.txt
-Downloaded February 13th, 2020
-
-Positive and Negative pairs downloaded from the TCRGP repository

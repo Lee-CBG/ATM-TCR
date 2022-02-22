@@ -44,6 +44,7 @@ tsne
 data/*_data_shuffle.txt
 
 # Output Files #
+################
 /result
 /models
 /autoencoder

@@ -91,8 +91,10 @@ def write_blackbox_output_batchiter(loader, model, wf, device='cpu', ifscore=Tru
 
             pep_seq = ''.join([rev_peploader[x] for x in X_pep[i]])
             pep_seq = re.sub(r'<pad>', '', pep_seq)
+            pep_seq = re.sub(r'@', '', pep_seq)
             tcr_seq = ''.join([rev_tcrloader[x] for x in X_tcr[i]])
             tcr_seq = re.sub(r'<pad>', '', tcr_seq)
+            tcr_seq = re.sub(r'@', '', tcr_seq)
             if ifscore:
                 wf.writerow([pep_seq, tcr_seq, int(y[i]),
                              int(pred[i]), float(score[i])])
