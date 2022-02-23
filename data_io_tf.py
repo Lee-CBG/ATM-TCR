@@ -3,7 +3,8 @@
 """
 Functions for data IO for neural network training.
 
-Credit: netTCR 
+Credit: netTCR
+https://github.com/mnielLab/netTCR
 """
 
 from __future__ import print_function

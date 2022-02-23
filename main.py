@@ -41,21 +41,21 @@ def main():
     parser = argparse.ArgumentParser(description='Prediction of TCR binding to peptide-MHC complexes')
 
     parser.add_argument('--infile', type=str,
-                        help='input file for training')
+                        help='Input file for training')
     parser.add_argument('--indepfile', type=str, default=None,
-                        help='independent test file')
+                        help='Independent test data file')
     parser.add_argument('--blosum', type=str, default=None,
-                        help='file with BLOSUM matrix')
+                        help='File containing BLOSUM matrix to initialize embeddings')
     parser.add_argument('--batch_size', type=int, default=32, metavar='N',
-                        help='batch size')
+                        help='Training batch size')
     parser.add_argument('--model_name', type=str, default='original.ckpt',
-                        help = 'if train is True, model name to be saved, otherwise model name to be loaded')
-    parser.add_argument('--epoch', type=int, default=30, metavar='N',
-                        help='maximum number of epoch to train')
+                        help = 'Model name to be saved/loaded for training/independent testing respectively')
+    parser.add_argument('--epoch', type=int, default=200, metavar='N',
+                        help='The maximum number of epochs to train')
     parser.add_argument('--min_epoch', type=int, default=30,
-                        help='minimum number of epoch to train, early stopping will not be applied until we reach min_epoch')
+                        help='The minimum number of epochs to train, early stopping will not be applied until this epoch')
     parser.add_argument('--early_stop', type=str2bool, default=True,
-                        help='use early stopping method')
+                        help='Use early stopping method')
     parser.add_argument('--lr', type=float, default=0.001, metavar='LR',
                         help='learning rate')
     parser.add_argument('--cuda', type=str2bool, default=True,
@@ -64,36 +64,32 @@ def main():
                         help='random seed')
     parser.add_argument('--mode', type=str, default='train',
                         help = 'train or test')
-    parser.add_argument('--save_model', type=str2bool, default=False,
+    parser.add_argument('--save_model', type=str2bool, default=True,
                         help = 'save model')
-    parser.add_argument('--model', type=str, default='cnn',
-                        help='cnn, nettcr')
-    parser.add_argument('--drop_rate', type=float, default=0.3,
+    parser.add_argument('--model', type=str, default='attention',
+                        help='Model to import')
+    parser.add_argument('--drop_rate', type=float, default=0.25,
                         help='dropout rate')
-    parser.add_argument('--n_hid', type=int, default=64,
-                        help='number of hidden variables')
-    parser.add_argument('--lin_size', type=int, default=32,
+    parser.add_argument('--lin_size', type=int, default=1024,
                         help='size of linear transformations')
-    parser.add_argument('--n_filters', type=int, default=100,
-                        help='number of filters in CNN module in netTCR')
     parser.add_argument('--padding', type=str, default='mid',
                         help='front, end, mid, alignment')
-    parser.add_argument('--heads', type=int, default=1,
+    parser.add_argument('--heads', type=int, default=5,
                         help='Multihead attention head')
-    parser.add_argument('--max_len_tcr', type=int, default=None,
+    parser.add_argument('--max_len_tcr', type=int, default=20,
                         help='maximum TCR length allowed')
-    parser.add_argument('--max_len_pep', type=int, default=None,
+    parser.add_argument('--max_len_pep', type=int, default=22,
                         help='maximum peptide length allowed')
     parser.add_argument('--n_fold', type=int, default=5,
                         help='number of cross-validation folds')
-    parser.add_argument('--idx_test_fold', type=int, default=9,
+    parser.add_argument('--idx_test_fold', type=int, default=0,
                         help='fold index for test set (0, ..., n_fold-1)')
     parser.add_argument('--idx_val_fold', type=int, default=-1,
                         help='fold index for validation set (-1, 0, ..., n_fold-1). \
                               If -1, the option will be ignored \
                               If >= 0, the test set will be set aside and the validation set is used as test set') 
     parser.add_argument('--split_type', type=str, default='random',
-                        help='how to split the dataset')
+                        help='how to split the dataset (random, tcr, epitope)')
     args = parser.parse_args()
 
     if args.mode == 'test':
@@ -105,7 +101,6 @@ def main():
     # Set Cuda
     if torch.cuda.is_available() and not args.cuda:
         print("WARNING: You have a CUDA device, so you should probably run with --cuda")
-    args.cuda = (args.cuda and torch.cuda.is_available())
     device = torch.device('cuda' if args.cuda else 'cpu')
 
     # Set random seed
@@ -142,18 +137,16 @@ def main():
                                          padding=args.padding,
                                          batch_size=args.batch_size, device=device)
 
-
     args.pep_length = train_loader['pep_length']
     args.tcr_length = train_loader['tcr_length']
 
     # Define model
-    if args.model == 'cnn':
+    if args.model == 'attention':
         from attention import Net
     else:
         raise ValueError('unknown model name')
 
     model = Net(embedding_matrix, args).to(device)
-
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
 
     # Create Required Directories
@@ -162,7 +155,7 @@ def main():
     if 'result' not in os.listdir('.'):
         os.mkdir('result')
 
-    # fit model
+    # eax1it model
     if args.mode == 'train':
         wf_open = open(
             'result/perf_' + os.path.splitext(os.path.basename(args.model_name))[0] + '.csv', 'w')
@@ -232,7 +225,7 @@ def main():
                 os.path.splitext(os.path.basename(args.model_name))[0] + '.ckpt'
             torch.save(model.state_dict(), model_name)
     
-    elif args.mode == 'indeptest':
+    elif args.mode == 'test':
 
         model_name = args.model_name
 
