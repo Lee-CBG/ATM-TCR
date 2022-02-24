@@ -25,7 +25,7 @@ It is recommended you utilize a [virtual environment](https://packaging.python.o
 ## Input File Formatting Format
 The input files should be CSVs with the following format:
 ```
-epitope,TCR,binding affinity
+Epitope,TCR,Binding Affinity
 ```
 
 Where epitope and TCR are the linear protein sequences and binding affinity is either 0 or 1.
@@ -54,15 +54,15 @@ After training has finished the model will appear under the ```models``` folder 
 ```perf_model_name.csv``` contains the a description of performance metrics throughout training. Each line of the csv is the performance of the training model on the validation set in that particular epoch. The last line of the file contains the final performance statistics.
 ```
 # Example
-Loss Accuracy Precision1 Precision0 Recall1 Recall0 F1Macro F1Micro AUC
-37814.6235	0.6101	0.6241	0.5988	0.5542	0.666	0.6089	0.6101	0.6749
+Loss        Accuracy Precision1 Precision0 Recall1 Recall0 F1Macro F1Micro AUC
+37814.6235	0.6101	 0.6241	    0.5988	   0.5542  0.666   0.6089  0.6101  0.6749
 ```
 
 ```pred_model_name.csv``` contains the predictions of the model on the validation set of data. Each line is a pair from the validation set along with the label and prediction made by the model. The calculated score from the model is also included.
 ```
 # Example
-Epitope                 TCR	             Actual Pred Binding Affinity
-GLCTL@@@@@@@@@@@VAML	CASCWN@@@@@@@YEQYF	1	1	0.9996516704559326
+Epitope     TCR	        Actual Prediction Binding Affinity
+GLCTLVAML	CASCWNYEQYF	1	   1	      0.9996516704559326
 ```
 ## Testing
 To make a prediction using a pre-trained model
