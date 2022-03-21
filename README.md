@@ -23,7 +23,8 @@ pip install -r requirements.txt
 It is recommended you utilize a [virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/).
 
 ## Input File Formatting Format
-The input files should be CSVs with the following format:
+
+The input file should be a CSV with the following format:
 ```
 Epitope,TCR,Binding Affinity
 ```
@@ -35,6 +36,8 @@ Where epitope and TCR are the linear protein sequences and binding affinity is e
 GLCTLVAML,CASSEGQVSPGELF,1
 GLCTLVAML,CSATGTSGRVETQYF,0
 ```
+
+If your data is unlabeled and you are only interested in the predictions, simply put either all 0's or all 1's as the label. The performance statistics can be ignored in this case and the predicted binding affinity scores can be collected from the output file.
 
 ## Training
 To train the model on our dataset using the default settings and on the first GPU
