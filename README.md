@@ -75,7 +75,7 @@ GLCTLVAML	CASCWNYEQYF	1	   1	      0.9996516704559326
 ## Testing
 To make a prediction using a pre-trained model
 ```
-python main.py --infile data/combined_dataset.csv --indepfile data/covid19_data.txt --model_name my_custom_model_name --mode test
+python main.py --infile data/combined_dataset.csv --indepfile data/covid19_data.csv --model_name original.ckpt --mode test
 ```
 
 The predictions will be saved into the ```result``` folder under the name ```pred_model_name_indep_test_data.csv```. These will be displayed similarly to the validation set predictions made during training.
